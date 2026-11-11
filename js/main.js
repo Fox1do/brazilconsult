@@ -150,6 +150,12 @@
     }
   }
 
+  // Направление из ссылки с отдельной страницы услуги
+  var initialService = new URLSearchParams(window.location.search).get('service');
+  if (initialService && serviceNames[initialService]) {
+    serviceSelect.value = serviceNames[initialService];
+  }
+
   // Автоматически выбираем направление из карточки услуги
   document.querySelectorAll('[data-service]').forEach(function (link) {
     link.addEventListener('click', function () {
