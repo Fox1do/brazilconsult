@@ -277,6 +277,11 @@
           throw new Error('HTTP ' + response.status);
         }
 
+        // Цель Метрики: только после успешного ответа Formspree.
+        if (typeof window.ym === 'function') {
+          window.ym(114197653, 'reachGoal', 'request_sent');
+        }
+
         form.reset();
 
         // Сбрасываем ошибки после успешной отправки
