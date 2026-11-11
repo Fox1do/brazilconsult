@@ -105,10 +105,20 @@
   var submitButton = form.querySelector('[type="submit"]');
   var serviceSelect = form.elements.service;
 
-  // «Обсудить запрос» в карточке услуги подставляет направление в форму
+// Соответствие карточек услуг русским названиям
+  var serviceNames = {
+    realty: 'Недвижимость в Бразилии',
+    legal: 'Легализация и иммиграция',
+    business: 'Открытие бизнеса в Бразилии',
+    tax: 'Налоги и налоговое планирование',
+    other: 'Другой вопрос'
+  };
+
+  // Автоматически выбираем направление при переходе из карточки
   document.querySelectorAll('[data-service]').forEach(function (link) {
     link.addEventListener('click', function () {
-      serviceSelect.value = link.getAttribute('data-service');
+      var key = link.getAttribute('data-service');
+      serviceSelect.value = serviceNames[key] || '';
     });
   });
 
