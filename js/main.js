@@ -1,3 +1,4 @@
+
 (function () {
   'use strict';
 
@@ -38,10 +39,11 @@
   });
 
   desktopNav.addEventListener('change', function () {
-    // Без анимации, иначе при смене раскладки меню на мгновение «мигает»
+    // Без анимации при смене раскладки
     nav.style.transition = 'none';
     setNavOpen(false);
     closeSubmenus();
+
     window.setTimeout(function () {
       nav.style.transition = '';
     }, 50);
@@ -49,11 +51,14 @@
 
   /* ---------- Подменю «Услуги» ---------- */
 
-  var submenus = Array.prototype.slice.call(document.querySelectorAll('[data-submenu]'));
+  var submenus = Array.prototype.slice.call(
+    document.querySelectorAll('[data-submenu]')
+  );
 
   function setSubmenuOpen(item, open) {
     item.classList.toggle('is-open', open);
-    item.querySelector('[data-submenu-toggle]').setAttribute('aria-expanded', String(open));
+    item.querySelector('[data-submenu-toggle]')
+      .setAttribute('aria-expanded', String(open));
   }
 
   function closeSubmenus() {
@@ -63,11 +68,11 @@
   }
 
   submenus.forEach(function (item) {
-    item.querySelector('[data-submenu-toggle]').addEventListener('click', function () {
-      setSubmenuOpen(item, !item.classList.contains('is-open'));
-    });
+    item.querySelector('[data-submenu-toggle]')
+      .addEventListener('click', function () {
+        setSubmenuOpen(item, !item.classList.contains('is-open'));
+      });
 
-    // На десктопе закрываем, когда фокус с клавиатуры ушёл из подменю
     item.addEventListener('focusout', function (event) {
       if (desktopNav.matches && !item.contains(event.relatedTarget)) {
         setSubmenuOpen(item, false);
@@ -105,7 +110,7 @@
   var submitButton = form.querySelector('[type="submit"]');
   var serviceSelect = form.elements.service;
 
-// Соответствие карточек услуг русским названиям
+  // Соответствие карточек услуг русским названиям
   var serviceNames = {
     realty: 'Недвижимость в Бразилии',
     legal: 'Легализация и иммиграция',
@@ -114,16 +119,9 @@
     other: 'Другой вопрос'
   };
 
-  // Автоматически выбираем направление при переходе из карточки
-  document.querySelectorAll('[data-service]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      var key = link.getAttribute('data-service');
-      serviceSelect.value = serviceNames[key] || '';
-    });
-  });
-
   function setStatus(state, message) {
     status.textContent = message;
+
     if (state) {
       status.setAttribute('data-state', state);
     } else {
@@ -132,37 +130,87 @@
   }
 
   function setFieldError(field, invalid) {
-    var error = form.querySelector('[data-error-for="' + field.id + '"]');
+    var error = form.querySelector(
+      '[data-error-for="' + field.id + '"]'
+    );
+
     field.setAttribute('aria-invalid', String(invalid));
+
     if (error) {
       error.hidden = !invalid;
+
       if (invalid) {
-        field.setAttribute('aria-describedby', error.id || (error.id = field.id + '-error'));
+        field.setAttribute(
+          'aria-describedby',
+          error.id || (error.id = field.id + '-error')
+        );
       } else {
         field.removeAttribute('aria-describedby');
       }
     }
   }
 
+  // Автоматически выбираем направление из карточки услуги
+  document.querySelectorAll('[data-service]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var key = link.getAttribute('data-service');
+      serviceSelect.value = serviceNames[key] || '';
+
+      // Убираем ошибку, если направление выбрано
+      if (serviceSelect.value) {
+        setFieldError(serviceSelect, false);
+      }
+    });
+  });
+
   function validate() {
     var firstInvalid = null;
 
-    Array.prototype.forEach.call(form.querySelectorAll('[required]'), function (field) {
-      var invalid = !field.value.trim();
-      setFieldError(field, invalid);
-      if (invalid && !firstInvalid) firstInvalid = field;
-    });
+    Array.prototype.forEach.call(
+      form.querySelectorAll('[required]'),
+      function (field) {
+        var invalid = !field.value.trim();
 
-    if (firstInvalid) firstInvalid.focus();
+        setFieldError(field, invalid);
+
+        if (invalid && !firstInvalid) {
+          firstInvalid = field;
+        }
+      }
+    );
+
+    if (firstInvalid) {
+      firstInvalid.focus();
+    }
+
     return !firstInvalid;
   }
 
+  // Убираем ошибки при заполнении текстовых полей
   form.addEventListener('input', function (event) {
-    if (event.target.getAttribute('aria-invalid') === 'true' && event.target.value.trim()) {
-      setFieldError(event.target, false);
+    var field = event.target;
+
+    if (
+      field.getAttribute('aria-invalid') === 'true' &&
+      field.value.trim()
+    ) {
+      setFieldError(field, false);
     }
   });
 
+  // Убираем ошибку сразу после выбора направления
+  form.addEventListener('change', function (event) {
+    var field = event.target;
+
+    if (
+      field.getAttribute('aria-invalid') === 'true' &&
+      field.value.trim()
+    ) {
+      setFieldError(field, false);
+    }
+  });
+
+  // Отправка формы
   form.addEventListener('submit', function (event) {
     event.preventDefault();
     setStatus(null, '');
@@ -172,7 +220,10 @@
     var endpoint = form.getAttribute('data-endpoint');
 
     if (!endpoint) {
-      setStatus('info', 'Форма работает в демо-режиме: отправка заявок ещё не подключена.');
+      setStatus(
+        'info',
+        'Форма работает в демо-режиме: отправка заявок ещё не подключена.'
+      );
       return;
     }
 
@@ -181,16 +232,36 @@
 
     fetch(endpoint, {
       method: 'POST',
-      headers: { Accept: 'application/json' },
+      headers: {
+        Accept: 'application/json'
+      },
       body: new FormData(form)
     })
       .then(function (response) {
-        if (!response.ok) throw new Error('HTTP ' + response.status);
+        if (!response.ok) {
+          throw new Error('HTTP ' + response.status);
+        }
+
         form.reset();
-        setStatus('success', 'Спасибо! Запрос отправлен — мы свяжемся с вами.');
+
+        // Сбрасываем ошибки после успешной отправки
+        Array.prototype.forEach.call(
+          form.querySelectorAll('[required]'),
+          function (field) {
+            setFieldError(field, false);
+          }
+        );
+
+        setStatus(
+          'success',
+          'Спасибо! Запрос отправлен — мы свяжемся с вами.'
+        );
       })
       .catch(function () {
-        setStatus('error', 'Не удалось отправить запрос. Проверьте соединение и попробуйте ещё раз.');
+        setStatus(
+          'error',
+          'Не удалось отправить запрос. Проверьте соединение и попробуйте ещё раз.'
+        );
       })
       .then(function () {
         submitButton.disabled = false;
@@ -211,7 +282,10 @@
           }
         });
       },
-      { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+      {
+        rootMargin: '0px 0px -8% 0%',
+        threshold: 0.08
+      }
     );
 
     revealItems.forEach(function (item) {
@@ -226,5 +300,8 @@
   /* ---------- Год в подвале ---------- */
 
   var year = document.querySelector('[data-year]');
-  if (year) year.textContent = String(new Date().getFullYear());
+
+  if (year) {
+    year.textContent = String(new Date().getFullYear());
+  }
 })();
