@@ -169,6 +169,20 @@
     });
   });
 
+  // Для публичной формы требуем точку в домене (HTML type=email этого не требует).
+  function isEmailValid(field) {
+    var value = field.value.trim();
+    if (!value) return true;
+    if (!field.validity.valid) return false;
+    var parts = value.split('@');
+    if (parts.length !== 2) return false;
+    var domain = parts[1];
+    var labels = domain.split('.');
+    return labels.length >= 2 && labels.every(function (label) {
+      return /^[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/.test(label);
+    }) && labels[labels.length - 1].length >= 2;
+  }
+
   function validate() {
     var firstInvalid = null;
 
@@ -188,7 +202,7 @@
     // Email необязателен, но при заполнении должен быть корректным.
     var emailField = form.elements.email;
     if (emailField) {
-      var emailInvalid = Boolean(emailField.value.trim()) && !emailField.validity.valid;
+      var emailInvalid = !isEmailValid(emailField);
       setFieldError(emailField, emailInvalid);
       if (emailInvalid && !firstInvalid) firstInvalid = emailField;
     }
@@ -206,7 +220,7 @@
 
     if (
       field.getAttribute('aria-invalid') === 'true' &&
-      field.value.trim() && (field.type !== 'email' || field.validity.valid)
+      field.value.trim() && (field.type !== 'email' || isEmailValid(field))
     ) {
       setFieldError(field, false);
     }
@@ -218,11 +232,18 @@
 
     if (
       field.getAttribute('aria-invalid') === 'true' &&
-      field.value.trim() && (field.type !== 'email' || field.validity.valid)
+      field.value.trim() && (field.type !== 'email' || isEmailValid(field))
     ) {
       setFieldError(field, false);
     }
   });
+
+  // Подсказка рядом с email после выхода из поля; не отправляем некорректный адрес.
+  if (form.elements.email) {
+    form.elements.email.addEventListener('blur', function () {
+      setFieldError(this, !isEmailValid(this));
+    });
+  }
 
   // Отправка формы
   form.addEventListener('submit', function (event) {
