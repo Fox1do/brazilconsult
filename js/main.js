@@ -185,6 +185,14 @@
       }
     );
 
+    // Email необязателен, но при заполнении должен быть корректным.
+    var emailField = form.elements.email;
+    if (emailField) {
+      var emailInvalid = Boolean(emailField.value.trim()) && !emailField.validity.valid;
+      setFieldError(emailField, emailInvalid);
+      if (emailInvalid && !firstInvalid) firstInvalid = emailField;
+    }
+
     if (firstInvalid) {
       firstInvalid.focus();
     }
@@ -198,7 +206,7 @@
 
     if (
       field.getAttribute('aria-invalid') === 'true' &&
-      field.value.trim()
+      field.value.trim() && (field.type !== 'email' || field.validity.valid)
     ) {
       setFieldError(field, false);
     }
@@ -210,7 +218,7 @@
 
     if (
       field.getAttribute('aria-invalid') === 'true' &&
-      field.value.trim()
+      field.value.trim() && (field.type !== 'email' || field.validity.valid)
     ) {
       setFieldError(field, false);
     }
