@@ -343,48 +343,67 @@
             (свой скрипт на хостинге или сервис вроде Formspree / Web3Forms).
             Пока атрибут пустой, форма ничего не отправляет и честно сообщает об этом.
           -->
-          <form class="form" data-request-form data-endpoint="https://formspree.io/f/mljbrbqo" novalidate>
-            <div class="form__row">
-              <div class="field">
-                <label class="field__label" for="f-name">Ваше имя</label>
-                <input class="field__control" id="f-name" name="name" type="text" autocomplete="name" required>
-                <p class="field__error" data-error-for="f-name" hidden>Укажите, как к вам обращаться</p>
-              </div>
-              <div class="field">
-                <label class="field__label" for="f-contact">Телефон, email или Telegram</label>
-                <input class="field__control" id="f-contact" name="contact" type="text" autocomplete="off" required>
-                <p class="field__error" data-error-for="f-contact" hidden>Укажите, как с вами связаться</p>
-              </div>
-            </div>
+         
+<form class="form" data-request-form data-endpoint="https://formspree.io/f/mljbrbqo" novalidate>
+  <div class="form__row">
+    <div class="field">
+      <label class="field__label" for="f-name">Ваше имя</label>
+      <input class="field__control" id="f-name" name="name"
+             type="text" autocomplete="name" required>
+      <p class="field__error" data-error-for="f-name" hidden>
+        Укажите, как к вам обращаться
+      </p>
+    </div>
 
-            <div class="field">
-              <label class="field__label" for="f-service">Что вас интересует</label>
-              <div class="field__select">
-                <select class="field__control" id="f-service" name="service">
-                  <option value="">Выберите направление</option>
-                  <option value="realty">Недвижимость в Бразилии</option>
-                  <option value="tax">Налоги и налоговое планирование</option>
-                  <option value="business">Открытие и ведение бизнеса</option>
-                  <option value="legal">Легализация и иммиграция</option>
-                  <option value="other">Другой вопрос</option>
-                </select>
-                <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg>
-              </div>
-            </div>
+    <div class="field">
+      <label class="field__label" for="f-contact">Ваш WhatsApp или Telegram</label>
+      <input class="field__control" id="f-contact" name="contact"
+             type="text" autocomplete="off"
+             placeholder="+55... или @username" required>
+      <p class="field__error" data-error-for="f-contact" hidden>
+        Укажите ваш WhatsApp или Telegram
+      </p>
+    </div>
+  </div>
 
-            <div class="field">
-              <label class="field__label" for="f-message">Коротко о задаче <span class="field__optional">— по желанию</span></label>
-              <textarea class="field__control" id="f-message" name="message" rows="4"></textarea>
-            </div>
+  <div class="field">
+    <label class="field__label" for="f-service">Что вас интересует</label>
+    <div class="field__select">
+      <select class="field__control" id="f-service" name="service">
+        <option value="">Выберите направление</option>
+        <option value="realty">Недвижимость в Бразилии</option>
+        <option value="legal">Легализация и иммиграция</option>
+        <option value="business">Открытие бизнеса в Бразилии</option>
+        <option value="tax">Налоги и налоговое планирование</option>
+        <option value="other">Другой вопрос</option>
+      </select>
+      <svg class="icon" aria-hidden="true">
+        <use href="#i-chevron"/>
+      </svg>
+    </div>
+  </div>
 
-            <div class="form__footer">
-              <button class="btn btn--navy" type="submit">
-                Оставить запрос
-                <svg class="icon btn__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
-              </button>
-              <p class="form__status" data-form-status role="status" aria-live="polite"></p>
-            </div>
-          </form>
+  <div class="field">
+    <label class="field__label" for="f-message">
+      Опишите вашу ситуацию в двух словах
+      <span class="field__optional">— по желанию</span>
+    </label>
+    <textarea class="field__control" id="f-message"
+              name="message" rows="4"></textarea>
+  </div>
+
+  <div class="form__footer">
+    <button class="btn btn--navy" type="submit">
+      Оставить запрос
+      <svg class="icon btn__arrow" aria-hidden="true">
+        <use href="#i-arrow"/>
+      </svg>
+    </button>
+    <p class="form__status" data-form-status
+       role="status" aria-live="polite"></p>
+  </div>
+</form>
+
         </div>
       </div>
     </section>
