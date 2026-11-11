@@ -1517,12 +1517,13 @@ textarea.field__control {
 
 .post__title a{color:inherit;text-decoration:none}.post__title a:hover{text-decoration:underline}
 
-/* Public profiles in About section */
-.person__alias { margin: 5px 0 0; color: #657186; font-size: .92rem; }
-.person__socials { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; }
-.person__socials a, .person__socials a:visited { color: #0869a8; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
-.person__socials a:hover, .person__socials a:focus-visible { color: #034b7a; text-decoration-thickness: 2px; }
-.person__socials a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+/* Quiet, consistent resource links under partner portraits */
+.person__socials { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; margin-top: 12px; }
+.person__socials a, .person__socials a:visited { display: inline-flex; align-items: baseline; flex-wrap: wrap; column-gap: 8px; row-gap: 2px; color: #566477; font-size: .82rem; font-weight: 400; line-height: 1.5; text-decoration: none; }
+.person__platform { color: #7a8492; font-size: .73rem; min-width: 62px; }
+.person__resource { color: #425369; border-bottom: 1px solid #aeb9c4; transition: color .15s ease, border-color .15s ease; }
+.person__socials a:hover .person__resource, .person__socials a:focus-visible .person__resource { color: #14233a; border-color: #14233a; }
+.person__socials a:focus-visible { outline: 2px solid #14233a; outline-offset: 3px; }
 
 /* Unified article call-to-action */
 .article__cta .btn { display:inline-flex; align-items:center; justify-content:center; min-height:54px; padding:0 26px; margin-top:20px; border-radius:12px; background:var(--navy-800); color:#fff; font-weight:600; text-decoration:none; line-height:1.3; }
