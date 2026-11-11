@@ -1542,3 +1542,10 @@ a.telegram-link:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
 }
+
+/* Public profiles in About section */
+.person__alias { margin: 5px 0 0; color: #657186; font-size: .92rem; }
+.person__socials { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; }
+.person__socials a, .person__socials a:visited { color: #0869a8; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.person__socials a:hover, .person__socials a:focus-visible { color: #034b7a; text-decoration-thickness: 2px; }
+.person__socials a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
