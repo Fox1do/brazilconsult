@@ -1567,7 +1567,7 @@ textarea.field__control {
 
 /* Immigration: passport visual with live, accessible HTML text and CTA */
 .detail-hero--passport{position:relative;isolation:isolate;overflow:hidden}
-.detail-hero--passport::before{content:"";position:absolute;z-index:-1;inset:0;background-image:linear-gradient(to bottom,#111c2e 0%,rgba(17,28,46,.86) 5%,rgba(17,28,46,.45) 14%,rgba(17,28,46,0) 29%),linear-gradient(90deg,#111c2e 0%,rgba(17,28,46,.99) 23%,rgba(17,28,46,.94) 38%,rgba(17,28,46,.70) 52%,rgba(17,28,46,.10) 76%,rgba(17,28,46,0) 100%),url("../assets/img/passport-brazil.webp");background-repeat:no-repeat;background-position:center,center,right center;background-size:cover,cover,92% auto;background-color:#111c2e}
+.detail-hero--passport::before{content:"";position:absolute;z-index:-1;inset:0;background-image:linear-gradient(to bottom,#111c2e 0%,rgba(17,28,46,.86) 5%,rgba(17,28,46,.45) 14%,rgba(17,28,46,0) 29%),linear-gradient(90deg,#111c2e 0%,rgba(17,28,46,.99) 23%,rgba(17,28,46,.94) 38%,rgba(17,28,46,.70) 52%,rgba(17,28,46,.10) 76%,rgba(17,28,46,0) 100%),url("../assets/img/passport-brazil.webp");background-repeat:no-repeat;background-position:center,center,right center;background-size:cover,cover,85% auto;background-color:#111c2e}
 .detail-hero--passport .container{position:relative;z-index:1}
 .detail-hero--passport .detail-hero__title{max-width:780px}
 .detail-hero--passport .detail-hero__lead{max-width:640px}
