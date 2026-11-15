@@ -1,3 +1,4 @@
+
 /* ==========================================================================
    Шрифты (лежат локально в assets/fonts — сайт не зависит от внешних сервисов)
    ========================================================================== */
@@ -218,10 +219,6 @@ textarea {
   transition: transform 0.2s var(--ease);
 }
 
-.btn:hover .btn__arrow {
-  transform: translateX(4px);
-}
-
 .btn--cream {
   background: var(--cream);
   color: var(--navy-900);
@@ -295,8 +292,6 @@ textarea {
   transition: color 0.3s var(--ease);
 }
 
-/* Подложка вынесена в псевдоэлемент, чтобы backdrop-filter не ломал
-   полноэкранное мобильное меню (fixed внутри шапки). */
 .header::before {
   content: '';
   position: absolute;
@@ -789,7 +784,6 @@ textarea {
       linear-gradient(90deg, rgba(13, 23, 40, 0.8) 0%, rgba(13, 23, 40, 0.56) 34%, rgba(13, 23, 40, 0.12) 64%, rgba(13, 23, 40, 0) 82%);
   }
 
-  /* На широких экранах — как в макете: ссылки в строку с разделителями */
   .hero__topics {
     gap: 0;
     margin-top: 36px;
@@ -1000,7 +994,6 @@ textarea {
 }
 
 .service {
-  /* компенсирует сдвиг анимации появления при переходе по якорю */
   scroll-margin-top: 18px;
 }
 
@@ -1229,7 +1222,6 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
-
 }
 
 /* ==========================================================================
@@ -1541,7 +1533,6 @@ textarea.field__control {
   background: var(--navy-700);
 }
 
-
 /* Article typography: explicit hierarchy and readable spacing. */
 .article > .article__meta { font-size: .88rem; line-height: 1.6; color: #69717b; margin-bottom: 24px; }
 .article > h3 { font-family: var(--font-sans); font-size: 1.3rem; font-weight: 600; line-height: 1.35; margin: 28px 0 12px; }
@@ -1587,40 +1578,81 @@ textarea.field__control {
 .post__body > .link-arrow { margin-top: auto; }
 @media (prefers-reduced-motion: reduce) { .blog__grid .post, .post__cover img { transition: none; } .blog__grid .post:hover, .post:hover .post__cover img { transform: none; } }
 
-/* v0.058: header-only brand typography; footer remains unchanged */
-.header .brand__tag, .detail-header .brand__tag {
+/* ==========================================================================
+   v0.059 — Единая шапка главной и внутренних страниц
+   ========================================================================== */
+
+.header .brand__tag,
+.detail-header .brand__tag {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.13;
   opacity: 1;
 }
+
+/* Десктоп */
 @media (min-width: 720px) {
-  :root { --header-h: 88px; }
-  .header .brand__tag, .detail-header .brand__tag { font-size: 1.125rem; }
-  .header .brand__name, .detail-header .brand__name {
+  :root {
+    --header-h: 88px;
+  }
+
+  .header .brand__tag,
+  .detail-header .brand__tag {
+    font-size: 1.125rem;
+  }
+
+  .header .brand__name,
+  .detail-header .brand__name {
     font-size: 0.8125rem;
     line-height: 1.25;
   }
 }
-@media (min-width: 420px) and (max-width: 719px) {
-  .header .brand, .detail-header .brand { gap: 12px; }
-  .header .brand__tag, .detail-header .brand__tag { padding-left: 12px; }
-}
-/* Показывать Brazil Consult на мобильных */
-@media (max-width: 719px) {
-  .header .brand__tag {
-    display: block;
-    font-size: 0.875rem;
-    padding-left: 10px;
-    line-height: 1.15;
-  }
 
-  .header .brand {
+/* Мобильная версия */
+@media (max-width: 719px) {
+  .header .brand,
+  .detail-header .brand {
     gap: 10px;
   }
 
-  .header .brand__name {
+  .header .brand__name,
+  .detail-header .brand__name {
     font-size: 0.8125rem;
     line-height: 1.25;
+  }
+
+  .header .brand__tag,
+  .detail-header .brand__tag {
+    display: block;
+    padding-left: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.15;
+    opacity: 1;
+  }
+
+  .detail-header__inner {
+    gap: 10px;
+  }
+
+  .detail-header__back {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 719px) {
+  .detail-header .brand {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .detail-header .brand__name {
+    font-size: 0.6875rem;
+  }
+
+  .detail-header .brand__tag {
+    font-size: 0.75rem;
+    overflow-wrap: anywhere;
   }
 }
