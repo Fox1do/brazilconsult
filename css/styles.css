@@ -1574,3 +1574,15 @@ textarea.field__control {
 .detail-hero--passport .detail-hero__lead{max-width:640px}
 @media(max-width:850px){.detail-hero--passport::before{background-image:linear-gradient(to bottom,#111c2e 0%,rgba(17,28,46,.7) 12%,transparent 30%),linear-gradient(90deg,rgba(17,28,46,.96),rgba(17,28,46,.77)),url("../assets/img/passport-brazil.webp");background-position:center,center,right center;background-size:cover,cover,auto 100%}}
 @media(max-width:600px){.detail-hero--passport::before{background-image:linear-gradient(to bottom,#111c2e 0%,rgba(17,28,46,.7) 12%,transparent 30%),linear-gradient(90deg,rgba(17,28,46,.88) 0%,rgba(17,28,46,.72) 45%,rgba(17,28,46,.35) 100%),url("../assets/img/passport-brazil.webp");background-size:cover,cover,cover;background-position:center,center,65% center}}
+
+/* Blog cards with editorial photo covers — v0.055 */
+.blog__grid { align-items: stretch; }
+.blog__grid .post { padding: 0; min-height: 0; overflow: hidden; border: 1px solid #e3e0d8; border-radius: 10px; background: #fff; align-items: stretch; transition: box-shadow .2s ease, transform .2s ease; }
+.blog__grid .post:hover { box-shadow: 0 12px 30px rgba(17,28,46,.10); transform: translateY(-2px); }
+.post__cover { display: block; aspect-ratio: 16 / 9; overflow: hidden; background: #eae8e2; }
+.post__cover img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.post:hover .post__cover img { transform: scale(1.025); }
+.post__body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 24px; }
+.post__body .post__title { margin: 12px 0 22px; }
+.post__body > .link-arrow { margin-top: auto; }
+@media (prefers-reduced-motion: reduce) { .blog__grid .post, .post__cover img { transition: none; } .blog__grid .post:hover, .post:hover .post__cover img { transform: none; } }
