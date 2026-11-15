@@ -1586,3 +1586,23 @@ textarea.field__control {
 .post__body .post__title { margin: 12px 0 22px; }
 .post__body > .link-arrow { margin-top: auto; }
 @media (prefers-reduced-motion: reduce) { .blog__grid .post, .post__cover img { transition: none; } .blog__grid .post:hover, .post:hover .post__cover img { transform: none; } }
+
+/* v0.057: header-only brand typography; footer remains unchanged */
+.header .brand__tag, .detail-header .brand__tag {
+  font-size: 1.125rem;
+  font-weight: 650;
+  line-height: 1.13;
+  opacity: 1;
+}
+@media (min-width: 720px) {
+  :root { --header-h: 88px; }
+  .header .brand__tag, .detail-header .brand__tag { font-size: 1.25rem; }
+  .header .brand__name, .detail-header .brand__name {
+    font-size: 0.8125rem;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 420px) and (max-width: 719px) {
+  .header .brand, .detail-header .brand { gap: 12px; }
+  .header .brand__tag, .detail-header .brand__tag { padding-left: 12px; }
+}
