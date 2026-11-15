@@ -1641,18 +1641,51 @@ textarea.field__control {
     white-space: nowrap;
   }
 }
+/* v0.060 — одинаковая типографика шапки и компактный мобильный подвал */
 @media (max-width: 719px) {
+  .header .brand,
   .detail-header .brand {
     min-width: 0;
-    flex: 1;
   }
 
+  .detail-header .brand {
+    flex: 1 1 auto;
+  }
+
+  .header .brand__name,
   .detail-header .brand__name {
-    font-size: 0.6875rem;
+    flex-shrink: 1;
+    min-width: 0;
   }
 
+  .header .brand__tag,
   .detail-header .brand__tag {
-    font-size: 0.75rem;
-    overflow-wrap: anywhere;
+    flex-shrink: 0;
+  }
+
+  .footer__inner {
+    gap: 16px;
+    padding-block: 24px 20px;
+  }
+
+  .footer .brand {
+    gap: 10px;
+  }
+
+  .footer .brand__tag {
+    padding-left: 10px;
+    font-size: 0.875rem;
+    line-height: 1.15;
+  }
+
+  .footer__nav {
+    gap: 4px 18px;
+    font-size: 0.875rem;
+  }
+
+  .footer__bottom {
+    gap: 6px 16px;
+    padding-block: 12px 18px;
+    font-size: 0.8125rem;
   }
 }
