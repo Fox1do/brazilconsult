@@ -1590,7 +1590,7 @@ textarea.field__control {
 /* v0.058: header-only brand typography; footer remains unchanged */
 .header .brand__tag, .detail-header .brand__tag {
   font-size: 1.125rem;
-  font-weight: 650;
+  font-weight: 600;
   line-height: 1.13;
   opacity: 1;
 }
