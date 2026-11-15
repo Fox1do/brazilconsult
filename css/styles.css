@@ -1606,3 +1606,21 @@ textarea.field__control {
   .header .brand, .detail-header .brand { gap: 12px; }
   .header .brand__tag, .detail-header .brand__tag { padding-left: 12px; }
 }
+/* Показывать Brazil Consult на мобильных */
+@media (max-width: 719px) {
+  .header .brand__tag {
+    display: block;
+    font-size: 0.875rem;
+    padding-left: 10px;
+    line-height: 1.15;
+  }
+
+  .header .brand {
+    gap: 10px;
+  }
+
+  .header .brand__name {
+    font-size: 0.6875rem;
+    line-height: 1.25;
+  }
+}
