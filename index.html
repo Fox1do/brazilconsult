@@ -19,7 +19,7 @@
 <link as="font" crossorigin="" href="assets/fonts/source-serif-4-cyrillic.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="" href="assets/fonts/golos-text-cyrillic.woff2" rel="preload" type="font/woff2"/>
 <link as="image" fetchpriority="high" href="assets/img/hero-rio.jpg" rel="preload"/>
-<link href="css/styles.css" rel="stylesheet"/>
+<link href="css/styles.css?v=0.074" rel="stylesheet"/>
 <script>document.documentElement.classList.add('js');</script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
@@ -33,7 +33,7 @@
 </script>
 <meta content="https://brazilconsult.com/assets/img/hero-rio.jpg" property="og:image"/><meta content="Панорама Рио-де-Жанейро — Brazil Consult" property="og:image:alt"/>
 <style>
-/* Только тестовая страница index2.html */
+/* Главная страница: блок ознакомительной встречи */
 .intro-meeting { background: #f6f4ef; padding: 30px 0 78px; }
 .intro-meeting__panel { position: relative; overflow: hidden; padding: clamp(28px, 5vw, 62px); border-radius: 16px; background: #101b2d; color: #fff; }
 .intro-meeting__label { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; color: #4ade80; font-size: .8rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
@@ -47,14 +47,14 @@
 .intro-meeting__free { color: #4ade80; font-size: .9375rem; font-weight: 600; letter-spacing: .12em; }
 @media (max-width: 560px) { .intro-meeting { padding: 12px 0 60px; } .intro-meeting__panel { padding: 28px 22px; } .intro-meeting__bottom { align-items: stretch; flex-direction: column-reverse; } .intro-meeting__cta { width: 100%; } }
 
-/* Только index2: заметная ссылка с первого экрана на встречу */
+/* Ссылка с первого экрана на WhatsApp */
 .hero__meeting-link { display: inline-flex; align-items: center; gap: 10px; width: fit-content; margin-top: 22px; padding: 9px 0; color: #fff; font-size: .95rem; font-weight: 600; letter-spacing: .01em; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.52); transition: color .2s, border-color .2s; }
 .hero__meeting-link:hover, .hero__meeting-link:focus-visible { color: #86efac; border-color: #86efac; }
 .hero__meeting-link-dot { display: inline-block; width: 11px; height: 11px; flex: 0 0 11px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 0 4px rgba(34,197,94,.20); }
 #first-meeting { scroll-margin-top: 85px; }
 @media (max-width: 600px) { .hero__meeting-link { font-size: .87rem; margin-top: 16px; } }
 
-/* v0.068 — discreet periodic pulse, test page only */
+/* v0.072 — discreet periodic pulse */
 .hero__meeting-link-dot { animation: meeting-dot-pulse 2.708s ease-in-out infinite; }
 @keyframes meeting-dot-pulse {
   0%, 8%, 16%, 100% { transform: scale(1); box-shadow: 0 0 0 4px rgba(34,197,94,.20); opacity: 1; }
@@ -140,10 +140,10 @@
 <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
 <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
 </ul>
-<a aria-label="WhatsApp — задать вопрос" class="header-whatsapp header-whatsapp--desktop" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%82%D0%B5%D0%BB%28%D0%B0%29%20%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%D0%BC%20Brazil%20Consult." rel="noopener noreferrer" target="_blank" title="WhatsApp"><svg aria-hidden="true" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.02 3.2A12.72 12.72 0 0 0 5.1 22.45L3.4 28.7l6.41-1.68A12.8 12.8 0 1 0 16.02 3.2Zm0 23.25a10.4 10.4 0 0 1-5.29-1.44l-.38-.23-3.79.99 1.01-3.7-.25-.39a10.43 10.43 0 1 1 8.7 4.77Zm5.72-7.8c-.31-.16-1.84-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.24-.67.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.29-.21-.6-.37Z" fill="currentColor"></path></svg></a><a class="btn btn--navy btn--pill nav__cta" href="#contacts">Оставить запрос</a>
+<a aria-label="WhatsApp — задать вопрос" class="header-whatsapp header-whatsapp--desktop" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%BB%D0%B8%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B7%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%2020-%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%3F" rel="noopener noreferrer" target="_blank" title="WhatsApp"><svg aria-hidden="true" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.02 3.2A12.72 12.72 0 0 0 5.1 22.45L3.4 28.7l6.41-1.68A12.8 12.8 0 1 0 16.02 3.2Zm0 23.25a10.4 10.4 0 0 1-5.29-1.44l-.38-.23-3.79.99 1.01-3.7-.25-.39a10.43 10.43 0 1 1 8.7 4.77Zm5.72-7.8c-.31-.16-1.84-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.24-.67.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.29-.21-.6-.37Z" fill="currentColor"></path></svg></a><a class="btn btn--navy btn--pill nav__cta" href="#contacts">Оставить запрос</a>
 </nav>
 
-<a aria-label="WhatsApp — задать вопрос" class="header-whatsapp header-whatsapp--mobile" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%82%D0%B5%D0%BB%28%D0%B0%29%20%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%B4%D0%B0%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%D0%BC%20Brazil%20Consult." rel="noopener noreferrer" target="_blank" title="WhatsApp"><svg aria-hidden="true" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.02 3.2A12.72 12.72 0 0 0 5.1 22.45L3.4 28.7l6.41-1.68A12.8 12.8 0 1 0 16.02 3.2Zm0 23.25a10.4 10.4 0 0 1-5.29-1.44l-.38-.23-3.79.99 1.01-3.7-.25-.39a10.43 10.43 0 1 1 8.7 4.77Zm5.72-7.8c-.31-.16-1.84-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.24-.67.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.29-.21-.6-.37Z" fill="currentColor"></path></svg></a><button aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" class="burger" data-nav-toggle="" type="button">
+<a aria-label="WhatsApp — задать вопрос" class="header-whatsapp header-whatsapp--mobile" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%BB%D0%B8%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B7%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%2020-%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%3F" rel="noopener noreferrer" target="_blank" title="WhatsApp"><svg aria-hidden="true" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.02 3.2A12.72 12.72 0 0 0 5.1 22.45L3.4 28.7l6.41-1.68A12.8 12.8 0 1 0 16.02 3.2Zm0 23.25a10.4 10.4 0 0 1-5.29-1.44l-.38-.23-3.79.99 1.01-3.7-.25-.39a10.43 10.43 0 1 1 8.7 4.77Zm5.72-7.8c-.31-.16-1.84-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.81 1.01-.99 1.22-.18.21-.36.24-.67.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.71-.97-2.34-.26-.61-.52-.53-.71-.54h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63s1.13 3.05 1.29 3.26c.16.21 2.22 3.39 5.38 4.75.75.32 1.34.52 1.8.66.76.24 1.45.21 2 .13.61-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.29-.21-.6-.37Z" fill="currentColor"></path></svg></a><button aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" class="burger" data-nav-toggle="" type="button">
 <span aria-hidden="true" class="burger__lines"></span>
 </button>
 </div>
@@ -172,7 +172,7 @@
 </a>
 <a class="btn btn--ghost" href="#services">Наши услуги</a>
 </div>
-<a class="hero__meeting-link" href="#first-meeting"><span class="hero__meeting-link-dot" aria-hidden="true"></span>Бесплатная встреча · 20 минут <span aria-hidden="true">↗</span></a>
+<a class="hero__meeting-link" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%BB%D0%B8%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B7%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%2020-%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%BD%D1%8B%D0%B9%20%D1%81%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%3F" target="_blank" rel="noopener noreferrer"><span class="hero__meeting-link-dot" aria-hidden="true"></span>Бесплатная встреча · 20 минут <span aria-hidden="true">↗</span></a>
 </div>
 </section>
 
@@ -262,7 +262,7 @@
 </div>
 </div>
 </section>
-<!-- Тестовый блок: бесплатная ознакомительная встреча (только index2.html) -->
+<!-- Бесплатная ознакомительная встреча -->
 <section id="first-meeting" class="intro-meeting" aria-labelledby="intro-meeting-title">
   <div class="container">
     <div class="intro-meeting__panel">
@@ -449,10 +449,10 @@
 </div>
 <div class="container footer__bottom">
 <p>© <span data-year="">2026</span> Brazil Consult · Дмитрий Кузьменко · Екатерина Захарова</p>
-<span aria-label="Версия сайта 0.058" style="font-size:10px;font-weight:400;opacity:.55;white-space:nowrap;">v0.058</span>
+<span aria-label="Версия сайта 0.074" style="font-size:10px;font-weight:400;opacity:.55;white-space:nowrap;">v0.074</span>
 <a href="#top">Наверх ↑</a>
 </div>
 </footer>
-<script defer="" src="js/main.js"></script>
+<script defer="" src="js/main.js?v=0.074"></script>
 </body>
 </html>

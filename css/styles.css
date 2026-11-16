@@ -1837,3 +1837,12 @@ textarea.field__control {
 @keyframes detail-meeting-pulse { 0%,8%,16%,100% { transform: scale(1); box-shadow: 0 0 0 4px rgba(34,197,94,.2); opacity: 1; } 11% { transform: scale(1.22); box-shadow: 0 0 0 9px rgba(34,197,94,.04); opacity: .72; } }
 @media (max-width:600px) { .detail-meeting-link { font-size: .87rem; } }
 @media (prefers-reduced-motion:reduce) { .detail-meeting-link__dot { animation:none; } }
+
+/* v0.073 — шапка страниц услуг остаётся видимой при прокрутке */
+.detail-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: var(--navy-900);
+}
