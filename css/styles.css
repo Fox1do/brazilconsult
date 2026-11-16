@@ -44,17 +44,17 @@
    ========================================================================== */
 
 :root {
-  --navy-900: #111c2e;
-  --navy-800: #18253b;
-  --navy-700: #24344f;
-  --cream: #f3ecdf;
-  --sand: #e3c79b;
-  --bronze: #96692f;
-  --bg: #f6f4ef;
+  --navy-900: #15261d;
+  --navy-800: #244b2b;
+  --navy-700: #346b37;
+  --cream: #f3f4eb;
+  --sand: #d9e7bd;
+  --bronze: #c75c1b;
+  --bg: #f7f8f4;
   --surface: #ffffff;
-  --ink: #18212f;
+  --ink: #18231c;
   --muted: #5a6371;
-  --line: #dedad1;
+  --line: #dce3d9;
   --error: #b3261e;
 
   --font-sans: 'Golos Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -1861,3 +1861,168 @@ textarea.field__control {
 }
 
 /* Build v0.082 — consistent passport image and shade across widths */
+
+/* v0.083 — фирменный знак и сдержанная палитра Brazil Consult */
+.brand__logo { display:block; width:clamp(187px,20.9vw,273px); height:auto; object-fit:contain; }
+.brand__logo--dark { display:none; }
+.brand__logo--light { display:block; }
+.header.is-scrolled .brand__logo--dark { display:block; }
+.header.is-scrolled .brand__logo--light { display:none; }
+.footer .brand__logo--dark { display:none; }
+.footer .brand__logo--light { display:block; }
+@media(max-width:719px) { .brand__logo { width:clamp(170px,46.2vw,231px); } }
+
+/* v0.084 — единая светлая шапка: логотип всегда на светлом фоне */
+.header, .header.is-scrolled, .nav-open .header {
+  color: var(--ink);
+  background: rgba(248,248,244,.97);
+  border-bottom: 1px solid var(--line);
+  -webkit-backdrop-filter: saturate(1.2) blur(14px);
+  backdrop-filter: saturate(1.2) blur(14px);
+}
+.header::before, .header.is-scrolled::before, .nav-open .header::before { opacity: 0; }
+.header .brand__logo--dark, .nav-open .header .brand__logo--dark { display: block; }
+.header .brand__logo--light, .nav-open .header .brand__logo--light { display: none; }
+/* Мобильное меню открывается под шапкой, не перекрывая её */
+@media (max-width: 719px) {
+  .nav { top: var(--header-h); padding-top: 20px; }
+}
+/* Внутренние страницы: та же светлая шапка */
+.detail-header { background: #f8f8f4; color: var(--ink); border-bottom: 1px solid var(--line); }
+.detail-header .brand__logo--dark { display: block; }
+.detail-header .brand__logo--light { display: none; }
+/* В тёмном подвале фирменный знак помещается на светлую подложку */
+.footer .brand--footer { background: #fff; border-radius: 6px; padding: 10px 14px; width: fit-content; }
+.footer .brand__logo--dark { display: block; }
+.footer .brand__logo--light { display: none; }
+
+/* v0.085 — чистая кнопка WhatsApp на светлой шапке */
+.header-whatsapp,
+.header.is-scrolled .header-whatsapp,
+.detail-header .header-whatsapp {
+  background: transparent;
+  border: 2px solid #25d366;
+  color: #25d366;
+  box-shadow: none;
+}
+.header-whatsapp svg,
+.header.is-scrolled .header-whatsapp svg,
+.detail-header .header-whatsapp svg {
+  color: #25d366;
+  fill: currentColor;
+  stroke: none;
+}
+.header-whatsapp:hover,
+.header.is-scrolled .header-whatsapp:hover,
+.detail-header .header-whatsapp:hover {
+  background: rgba(37,211,102,.09);
+  border-color: #25d366;
+  color: #25d366;
+  box-shadow: none;
+}
+.header-whatsapp:hover svg,
+.header.is-scrolled .header-whatsapp:hover svg,
+.detail-header .header-whatsapp:hover svg { color: #25d366; }
+
+/* v0.086 — WhatsApp, вариант 2: яркий чистый контур */
+.header-whatsapp,
+.header.is-scrolled .header-whatsapp,
+.detail-header .header-whatsapp {
+  background: transparent;
+  border: 2px solid #08c846;
+  color: #08c846;
+  box-shadow: none;
+}
+.header-whatsapp svg,
+.header.is-scrolled .header-whatsapp svg,
+.detail-header .header-whatsapp svg {
+  width: 26px; height: 26px;
+  color: #08c846; fill: currentColor; stroke: none;
+  opacity: 1; filter: none;
+}
+.header-whatsapp:hover,
+.header.is-scrolled .header-whatsapp:hover,
+.detail-header .header-whatsapp:hover {
+  background: rgba(8,200,70,.08); border-color: #08c846;
+  color: #08c846; box-shadow: none;
+}
+
+/* v0.087 — WhatsApp, вариант 3: яркая фирменная заливка */
+.header-whatsapp,
+.header.is-scrolled .header-whatsapp,
+.detail-header .header-whatsapp {
+  background: #20c95a;
+  border: 2px solid #20c95a;
+  color: #ffffff;
+  box-shadow: none;
+}
+.header-whatsapp svg,
+.header.is-scrolled .header-whatsapp svg,
+.detail-header .header-whatsapp svg {
+  width: 26px;
+  height: 26px;
+  color: #ffffff;
+  fill: currentColor;
+  stroke: none;
+  opacity: 1;
+  filter: none;
+}
+.header-whatsapp:hover,
+.header.is-scrolled .header-whatsapp:hover,
+.detail-header .header-whatsapp:hover {
+  background: #10b84d;
+  border-color: #10b84d;
+  color: #ffffff;
+  box-shadow: none;
+}
+.header-whatsapp:hover svg,
+.header.is-scrolled .header-whatsapp:hover svg,
+.detail-header .header-whatsapp:hover svg { color: #ffffff; }
+
+/* v0.088: footer navigation without redundant brand logo */
+.footer__inner { justify-content: flex-end; }
+
+/* v0.093 — единое поведение раскрывающегося меню на узких экранах */
+@media (max-width: 1199px) {
+  .header__inner > .burger { display: grid; flex: 0 0 46px; }
+  .header__inner > .nav {
+    position: fixed;
+    inset: var(--header-h) 0 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+    width: 100%;
+    height: calc(100dvh - var(--header-h));
+    margin: 0;
+    padding: 20px var(--gutter) max(32px, env(safe-area-inset-bottom));
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: var(--navy-900);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s var(--ease), visibility .25s;
+  }
+  .nav-open .header__inner > .nav { opacity: 1; visibility: visible; }
+  .header__inner > .nav .nav__list { flex-direction: column; align-items: stretch; gap: 0; }
+  .header__inner > .nav .nav__item { border-bottom: 1px solid rgba(255,255,255,.12); }
+  .header__inner > .nav .nav__link {
+    display: flex;
+    width: 100%;
+    padding: 16px 0;
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    text-align: left;
+    color: #fff;
+  }
+  .header__inner > .nav .nav__cta { min-height: 54px; background: var(--cream); color: var(--navy-900); }
+  .header__inner > .nav .submenu { display: none; position: static; width: auto; padding: 0 0 12px; opacity: 1; visibility: visible; transform: none; }
+  .header__inner > .nav .nav__item.is-open .submenu { display: block; }
+  .header__inner > .nav .submenu__list { background: transparent; border: 0; box-shadow: none; padding: 0; color: #fff; }
+  .header__inner > .nav .submenu__text { color: rgba(255,255,255,.68); }
+  .header__inner > .nav .header-whatsapp--desktop { display: none; }
+  .header__inner > .header-whatsapp--mobile { display: inline-flex; margin-left: auto; }
+  .header__inner > .brand, .header__inner > .burger, .header__inner > .header-whatsapp--mobile { position: relative; z-index: 2; }
+}
