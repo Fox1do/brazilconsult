@@ -2026,3 +2026,16 @@ textarea.field__control {
   .header__inner > .header-whatsapp--mobile { display: inline-flex; margin-left: auto; }
   .header__inner > .brand, .header__inner > .burger, .header__inner > .header-whatsapp--mobile { position: relative; z-index: 2; }
 }
+
+/* Privacy controls — isolated from the existing site layout */
+.bc-cookie-banner[hidden]{display:none!important}
+.bc-cookie-banner{position:fixed;z-index:99999;bottom:18px;left:18px;right:18px;max-width:850px;margin:0 auto;padding:18px 22px;border:1px solid #d9dfd8;border-radius:12px;background:#fff;color:#16271e;box-shadow:0 10px 40px #0003;display:flex;gap:20px;align-items:center;justify-content:space-between;font:14px/1.5 Arial,sans-serif}
+.bc-cookie-banner__text p{margin:4px 0 0}.bc-cookie-banner a{color:#205332;text-decoration:underline}.bc-cookie-banner__actions{display:flex;flex-shrink:0;gap:8px;flex-wrap:wrap}
+.bc-cookie-banner button{padding:10px 13px;border:1px solid #214b2b;border-radius:7px;background:#fff;color:#214b2b;font:inherit;cursor:pointer}.bc-cookie-banner button[data-bc-accept]{background:#214b2b;color:#fff}
+.bc-legal-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;font-size:12px}.bc-legal-links a,.bc-legal-links button{color:inherit;opacity:.85;text-decoration:underline;background:none;border:0;padding:0;font:inherit;cursor:pointer}
+.bc-form-privacy{font-size:13px;line-height:1.5;margin:14px 0}.bc-form-privacy a{text-decoration:underline}.bc-form-privacy input{margin-right:7px;vertical-align:middle}
+.bc-legal-page{max-width:850px;margin:65px auto 90px;padding:0 24px;line-height:1.75}.bc-legal-page h1{font-size:clamp(30px,5vw,48px);line-height:1.1}.bc-legal-page h2{margin-top:30px;font-size:22px}.bc-legal-page a{text-decoration:underline}
+@media(max-width:650px){.bc-cookie-banner{left:10px;right:10px;bottom:10px;display:block;padding:16px}.bc-cookie-banner__actions{margin-top:12px}.bc-cookie-banner button{flex:1}}
+
+/* Company identification in legal footer */
+.bc-company-details{font-size:12px;line-height:1.6;opacity:.78;overflow-wrap:anywhere}.bc-company-details a{color:inherit;text-decoration:underline;text-underline-offset:2px}

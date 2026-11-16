@@ -189,7 +189,7 @@
     Array.prototype.forEach.call(
       form.querySelectorAll('[required]'),
       function (field) {
-        var invalid = !field.value.trim();
+        var invalid = field.type === 'checkbox' ? !field.checked : !field.value.trim();
 
         setFieldError(field, invalid);
 
@@ -220,7 +220,7 @@
 
     if (
       field.getAttribute('aria-invalid') === 'true' &&
-      field.value.trim() && (field.type !== 'email' || isEmailValid(field))
+      (field.type === 'checkbox' ? field.checked : field.value.trim()) && (field.type !== 'email' || isEmailValid(field))
     ) {
       setFieldError(field, false);
     }
@@ -232,7 +232,7 @@
 
     if (
       field.getAttribute('aria-invalid') === 'true' &&
-      field.value.trim() && (field.type !== 'email' || isEmailValid(field))
+      (field.type === 'checkbox' ? field.checked : field.value.trim()) && (field.type !== 'email' || isEmailValid(field))
     ) {
       setFieldError(field, false);
     }
