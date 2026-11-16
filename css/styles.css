@@ -1733,3 +1733,77 @@ textarea.field__control {
   .header .brand__name, .detail-header .brand__name { font-size: .75rem; }
   .header .brand__tag, .detail-header .brand__tag { font-size: .8125rem; }
 }
+
+/* v0.062 — заметная кнопка WhatsApp, без переноса навигации */
+.header-whatsapp {
+  background: #25d366;
+  border: 1px solid #25d366;
+  color: #10271b;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+}
+.header-whatsapp:hover,
+.header.is-scrolled .header-whatsapp:hover {
+  background: #1fbe59;
+  border-color: #1fbe59;
+  color: #10271b;
+}
+.header-whatsapp svg { color: #10271b; }
+.header__inner > .nav { min-width: 0; }
+@media (min-width: 1040px) {
+  .header__inner { gap: 14px; }
+  .header__inner > .brand { flex: 0 0 auto; }
+  .header__inner > .nav { margin-left: auto; gap: 12px; }
+  .header__inner > .header-whatsapp { flex: 0 0 auto; }
+  .nav__link { padding-inline: 10px; }
+}
+@media (min-width: 1040px) and (max-width: 1199px) {
+  .burger { display: grid; }
+  .nav { position: fixed; inset: 0; z-index: 1; flex-direction: column; align-items: stretch; gap: 28px; padding: calc(var(--header-h) + 20px) var(--gutter) max(32px, env(safe-area-inset-bottom)); overflow-y: auto; background: var(--navy-900); color: #fff; opacity: 0; visibility: hidden; transition: opacity .25s var(--ease), visibility .25s; }
+  .nav-open .nav { opacity: 1; visibility: visible; }
+  .nav__list { flex-direction: column; align-items: stretch; }
+  .nav__item { border-bottom: 1px solid rgba(255,255,255,.12); }
+  .nav__link { width: 100%; padding: 16px 0; font-family: var(--font-serif); font-size: 1.5rem; text-align: left; }
+  .nav__cta { min-height: 54px; background: var(--cream); color: var(--navy-900); }
+  .submenu { display: none; position: static; width: auto; padding: 0 0 12px; opacity: 1; visibility: visible; transform: none; }
+  .nav__item.is-open .submenu { display: block; }
+  .submenu__list { background: transparent; border: 0; box-shadow: none; padding: 0; color: #fff; }
+  .submenu__text { color: rgba(255,255,255,.68); }
+  .header__inner > .brand { margin-right: auto; }
+  .header__inner > .header-whatsapp { margin-left: 0; }
+}
+@media (max-width: 1199px) {
+  .header__inner > .header-whatsapp { margin-left: auto; }
+  .header-whatsapp__label { display: none; }
+}
+@media (max-width: 719px) {
+  .header__inner > .header-whatsapp { margin-left: 0; }
+}
+
+/* v0.063 — WhatsApp: только узнаваемая иконка в зелёном контуре */
+.header-whatsapp,
+.header.is-scrolled .header-whatsapp {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 9px;
+  border: 2px solid #25d366;
+  border-radius: 12px;
+  background: rgba(17, 28, 46, .24);
+  color: #25d366;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.10);
+}
+.header.is-scrolled .header-whatsapp { background: rgba(37, 211, 102, .08); }
+.header-whatsapp svg { width: 24px; height: 24px; color: #25d366; }
+.header-whatsapp__label { display: none !important; }
+.header-whatsapp:hover,
+.header.is-scrolled .header-whatsapp:hover {
+  background: #25d366;
+  border-color: #25d366;
+  color: #10271b;
+}
+.header-whatsapp:hover svg,
+.header.is-scrolled .header-whatsapp:hover svg { color: #10271b; }
+@media (min-width: 1040px) { .header-whatsapp { padding: 9px; } }
