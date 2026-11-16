@@ -2044,3 +2044,41 @@ textarea.field__control {
 .bc-form-privacy:has(input[aria-invalid="true"]){color:var(--error)}
 .bc-form-privacy input[aria-invalid="true"]{outline:2px solid var(--error);outline-offset:3px}
 .bc-privacy-error{margin-top:-8px;margin-bottom:14px}
+
+/* v0.105 — Telegram immediately after WhatsApp in every header */
+.header-telegram {
+  display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:44px; min-width:44px; min-height:44px; flex:0 0 44px;
+  padding:8px; border:2px solid #229ed9; border-radius:12px;
+  background:#229ed9; color:#fff; box-shadow:none; text-decoration:none;
+}
+.header-telegram svg { width:26px; height:26px; display:block; color:#fff; fill:currentColor; stroke:none; }
+.header-telegram:hover, .header-telegram:focus-visible { background:#1689c1; border-color:#1689c1; color:#fff; }
+.header__inner > .header-telegram--mobile { display:none; }
+.header__inner > .nav .header-telegram--desktop { margin-left:0; }
+@media (min-width:1040px) {
+  .header__inner > .nav .header-telegram--desktop { display:inline-flex; }
+  .header__inner > .header__inner > .header-telegram--mobile { display:none; }
+}
+@media (max-width:1039px) {
+  .header__inner > .nav .header-telegram--desktop { display:none; }
+  .header__inner > .header-whatsapp--mobile { margin-left:auto; }
+  .header__inner > .header-telegram--mobile { display:inline-flex; margin-left:0; position:relative; z-index:2; }
+}
+@media (min-width:720px) {
+  .detail-header__inner > .header-telegram--detail { order:0; margin-left:0; margin-right:0; flex-shrink:0; }
+}
+@media (max-width:719px) {
+  .detail-header__inner > .header-telegram--detail { order:3; flex-shrink:0; }
+}
+
+/* v0.106 — keep WhatsApp and Telegram together in detail-page headers */
+.detail-header__inner { justify-content: flex-start; gap: 12px; }
+.detail-header__inner > .brand { margin-right: auto; }
+@media (min-width: 720px) {
+  .detail-header__inner > .header-whatsapp--detail { margin-left: 0; margin-right: 0; }
+  .detail-header__inner > .header-telegram--detail { margin-left: 0; margin-right: 0; }
+}
+@media (max-width: 719px) {
+  .detail-header__inner > .brand { margin-right: 0; }
+}
