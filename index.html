@@ -31,7 +31,38 @@
     })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114197653', 'ym');
     ym(114197653, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
 </script>
-<meta content="https://brazilconsult.com/assets/img/hero-rio.jpg" property="og:image"/><meta content="Панорама Рио-де-Жанейро — Brazil Consult" property="og:image:alt"/></head>
+<meta content="https://brazilconsult.com/assets/img/hero-rio.jpg" property="og:image"/><meta content="Панорама Рио-де-Жанейро — Brazil Consult" property="og:image:alt"/>
+<style>
+/* Только тестовая страница index2.html */
+.intro-meeting { background: #f6f4ef; padding: 30px 0 78px; }
+.intro-meeting__panel { position: relative; overflow: hidden; padding: clamp(28px, 5vw, 62px); border-radius: 16px; background: #101b2d; color: #fff; }
+.intro-meeting__label { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; color: #4ade80; font-size: .8rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+.intro-meeting__dot { width: 9px; height: 9px; flex: none; border-radius: 50%; background: #22c55e; }
+.intro-meeting__title { max-width: 920px; margin: 0; font-family: var(--font-serif); font-weight: 400; font-size: clamp(2rem, 4.1vw, 3.7rem); line-height: 1.14; letter-spacing: -.012em; }
+.intro-meeting__desc { max-width: 690px; margin: 22px 0 30px; color: #c2ccda; font-size: clamp(1rem, 1.5vw, 1.125rem); line-height: 1.6; }
+.intro-meeting__bottom { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+.intro-meeting__cta { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 52px; padding: 13px 22px; border-radius: 8px; background: #f5f7fa; color: #101b2d; font-weight: 600; line-height: 1.3; transition: background-color .2s ease, transform .2s ease; }
+.intro-meeting__cta:hover { background: #dce6f3; transform: translateY(-1px); }
+.intro-meeting__cta svg { width: 19px; height: 19px; }
+.intro-meeting__free { color: #4ade80; font-size: .9375rem; font-weight: 600; letter-spacing: .12em; }
+@media (max-width: 560px) { .intro-meeting { padding: 12px 0 60px; } .intro-meeting__panel { padding: 28px 22px; } .intro-meeting__bottom { align-items: stretch; flex-direction: column-reverse; } .intro-meeting__cta { width: 100%; } }
+
+/* Только index2: заметная ссылка с первого экрана на встречу */
+.hero__meeting-link { display: inline-flex; align-items: center; gap: 10px; width: fit-content; margin-top: 22px; padding: 9px 0; color: #fff; font-size: .95rem; font-weight: 600; letter-spacing: .01em; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.52); transition: color .2s, border-color .2s; }
+.hero__meeting-link:hover, .hero__meeting-link:focus-visible { color: #86efac; border-color: #86efac; }
+.hero__meeting-link-dot { display: inline-block; width: 11px; height: 11px; flex: 0 0 11px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 0 4px rgba(34,197,94,.20); }
+#first-meeting { scroll-margin-top: 85px; }
+@media (max-width: 600px) { .hero__meeting-link { font-size: .87rem; margin-top: 16px; } }
+
+/* v0.068 — discreet periodic pulse, test page only */
+.hero__meeting-link-dot { animation: meeting-dot-pulse 2.708s ease-in-out infinite; }
+@keyframes meeting-dot-pulse {
+  0%, 8%, 16%, 100% { transform: scale(1); box-shadow: 0 0 0 4px rgba(34,197,94,.20); opacity: 1; }
+  11% { transform: scale(1.22); box-shadow: 0 0 0 9px rgba(34,197,94,.04); opacity: .72; }
+}
+@media (prefers-reduced-motion: reduce) { .hero__meeting-link-dot { animation: none; } }
+</style>
+</head>
 <body id="top">
 <noscript><div><img alt="" src="https://mc.yandex.ru/watch/114197653" style="position:absolute; left:-9999px;"/></div></noscript>
 <!-- /Yandex.Metrika counter -->
@@ -141,8 +172,10 @@
 </a>
 <a class="btn btn--ghost" href="#services">Наши услуги</a>
 </div>
+<a class="hero__meeting-link" href="#first-meeting"><span class="hero__meeting-link-dot" aria-hidden="true"></span>Бесплатная встреча · 20 минут <span aria-hidden="true">↗</span></a>
 </div>
 </section>
+
 <!-- ================= Преимущества ================= -->
 <section aria-label="Наши принципы" class="features">
 <div class="container">
@@ -229,7 +262,23 @@
 </div>
 </div>
 </section>
+<!-- Тестовый блок: бесплатная ознакомительная встреча (только index2.html) -->
+<section id="first-meeting" class="intro-meeting" aria-labelledby="intro-meeting-title">
+  <div class="container">
+    <div class="intro-meeting__panel">
+      <p class="intro-meeting__label"><span class="intro-meeting__dot" aria-hidden="true"></span>Ваш первый шаг</p>
+      <h2 class="intro-meeting__title" id="intro-meeting-title">Большие решения начинаются с короткого разговора.</h2>
+      <p class="intro-meeting__desc">20 минут, чтобы познакомиться, быстрее понять вашу задачу и определить следующий шаг.</p>
+      <div class="intro-meeting__bottom">
+        <a class="intro-meeting__cta" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%82%D0%B5%D0%BB%28%D0%B0%29%20%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%2020-%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%BD%D1%83%D1%8E%20%D0%BE%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%83%D1%8E%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D1%83%20%D1%81%20Brazil%20Consult." target="_blank" rel="noopener noreferrer">Назначить встречу <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <span class="intro-meeting__free">БЕСПЛАТНО · 20 МИНУТ</span>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- ================= О нас ================= -->
+
+
 <section aria-labelledby="about-title" class="section about" id="about">
 <div class="container about__grid">
 <div class="about__copy" data-reveal="">
