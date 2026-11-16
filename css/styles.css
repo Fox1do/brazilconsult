@@ -1847,13 +1847,9 @@ textarea.field__control {
   background: var(--navy-900);
 }
 
-/* v0.080 — consistent passport visibility at intermediate viewport widths */
+/* v0.078 — seamless passport hero at intermediate widths; no transitional two-column layout */
 @media (min-width: 601px) and (max-width: 1099px) {
   .detail-hero--passport::before {
-    background-image:
-      linear-gradient(to bottom, rgba(17,28,46,.68) 0%, rgba(17,28,46,0) 26%),
-      linear-gradient(90deg, rgba(17,28,46,.91) 0%, rgba(17,28,46,.72) 33%, rgba(17,28,46,.24) 68%, rgba(17,28,46,.06) 100%),
-      url("../assets/img/passport-brazil.webp");
     background-size: cover, cover, cover;
     background-position: center, center, 65% center;
   }
@@ -1863,16 +1859,21 @@ textarea.field__control {
   .detail-copy { max-width: 680px; }
 }
 
-/* Build v0.080 — passport intermediate-width contrast fix */
+/* Build v0.079 — verified version alignment */
 
-/* v0.080 — passport: one continuous image scale and overlay at every width.
-   Overrides earlier 600/850/1099px background rules. */
-.detail-hero--passport::before {
-  background-image:
-    linear-gradient(to bottom, #111c2e 0%, rgba(17,28,46,.64) 12%, transparent 32%),
-    linear-gradient(90deg, rgba(17,28,46,.90) 0%, rgba(17,28,46,.68) 40%, rgba(17,28,46,.24) 100%),
-    url("../assets/img/passport-brazil.webp");
-  background-size: cover, cover, cover;
-  background-position: center, center, 65% center;
-  background-repeat: no-repeat;
+/* v0.080: gradual passport contrast on tablet/mobile; no change to the image */
+.detail-hero--passport { --passport-shade: 0; }
+.detail-hero--passport::after {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(17,28,46,.96) 0%, rgba(17,28,46,.72) 55%, rgba(17,28,46,.35) 100%);
+  opacity: var(--passport-shade);
+}
+/* Retain the current large-screen framing; fill the entire hero at tablet widths. */
+@media (max-width: 850px) {
+  .detail-hero--passport::before {
+    background-image: linear-gradient(to bottom, #111c2e 0%, rgba(17,28,46,.55) 12%, transparent 30%), url("../assets/img/passport-brazil.webp");
+    background-position: center, 65% center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+  }
 }
