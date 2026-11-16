@@ -17,14 +17,48 @@
     window.ym(metrikaId, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: false });
   }
   if (choice === 'accepted') startAnalytics();
+  else clearAnalyticsCookies();
   function update() {
     var banner = document.getElementById('bc-cookie-banner');
     if (banner) banner.hidden = choice === 'accepted' || choice === 'rejected';
+  }
+  function clearAnalyticsCookies() {
+    // Remove first-party Yandex Metrika cookies that JavaScript can access.
+    // Third-party/HttpOnly cookies are controlled by their issuing domains.
+    var names = ['_ym_uid', '_ym_d', '_ym_isad', '_ym_visorc', '_ym_retryReqs',
+      'yandexuid', 'ymex', 'i', 'yabs-sid'];
+    document.cookie.split(';').forEach(function (part) {
+      var name = part.split('=')[0].trim();
+      if (/^_ym_/.test(name) && names.indexOf(name) === -1) names.push(name);
+    });
+    var labels = location.hostname.split('.');
+    var domains = [''];
+    for (var i = 0; i < labels.length - 1; i++) {
+      var domain = labels.slice(i).join('.');
+      if (domain.indexOf('.') !== -1) domains.push(domain, '.' + domain);
+    }
+    var paths = ['/'];
+    var segments = location.pathname.split('/').filter(Boolean);
+    var path = '';
+    segments.slice(0, -1).forEach(function (segment) {
+      path += '/' + segment;
+      paths.push(path, path + '/');
+    });
+    names.forEach(function (name) {
+      domains.forEach(function (domain) {
+        paths.forEach(function (cookiePath) {
+          document.cookie = name + '=; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=' + cookiePath + (domain ? '; domain=' + domain : '') + '; SameSite=Lax';
+        });
+      });
+    });
   }
   function save(value) {
     try { localStorage.setItem(KEY, value); } catch (e) {}
     choice = value;
     if (value === 'accepted') startAnalytics();
+    if (value === 'rejected') {
+      clearAnalyticsCookies();
+    }
     if (value === 'rejected' && active) {
       // Reload without initializing Metrika. Prevents continued tracking after withdrawal.
       window.location.reload();
