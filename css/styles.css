@@ -1825,3 +1825,15 @@ textarea.field__control {
 @media (max-width:719px) {
  .detail-header__inner > .header-whatsapp--detail {order:3; flex-shrink:0;}
 }
+
+/* v0.071 — service detail pages: WhatsApp immediately left of “Все услуги”, free call link */
+@media (min-width:720px) {
+  .detail-header__inner > .header-whatsapp--detail { margin-left: auto; margin-right: 0; order: 0; }
+  .detail-header__inner > .detail-header__back { margin-left: 0; order: 0; white-space: nowrap; }
+}
+.detail-meeting-link { display: flex; align-items: center; gap: 10px; width: fit-content; margin-top: 18px; padding: 8px 0; color: #fff; font-size: .95rem; font-weight: 600; letter-spacing: .01em; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.5); transition: color .2s, border-color .2s; }
+.detail-meeting-link:hover, .detail-meeting-link:focus-visible { color: #86efac; border-color: #86efac; }
+.detail-meeting-link__dot { display: inline-block; width: 11px; height: 11px; flex: 0 0 11px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 0 4px rgba(34,197,94,.2); animation: detail-meeting-pulse 2.708s ease-in-out infinite; }
+@keyframes detail-meeting-pulse { 0%,8%,16%,100% { transform: scale(1); box-shadow: 0 0 0 4px rgba(34,197,94,.2); opacity: 1; } 11% { transform: scale(1.22); box-shadow: 0 0 0 9px rgba(34,197,94,.04); opacity: .72; } }
+@media (max-width:600px) { .detail-meeting-link { font-size: .87rem; } }
+@media (prefers-reduced-motion:reduce) { .detail-meeting-link__dot { animation:none; } }
