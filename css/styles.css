@@ -1864,3 +1864,15 @@ textarea.field__control {
 }
 
 /* Build v0.080 — passport intermediate-width contrast fix */
+
+/* v0.080 — passport: one continuous image scale and overlay at every width.
+   Overrides earlier 600/850/1099px background rules. */
+.detail-hero--passport::before {
+  background-image:
+    linear-gradient(to bottom, #111c2e 0%, rgba(17,28,46,.64) 12%, transparent 32%),
+    linear-gradient(90deg, rgba(17,28,46,.90) 0%, rgba(17,28,46,.68) 40%, rgba(17,28,46,.24) 100%),
+    url("../assets/img/passport-brazil.webp");
+  background-size: cover, cover, cover;
+  background-position: center, center, 65% center;
+  background-repeat: no-repeat;
+}
