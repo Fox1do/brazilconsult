@@ -2039,3 +2039,8 @@ textarea.field__control {
 
 /* Company identification in legal footer */
 .bc-company-details{font-size:12px;line-height:1.6;opacity:.78;overflow-wrap:anywhere}.bc-company-details a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+/* v0.102: visible privacy checkbox validation */
+.bc-form-privacy:has(input[aria-invalid="true"]){color:var(--error)}
+.bc-form-privacy input[aria-invalid="true"]{outline:2px solid var(--error);outline-offset:3px}
+.bc-privacy-error{margin-top:-8px;margin-bottom:14px}
