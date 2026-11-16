@@ -15,7 +15,7 @@
 <meta content="ВНЖ и гражданство Бразилии: сопровождение оформления документов" property="og:description"/>
 <meta content="https://brazilconsult.com/immigration.html" property="og:url"/>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="css/styles.css?v=0.080" rel="stylesheet"/>
+<link href="css/styles.css?v=0.081" rel="stylesheet"/>
 <script type="application/ld+json">
    {"@context":"https://schema.org","@type":"Service","name":"Легализация и иммиграция","description":"ВНЖ и гражданство Бразилии: сопровождение оформления документов","provider":{"@type":"Organization","name":"Дмитрий Кузьменко и Екатерина Захарова","url":"https://brazilconsult.com/"},"areaServed":{"@type":"Country","name":"Brazil"}}
   </script>
@@ -136,19 +136,5 @@
     </p>
 </div>
 </footer>
-<script>
-/* Smoothly reduce the extra mobile passport overlay as the window widens. */
-(function () {
-  const hero = document.querySelector('.detail-hero--passport');
-  if (!hero) return;
-  function updatePassportShade() {
-    const width = window.innerWidth;
-    const shade = Math.max(0, Math.min(0.82, (1100 - width) / 620 * 0.82));
-    hero.style.setProperty('--passport-shade', shade.toFixed(3));
-  }
-  updatePassportShade();
-  window.addEventListener('resize', updatePassportShade, { passive: true });
-})();
-</script>
 </body>
 </html>
