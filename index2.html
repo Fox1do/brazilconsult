@@ -46,6 +46,13 @@
 .intro-meeting__cta svg { width: 19px; height: 19px; }
 .intro-meeting__free { color: #ff655b; font-size: .8125rem; font-weight: 600; letter-spacing: .12em; }
 @media (max-width: 560px) { .intro-meeting { padding: 12px 0 60px; } .intro-meeting__panel { padding: 28px 22px; } .intro-meeting__bottom { align-items: stretch; flex-direction: column-reverse; } .intro-meeting__cta { width: 100%; } }
+
+/* Только index2: заметная ссылка с первого экрана на встречу */
+.hero__meeting-link { display: inline-flex; align-items: center; gap: 10px; width: fit-content; margin-top: 22px; padding: 9px 0; color: #fff; font-size: .95rem; font-weight: 600; letter-spacing: .01em; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.52); transition: color .2s, border-color .2s; }
+.hero__meeting-link:hover, .hero__meeting-link:focus-visible { color: #ff8178; border-color: #ff8178; }
+.hero__meeting-link-dot { display: inline-block; width: 9px; height: 9px; flex: 0 0 9px; background: #ff453a; border-radius: 50%; box-shadow: 0 0 0 4px rgba(255,69,58,.18); }
+#first-meeting { scroll-margin-top: 85px; }
+@media (max-width: 600px) { .hero__meeting-link { font-size: .87rem; margin-top: 16px; } }
 </style>
 </head>
 <body id="top">
@@ -157,7 +164,22 @@
 </a>
 <a class="btn btn--ghost" href="#services">Наши услуги</a>
 </div>
+<a class="hero__meeting-link" href="#first-meeting"><span class="hero__meeting-link-dot" aria-hidden="true"></span>Бесплатная встреча · 20 минут <span aria-hidden="true">↗</span></a>
 </div>
+</section>
+<!-- Тестовый блок: бесплатная ознакомительная встреча (только index2.html) -->
+<section id="first-meeting" class="intro-meeting" aria-labelledby="intro-meeting-title">
+  <div class="container">
+    <div class="intro-meeting__panel">
+      <p class="intro-meeting__label"><span class="intro-meeting__dot" aria-hidden="true"></span>Ваш первый шаг</p>
+      <h2 class="intro-meeting__title" id="intro-meeting-title">Большие решения начинаются с короткого разговора.</h2>
+      <p class="intro-meeting__desc">20 минут, чтобы познакомиться, понять вашу задачу и определить следующий шаг.</p>
+      <div class="intro-meeting__bottom">
+        <a class="intro-meeting__cta" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%82%D0%B5%D0%BB%28%D0%B0%29%20%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%2020-%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%BD%D1%83%D1%8E%20%D0%BE%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%83%D1%8E%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D1%83%20%D1%81%20Brazil%20Consult." target="_blank" rel="noopener noreferrer">Назначить встречу <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        <span class="intro-meeting__free">БЕСПЛАТНО · 20 МИНУТ</span>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- ================= Преимущества ================= -->
 <section aria-label="Наши принципы" class="features">
@@ -247,20 +269,7 @@
 </section>
 <!-- ================= О нас ================= -->
 
-<!-- Тестовый блок: бесплатная ознакомительная встреча (только index2.html) -->
-<section class="intro-meeting" aria-labelledby="intro-meeting-title">
-  <div class="container">
-    <div class="intro-meeting__panel">
-      <p class="intro-meeting__label"><span class="intro-meeting__dot" aria-hidden="true"></span>Ваш первый шаг</p>
-      <h2 class="intro-meeting__title" id="intro-meeting-title">Большие решения начинаются с короткого разговора.</h2>
-      <p class="intro-meeting__desc">20 минут, чтобы познакомиться, понять вашу задачу и определить следующий шаг.</p>
-      <div class="intro-meeting__bottom">
-        <a class="intro-meeting__cta" href="https://wa.me/5524999592093?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%A5%D0%BE%D1%82%D0%B5%D0%BB%28%D0%B0%29%20%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%2020-%D0%BC%D0%B8%D0%BD%D1%83%D1%82%D0%BD%D1%83%D1%8E%20%D0%BE%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%83%D1%8E%20%D0%B2%D1%81%D1%82%D1%80%D0%B5%D1%87%D1%83%20%D1%81%20Brazil%20Consult." target="_blank" rel="noopener noreferrer">Назначить встречу <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-        <span class="intro-meeting__free">БЕСПЛАТНО · 20 МИНУТ</span>
-      </div>
-    </div>
-  </div>
-</section>
+
 <section aria-labelledby="about-title" class="section about" id="about">
 <div class="container about__grid">
 <div class="about__copy" data-reveal="">
