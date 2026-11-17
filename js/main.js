@@ -282,6 +282,10 @@
             window.bcAnalyticsConsentGranted() && typeof window.ym === 'function') {
           window.ym(114197653, 'reachGoal', 'request_sent');
         }
+        if (typeof window.bcAnalyticsConsentGranted === 'function' &&
+            window.bcAnalyticsConsentGranted() && typeof window.gtag === 'function') {
+          window.gtag('event', 'request_sent');
+        }
 
         form.reset();
 
