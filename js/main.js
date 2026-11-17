@@ -278,7 +278,8 @@
         }
 
         // Цель Метрики: только после успешного ответа Formspree.
-        if (typeof window.ym === 'function') {
+        if (typeof window.bcAnalyticsConsentGranted === 'function' &&
+            window.bcAnalyticsConsentGranted() && typeof window.ym === 'function') {
           window.ym(114197653, 'reachGoal', 'request_sent');
         }
 

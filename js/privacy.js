@@ -5,6 +5,8 @@
   var choice = null;
   try { choice = localStorage.getItem(KEY); } catch (e) {}
   var active = false;
+  // Current consent state, including when the settings banner is reopened.
+  window.bcAnalyticsConsentGranted = function () { return choice === 'accepted'; };
   function startAnalytics() {
     if (active) return;
     active = true;
@@ -66,6 +68,24 @@
     }
     update();
   }
+  // Contact conversion goals: count only direct contact links, not editorial channels.
+  // Analytics is initialized only after the visitor has consented.
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href]');
+    if (!link || choice !== 'accepted' || typeof window.ym !== 'function') return;
+    var url;
+    try { url = new URL(link.href, window.location.href); } catch (e) { return; }
+    var host = url.hostname.toLowerCase();
+    var goal = null;
+    if (host === 'wa.me' || host === 'api.whatsapp.com' || host === 'web.whatsapp.com') {
+      goal = 'whatsapp_click';
+    } else if ((host === 't.me' || host === 'telegram.me') &&
+               /^\/katiabrazil\/?$/i.test(url.pathname)) {
+      goal = 'telegram_contact_click';
+    }
+    if (goal) window.ym(metrikaId, 'reachGoal', goal);
+  });
+
   function render() {
     var banner = document.createElement('section');
     banner.id = 'bc-cookie-banner';
