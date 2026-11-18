@@ -2272,3 +2272,9 @@ textarea.field__control {
     padding-right: 12px;
   }
 }
+
+/* v0.146 — keep Telegram visible throughout the collapsed-navigation range (<=1199px). */
+@media (min-width: 1040px) and (max-width: 1199px) {
+  .header__inner > .nav .header-telegram--desktop { display: none; }
+  .header__inner > .header-telegram--mobile { display: inline-flex; margin-left: 0; position: relative; z-index: 2; flex-shrink: 0; }
+}
