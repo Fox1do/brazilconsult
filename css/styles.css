@@ -2234,3 +2234,23 @@ textarea.field__control {
 /* v0.137: consistent editorial notes across articles */
 .article-note--highlight,.article__notice--highlight{background:#fbf6e9;border-left:3px solid #c49744;border-radius:0 7px 7px 0;padding:15px 19px;margin:24px 0;color:inherit;line-height:1.65}
 .article-note--highlight{display:block}
+
+/* v0.141 — larger proportional brand on mobile, without crowding messenger buttons */
+@media (max-width: 719px) {
+  .header__inner, .detail-header__inner {
+    padding-inline: max(12px, env(safe-area-inset-left)) max(12px, env(safe-area-inset-right));
+    gap: 8px;
+  }
+  .header__inner > .brand, .detail-header__inner > .brand {
+    flex: 0 1 auto;
+    min-width: 0;
+    margin-right: auto;
+  }
+  .header .brand__logo, .detail-header .brand__logo {
+    width: min(300px, calc(100vw - 128px));
+    max-width: 100%;
+    height: auto;
+  }
+  .header__inner > .header-whatsapp--mobile,
+  .detail-header__inner > .header-whatsapp--detail { margin-left: 0; }
+}
