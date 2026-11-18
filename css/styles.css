@@ -2230,3 +2230,7 @@ textarea.field__control {
 
 /* Russian-language brand styling */
 .bc-brand-name { font-weight: 600; }
+
+/* v0.137: consistent editorial notes across articles */
+.article-note--highlight,.article__notice--highlight{background:#fbf6e9;border-left:3px solid #c49744;border-radius:0 7px 7px 0;padding:15px 19px;margin:24px 0;color:inherit;line-height:1.65}
+.article-note--highlight{display:block}
