@@ -2190,3 +2190,11 @@ textarea.field__control {
   }
   .footer__inner + .footer__bottom { border-top: 1px solid rgba(255,255,255,.12); }
 }
+
+/* v0.128 — consistent responsive editorial headings across blog pages */
+.blog-hero .container { width: min(100% - 40px, 1180px); max-width: 1180px; }
+.blog-hero h1 { max-width: 1120px; font-size: clamp(2.25rem, 4.1vw, 4.15rem); line-height: 1.12; text-wrap: balance; overflow-wrap: normal; hyphens: none; }
+@media (max-width: 760px) {
+  .blog-hero .container { width: min(100% - 36px, 1180px); }
+  .blog-hero h1 { font-size: clamp(2rem, 7.5vw, 3rem); line-height: 1.14; }
+}
