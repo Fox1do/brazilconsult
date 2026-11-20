@@ -2305,3 +2305,8 @@ textarea.field__control {
 /* v0.148: Reserve space for the fixed shared header on inner pages.
    Homepage hero already accounts for its overlay header. */
 body.bc-inner-page > main { padding-top: var(--header-h); }
+
+/* v0.149 — modestly tighter mobile editorial hero top spacing. */
+@media (max-width:760px) {
+  body.bc-inner-page .blog-hero { padding-top:48px; }
+}
