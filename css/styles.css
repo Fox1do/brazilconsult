@@ -2310,3 +2310,89 @@ body.bc-inner-page > main { padding-top: var(--header-h); }
 @media (max-width:760px) {
   body.bc-inner-page .blog-hero { padding-top:48px; }
 }
+
+/* v0.150: пробная секция «Почему мы?» */
+.why-us__intro { max-width: 830px; margin: 0 0 42px; }
+.why-us__intro p { color: rgba(255,255,255,.79); line-height: 1.75; margin: 0 0 17px; font-size: clamp(1rem, .96rem + .22vw, 1.125rem); }
+.why-us__intro .why-us__names { color: #fff; font-family: var(--font-serif); font-size: clamp(1.3rem, 1.1rem + .65vw, 1.65rem); line-height: 1.4; margin-bottom: 22px; }
+.why-us__benefits { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.why-us__benefit { border-top: 1px solid rgba(255,255,255,.26); padding-top: 20px; }
+.why-us__index { color: var(--sand); font-family: var(--font-serif); font-size: 1.75rem; }
+.why-us__benefit h3 { font-size: 1.08rem; margin: 17px 0 8px; line-height: 1.35; }
+.why-us__benefit p { color: rgba(255,255,255,.72); line-height: 1.65; margin: 0; }
+@media (max-width: 900px) { .why-us__benefits { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; } }
+@media (max-width: 560px) { .why-us__intro { margin-bottom: 30px; } .why-us__benefits { grid-template-columns: 1fr; gap: 20px; } .why-us__benefit { padding-top: 15px; } .why-us__benefit h3 { margin-top: 9px; } }
+
+/* v0.151: profiles integrated into the Why Us section. */
+.why-us__anchor { display:block; position:relative; top:calc(-1 * var(--header-h)); height:0; visibility:hidden; }
+.why-us__people { max-width:850px; margin:0 0 48px; }
+.why-us__people .people { grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(16px,3vw,32px); }
+.why-us__people .person__name { color:#fff; }
+.why-us__people .person__socials a,
+.why-us__people .person__socials a:visited { color:rgba(255,255,255,.76); }
+.why-us__people .person__platform { color:rgba(255,255,255,.58); }
+.why-us__people .person__resource { color:#fff; border-color:rgba(255,255,255,.36); }
+.why-us__people .person__socials a:hover .person__resource,
+.why-us__people .person__socials a:focus-visible .person__resource { color:var(--sand); border-color:var(--sand); }
+.why-us__people .person__socials a:focus-visible { outline-color:var(--sand); }
+@media(max-width:560px) { .why-us__people { margin-bottom:36px; } .why-us__people .people { gap:16px; } }
+
+/* v0.152: compact founder portraits beside the introduction, as in the original About section. */
+.why-us__layout { display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); align-items:center; gap:clamp(28px,5vw,72px); margin-bottom:48px; }
+.why-us__layout .why-us__intro { max-width:none; margin-bottom:0; }
+.why-us__layout .why-us__people { max-width:none; min-width:0; margin:0; }
+.why-us__layout .people { gap:16px; }
+@media(max-width:959px) { .why-us__layout { grid-template-columns:1fr; gap:28px; } .why-us__layout .why-us__people { max-width:650px; } }
+@media(max-width:560px) { .why-us__layout { margin-bottom:36px; } .why-us__layout .people { gap:16px; } }
+
+/* v0.154 — understated panels for the three Why Us benefits. */
+.why-us__benefits { gap: 18px; align-items: stretch; }
+.why-us__benefit {
+  position: relative;
+  padding: 25px 26px 28px;
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.13);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.065);
+}
+.why-us__benefit::before {
+  content: ""; position: absolute; left: 26px; top: -1px;
+  width: 42px; height: 2px; background: var(--sand); opacity: .82;
+}
+.why-us__benefit h3 { margin-top: 15px; }
+@media (max-width:900px) { .why-us__benefits { gap: 16px; } }
+@media (max-width:560px) {
+  .why-us__benefits { gap: 13px; }
+  .why-us__benefit { padding: 20px 22px 23px; }
+  .why-us__benefit::before { left: 22px; }
+}
+
+/* v0.155 — warm editorial Why Us section with expressive colour cards. */
+.process.why-us { background: #f3f1ea; color: #263c32; }
+.why-us .section__title, .why-us__intro .why-us__names { color: #263c32; }
+.process.why-us .eyebrow { color: #8c6938; }
+.why-us__intro p { color: #526158; }
+.why-us__people .person__name { color: #263c32; }
+.why-us__people .person__socials a,
+.why-us__people .person__socials a:visited { color: #43584b; }
+.why-us__people .person__platform { color: #6f7b71; }
+.why-us__people .person__resource { color: #263c32; border-color: rgba(38,60,50,.35); }
+.why-us__people .person__socials a:hover .person__resource,
+.why-us__people .person__socials a:focus-visible .person__resource { color: #8d552c; border-color: #8d552c; }
+.why-us__benefit { background: #e7a68d; border: 0; box-shadow: none; border-radius: 14px; color: #49332c; padding: 28px 27px 30px; transition: transform .2s ease, box-shadow .2s ease; }
+.why-us__benefit:nth-child(2) { background: #e9b964; color: #263c32; }
+.why-us__benefit:nth-child(3) { background: #a8c8b5; color: #244a3d; }
+.why-us__benefit::before { display: none; }
+.why-us__benefit .why-us__index { color: inherit; font-size: 2.3rem; line-height: 1.1; }
+.why-us__benefit h3 { color: inherit; margin: 29px 0 10px; font-size: 1.13rem; }
+.why-us__benefit p { color: inherit; opacity: .87; line-height: 1.6; }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  .why-us__benefit:hover { transform: translateY(-3px); box-shadow: 0 12px 25px rgba(38,60,50,.10); }
+}
+@media(max-width:560px) { .why-us__benefit { padding: 24px 24px 27px; } .why-us__benefit h3 { margin-top: 19px; } }
+
+/* v0.156 — distinct Why Us section and readable colorful benefits */
+.process.why-us { background: #e7e5db; }
+.why-us__benefit h3 { font-size: clamp(1.32rem, 1.65vw, 1.48rem); line-height: 1.25; margin-top: 22px; margin-bottom: 12px; letter-spacing: -.015em; }
+.why-us__benefit p { font-size: 1.04rem; line-height: 1.62; opacity: .94; }
+@media (max-width: 560px) { .why-us__benefit h3 { font-size: 1.35rem; margin-top: 18px; } .why-us__benefit p { font-size: 1rem; } }
