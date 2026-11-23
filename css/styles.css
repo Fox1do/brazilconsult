@@ -770,6 +770,10 @@ textarea {
 }
 
 @media (min-width: 860px) {
+  .hero__lead {
+    max-width: 640px;
+  }
+
   .hero {
     padding-bottom: 72px;
   }
@@ -2396,3 +2400,67 @@ body.bc-inner-page > main { padding-top: var(--header-h); }
 .why-us__benefit h3 { font-size: clamp(1.32rem, 1.65vw, 1.48rem); line-height: 1.25; margin-top: 22px; margin-bottom: 12px; letter-spacing: -.015em; }
 .why-us__benefit p { font-size: 1.04rem; line-height: 1.62; opacity: .94; }
 @media (max-width: 560px) { .why-us__benefit h3 { font-size: 1.35rem; margin-top: 18px; } .why-us__benefit p { font-size: 1rem; } }
+
+/* v0.160 — natural wrapping, description matches the width of four hero service links */
+@media (min-width: 860px) {
+  .hero__lead {
+    width: 610px;
+    max-width: 100%;
+    text-align: left;
+    text-wrap: wrap;
+  }
+}
+
+/* v0.163 — bring the services section closer to the hero */
+#services.section { padding-top: clamp(48px, 5vw, 64px); }
+@media (max-width: 767px) { #services.section { padding-top: 44px; } }
+
+/* v0.164 — tighter rhythm across all four service cards and service pages */
+#services.section { padding-bottom: clamp(52px, 6.5vw, 88px); }
+#services .section__head { margin-bottom: clamp(24px, 3.4vw, 38px); }
+#services .services__grid { gap: 18px; }
+#services .service { padding: clamp(22px, 2.65vw, 33px); }
+#services .service__top { margin-bottom: 18px; }
+#services .service__text { margin: 12px 0 20px; }
+@media (min-width: 860px) { #services .services__grid { gap: 20px; } }
+/* Detail pages: reduce excessive space between hero, content and CTA without touching other pages. */
+body.bc-inner-page .detail-hero { padding-block: clamp(54px, 7vw, 100px); }
+body.bc-inner-page .detail-grid { gap: clamp(28px, 4vw, 58px); }
+body.bc-inner-page .detail-copy { margin-top: 18px; }
+body.bc-inner-page .detail-hero__lead { margin-block: 20px 26px; }
+@media (max-width: 767px) {
+  #services.section { padding-bottom: 52px; }
+  #services .section__head { margin-bottom: 24px; }
+  #services .service { padding: 23px; }
+  #services .service__top { margin-bottom: 16px; }
+  #services .service__text { margin: 11px 0 18px; }
+  body.bc-inner-page .detail-hero { padding-block: 48px 54px; }
+}
+
+/* v0.166 — consistent vertical rhythm on all four service detail pages.
+   Preserve card interiors and typography; reduce empty space between sections. */
+body.bc-inner-page .detail-hero + .section:not(.detail-cta):not(.detail-related) {
+  padding-block: clamp(46px, 5.2vw, 72px);
+}
+body.bc-inner-page .detail-cta.section {
+  padding-block: clamp(32px, 3.6vw, 48px);
+}
+body.bc-inner-page .detail-related.section {
+  padding-block: clamp(42px, 4.6vw, 64px);
+}
+@media (max-width: 767px) {
+  body.bc-inner-page .detail-hero + .section:not(.detail-cta):not(.detail-related) { padding-block: 38px 44px; }
+  body.bc-inner-page .detail-cta.section { padding-block: 26px 30px; }
+  body.bc-inner-page .detail-related.section { padding-block: 36px 44px; }
+}
+
+/* v0.167 — unified spacing around enquiry and related-services sections.
+   The gap is the sum of adjacent section paddings; set each side explicitly. */
+body.bc-inner-page .detail-cta.section { padding-top: 32px; padding-bottom: 18px; }
+body.bc-inner-page .detail-related.section { padding-top: 30px; padding-bottom: 48px; }
+body.bc-inner-page .detail-related__links { margin-top: 24px; }
+@media (max-width: 767px) {
+  body.bc-inner-page .detail-cta.section { padding-top: 24px; padding-bottom: 16px; }
+  body.bc-inner-page .detail-related.section { padding-top: 26px; padding-bottom: 36px; }
+  body.bc-inner-page .detail-related__links { margin-top: 18px; }
+}
