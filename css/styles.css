@@ -2464,3 +2464,6 @@ body.bc-inner-page .detail-related__links { margin-top: 24px; }
   body.bc-inner-page .detail-related.section { padding-top: 26px; padding-bottom: 36px; }
   body.bc-inner-page .detail-related__links { margin-top: 18px; }
 }
+
+.editorial-tag{display:inline-block;color:var(--navy-700);font-size:.78rem;font-weight:500;white-space:nowrap;margin-inline-start:4px}
+.article-share [hidden]{display:none!important}
