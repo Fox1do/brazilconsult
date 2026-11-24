@@ -2467,3 +2467,8 @@ body.bc-inner-page .detail-related__links { margin-top: 24px; }
 
 .editorial-tag{display:inline-block;color:var(--navy-700);font-size:.78rem;font-weight:500;white-space:nowrap;margin-inline-start:4px}
 .article-share [hidden]{display:none!important}
+
+/* Article editorial signature */
+.article .article-signature{margin:30px 0 0;font-family:var(--font-sans);text-align:right;line-height:1.5;color:var(--navy-800)}
+.article .article-signature strong{display:block;font-size:1rem;font-weight:600}
+.article .article-signature span{display:block;font-size:.85rem;color:var(--muted)}
