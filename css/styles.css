@@ -2472,3 +2472,6 @@ body.bc-inner-page .detail-related__links { margin-top: 24px; }
 .article .article-signature{margin:30px 0 0;font-family:var(--font-sans);text-align:right;line-height:1.5;color:var(--navy-800)}
 .article .article-signature strong{display:block;font-size:1rem;font-weight:600}
 .article .article-signature span{display:block;font-size:.85rem;color:var(--muted)}
+
+/* Article byline */
+.article .article__byline{font-family:var(--font-sans);font-size:.78rem;font-weight:400;color:#65766c;margin:-1rem 0 2rem;line-height:1.5}
