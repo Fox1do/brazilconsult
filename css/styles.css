@@ -2627,6 +2627,6 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .catalog-home-art{flex-basis:40%;width:40%;max-width:460px}
 @media(max-width:760px){.catalog-home-art{width:230px;max-width:55%}.catalog-art-window{display:none}}
 
-/* 0.238 — shared logo canvas and catalog alignment */
+/* 0.239 — shared logo canvas and catalog alignment */
 .bc-property-portal .catalog-home-hero .container {width:100%;max-width:calc(var(--container) + var(--gutter) * 2);}
 .bc-property-portal .gran-detail {max-width:calc(var(--container) + var(--gutter) * 2);}
