@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "title": "Gran Thai",
+    "city": "Рио-де-Жанейро",
+    "district": "Barra da Tijuca · Península",
+    "description": "Застройщик Tegra",
+    "price": "От R$ 2 100 000",
+    "image": "gran-thai-cover.webp",
+    "page": "gran-thai.html"
+  }
+]
