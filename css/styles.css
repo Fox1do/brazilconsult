@@ -2628,3 +2628,11 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .offer-track .offer-preview:nth-child(4n+2){background:#E2EADD}
 .offer-track .offer-preview:nth-child(4n+3){background:#DCE7EF}
 .offer-track .offer-preview:nth-child(4n+4){background:#EFDDD2}
+
+/* 0.233 — independent property brand, original symbol retained */
+.bc-property-portal .brand__logo {width:clamp(142px,15.8vw,207px);max-width:100%;height:auto}
+@media(max-width:1199px){.bc-property-portal .brand__logo{width:clamp(130px,35vw,175px);max-width:100%}}
+
+/* 0.234 — approved home illustration */
+.catalog-home-art{flex-basis:40%;width:40%;max-width:460px}
+@media(max-width:760px){.catalog-home-art{width:230px;max-width:55%}.catalog-art-window{display:none}}
