@@ -2618,21 +2618,15 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 @media(max-width:760px){.catalog-home-hero .container{display:block;isolation:isolate}.catalog-home-art{position:absolute;right:0;bottom:-24px;width:230px;max-width:55%;opacity:.15;z-index:-1}.catalog-art-sofa{display:none}.catalog-home-copy{max-width:100%}}
 @media(max-width:360px){.catalog-home-art{display:none}}
 
-/* v0.232 — shared header layout, independent portal label and offer palette */
-.bc-property-portal .brand {gap:10px;min-width:0;white-space:nowrap}
-.bc-property-portal .brand__logo {min-width:0;flex:0 1 auto}
-.bc-property-portal .portal-label {font-family:Georgia,serif;font-size:1.5rem;font-weight:400;letter-spacing:.04em;color:#934b32;border-left:1px solid #c8a38f;padding-left:10px;flex:none;line-height:1.15}
-@media(max-width:1199px){.bc-property-portal .brand {gap:6px}.bc-property-portal .brand__logo {width:auto;max-width:calc(100% - 58px)}.bc-property-portal .portal-label {font-size:1rem;padding-left:6px}}
-@media(max-width:420px){.bc-property-portal .brand__logo {max-width:calc(100% - 46px)}.bc-property-portal .portal-label {font-size:.8rem}}
 .offer-track .offer-preview:nth-child(4n+1){background:#F3ECD6}
 .offer-track .offer-preview:nth-child(4n+2){background:#E2EADD}
 .offer-track .offer-preview:nth-child(4n+3){background:#DCE7EF}
 .offer-track .offer-preview:nth-child(4n+4){background:#EFDDD2}
 
-/* 0.233 — independent property brand, original symbol retained */
-.bc-property-portal .brand__logo {width:clamp(142px,15.8vw,207px);max-width:100%;height:auto}
-@media(max-width:1199px){.bc-property-portal .brand__logo{width:clamp(130px,35vw,175px);max-width:100%}}
-
 /* 0.234 — approved home illustration */
 .catalog-home-art{flex-basis:40%;width:40%;max-width:460px}
 @media(max-width:760px){.catalog-home-art{width:230px;max-width:55%}.catalog-art-window{display:none}}
+
+/* 0.238 — shared logo canvas and catalog alignment */
+.bc-property-portal .catalog-home-hero .container {width:100%;max-width:calc(var(--container) + var(--gutter) * 2);}
+.bc-property-portal .gran-detail {max-width:calc(var(--container) + var(--gutter) * 2);}
