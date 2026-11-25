@@ -2520,3 +2520,17 @@ body.bc-inner-page .detail-related__links { margin-top: 24px; }
 
 /* Gran Thai detail */
 .gran-detail{max-width:1120px}.gran-detail h1{margin:8px 0;font-size:clamp(2.4rem,5vw,4rem)}.gran-developer{color:var(--muted);margin:0 0 24px}.gran-cover{display:block;width:100%;height:auto;border-radius:12px}.gran-caption{font-size:.85rem;color:var(--muted);margin:8px 0}.gran-price{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:28px 0;border-bottom:1px solid var(--line)}.gran-price h2{margin:6px 0}.gran-plans{padding-top:32px}.gran-plans img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:white}.gran-plans a{display:block;max-width:900px}.gran-plans h3{margin-top:20px}@media(max-width:600px){.gran-price .btn{width:100%;text-align:center}}
+
+/* Property image viewer */
+a[data-lightbox] { display:block; cursor:zoom-in; }
+.property-lightbox { position:fixed; inset:0; margin:0; width:100%; height:100%; max-width:none; max-height:none; border:0; padding:0; background:transparent; color:white; overflow:hidden; }
+.property-lightbox::backdrop { background:rgba(8,15,20,.94); }
+.property-lightbox-scroll { position:absolute; inset:64px 12px 64px; overflow:auto; display:flex; align-items:center; justify-content:center; overscroll-behavior:contain; }
+.property-lightbox-scroll img { display:block; width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; }
+.property-lightbox.is-zoomed .property-lightbox-scroll { display:block; }
+.property-lightbox.is-zoomed img { width:200%; max-width:none; max-height:none; height:auto; }
+.property-lightbox-close,.property-lightbox-zoom { position:absolute; right: max(16px, env(safe-area-inset-right)); z-index:1; width:44px; height:44px; border:1px solid #ffffff66; border-radius:50%; background:#24332d; color:white; font:30px/1 sans-serif; cursor:pointer; }
+.property-lightbox-close { top:max(12px, env(safe-area-inset-top)); }
+.property-lightbox-zoom { bottom:max(12px, env(safe-area-inset-bottom)); }
+
+.gran-gallery{padding-top:32px}.gran-gallery__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.gran-gallery figure{margin:0;min-width:0}.gran-gallery a{display:block}.gran-gallery img{display:block;width:100%;height:auto;border-radius:10px}.gran-gallery figcaption{font-size:.85rem;color:var(--muted);margin-top:8px}@media(max-width:600px){.gran-gallery__grid{grid-template-columns:1fr}}
