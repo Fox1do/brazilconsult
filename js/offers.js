@@ -8,7 +8,7 @@ const stats=u=>({min:u.reduce((a,b)=>a.promo<b.promo?a:b),max:Math.max(...u.map(
 const note='Цены по предоставленной таблице застройщика. Наличие, срок действия акции и условия оплаты необходимо уточнить.';
 const price=(parent,u)=>{const s=stats(u);parent.append(el('del','От '+fmt(s.min.regular)),el('strong','От '+fmt(s.min.promo),'offer-price'),el('p','Экономия до '+fmt(s.max)));};
 async function share(url,title){if(navigator.share){try{await navigator.share({title,url});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(url);alert('Ссылка скопирована')}catch{prompt('Скопируйте ссылку:',url)}}
-Promise.all(['offers.json','properties.json'].map(f=>fetch(base+f).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([offers,properties])=>{
+window.bcOffersReady=Promise.all(['offers.json','properties.json'].map(f=>fetch(base+f).then(r=>{if(!r.ok)throw Error();return r.json()}))).then(([offers,properties])=>{
 if(list){
 const grid=document.querySelector('[data-property-grid]');const refresh=()=>{for(const p of grid.querySelectorAll('[data-property-price]')){const o=offers.find(o=>active(o)&&o.page===p.dataset.propertyPrice);if(o)p.textContent='От '+fmt(stats(o.units).min.promo)+' · акция';}};new MutationObserver(refresh).observe(grid,{childList:true});refresh();
 const home=grid.dataset.propertyGrid==='home';const rows=offers.filter(o=>active(o)&&(!home||o.featured)).sort((a,b)=>(b.priority||0)-(a.priority||0));

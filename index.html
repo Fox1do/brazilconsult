@@ -18,7 +18,7 @@
 <link href="favicon.svg?v=0.095" rel="icon" type="image/svg+xml"/><link as="font" crossorigin="" href="assets/fonts/source-serif-4-cyrillic.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="" href="assets/fonts/golos-text-cyrillic.woff2" rel="preload" type="font/woff2"/>
 <link as="image" fetchpriority="high" href="assets/img/hero-rio.jpg" rel="preload"/>
-<link href="css/styles.css?v=0.230" rel="stylesheet"/>
+<link href="css/styles.css?v=0.232" rel="stylesheet"/>
 <script>document.documentElement.classList.add('js');</script>
 
 <meta content="https://brazilconsult.com/assets/img/hero-rio.jpg" property="og:image"/><meta content="Панорама Рио-де-Жанейро — Бразил Консалт" property="og:image:alt"/>
@@ -42,7 +42,7 @@
 .hero__meeting-link:hover, .hero__meeting-link:focus-visible { color: #86efac; border-color: #86efac; }
 .hero__meeting-link-dot { display: inline-block; width: 11px; height: 11px; flex: 0 0 11px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 0 4px rgba(34,197,94,.20); }
 #first-meeting { scroll-margin-top: 85px; }
-/* Mobile meeting-link layout is defined in css/styles.css (v0.230). */
+/* Mobile meeting-link layout is defined in css/styles.css (v0.232). */
 
 /* v0.072 — discreet periodic pulse */
 .hero__meeting-link-dot { animation: meeting-dot-pulse 2.708s ease-in-out infinite; }
@@ -366,11 +366,32 @@
 <div class="container footer__inner"><nav class="footer__nav" aria-label="Навигация в подвале"><a href="index.html">Главная</a><a href="index.html#services">Услуги</a><a href="index.html#process">Почему мы?</a><a href="blog.html">Блог</a><a href="index.html#contacts">Контакты</a></nav></div>
 <div class="container footer__bottom">
 <p>© <span data-year="">2026</span> <span class="bc-brand-name">Бразил Консалт</span> · Дмитрий Кузьменко · Екатерина Захарова</p>
-<span aria-label="Версия сайта 0.230" style="font-size:10px;font-weight:400;opacity:.55;white-space:nowrap;">v0.230</span>
+<span aria-label="Версия сайта 0.232" style="font-size:10px;font-weight:400;opacity:.55;white-space:nowrap;">v0.232</span>
 <a href="#top">Наверх ↑</a>
 <div class="bc-company-details">KATIA BRAZIL GLOBAL LTDA · CNPJ 68.186.009/0001-72 · <a href="mailto:contact@brazilconsult.com">contact@brazilconsult.com</a></div><div class="bc-legal-links"><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия использования</a><button type="button" data-bc-cookie-settings>Настройки cookies</button></div>
 </div>
 </footer>
 <script defer="" src="js/main.js?v=0.118"></script>
-<script defer src="js/properties.js?v=0.230"></script><script defer src="js/offers.js?v=0.230"></script></body>
+<script defer src="js/properties.js?v=0.232"></script><script defer src="js/offers.js?v=0.232"></script><script>
+(function () {
+  function alignContacts() {
+    if (location.hash !== '#contacts') return;
+    var target = document.getElementById('contacts');
+    if (!target) return;
+    var cancelled = false;
+    function cancel() { cancelled = true; }
+    var events = ['wheel', 'touchstart', 'pointerdown', 'keydown'];
+    events.forEach(function (name) { window.addEventListener(name, cancel, {once:true, passive:true}); });
+    Promise.allSettled([window.bcPropertiesReady, window.bcOffersReady, document.fonts && document.fonts.ready]).then(function () {
+      requestAnimationFrame(function () { requestAnimationFrame(function () {
+        events.forEach(function (name) { window.removeEventListener(name, cancel); });
+        if (!cancelled && location.hash === '#contacts') target.scrollIntoView({block:'start', behavior:'instant'});
+      }); });
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', alignContacts, {once:true});
+  else alignContacts();
+  window.addEventListener('hashchange', alignContacts);
+})();
+</script></body>
 </html>

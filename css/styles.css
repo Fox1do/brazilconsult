@@ -2602,21 +2602,14 @@ a.property-card{display:block;color:inherit;text-decoration:none;cursor:pointer;
 [data-offers-list]>.offer-note{margin:12px 0 0;font-size:12px;line-height:1.5;color:#777268}
 
 /* Real estate subportal */
-.bc-property-portal .brand {display:flex;align-items:center;gap:10px;min-width:0;white-space:nowrap}
-.bc-property-portal .brand__logo {flex:0 1 auto;min-width:0}
-.bc-property-portal .portal-label {color:#934b32;font-size:clamp(.85rem,1.4vw,1.25rem);font-weight:750;letter-spacing:.04em;border-left:1px solid #c8a38f;padding-left:10px;flex:none}
 .bc-property-portal .header-properties {display:none!important}
-.bc-property-portal .nav__list {gap:clamp(10px,1.3vw,20px)}
-.bc-property-portal .nav__link {white-space:nowrap}
 body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .bc-property-portal .blog-hero .eyebrow {color:#f1d5b9}
 .bc-property-portal .blog-hero h1 {font-family:inherit;font-weight:750;text-align:left;margin:12px 0;font-size:clamp(2rem,3.6vw,3.5rem)}
 .bc-property-portal .blog-hero p {color:#fff3e9}
 .bc-property-portal .property-catalog {padding-top:40px}
 .bc-property-portal #special-offers {scroll-margin-top:calc(var(--header-h) + 20px)}
-@media(min-width:1200px){.bc-property-portal .brand__logo {max-width:210px}.bc-property-portal .header__inner {gap:16px}}
-@media(max-width:1199px){.bc-property-portal .brand__logo {width:auto;max-width:calc(100% - 55px)}.bc-property-portal .brand {gap:6px}.bc-property-portal .portal-label {padding-left:6px}}
-@media(max-width:600px){body.bc-property-portal .blog-hero {padding:36px 0}.bc-property-portal .property-catalog {padding-top:24px}.bc-property-portal .portal-label {font-size:.75rem}}
+@media(max-width:600px){body.bc-property-portal .blog-hero {padding:36px 0}.bc-property-portal .property-catalog {padding-top:24px}}
 
 /* 0.230 — decorative home line art, catalog only */
 .catalog-home-hero .container{position:relative;display:flex;align-items:center;justify-content:space-between;gap:24px}
@@ -2624,3 +2617,14 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .catalog-home-art{display:block;flex:0 0 30%;width:30%;max-width:360px;height:auto;color:#f5dcc8;opacity:.25;pointer-events:none}
 @media(max-width:760px){.catalog-home-hero .container{display:block;isolation:isolate}.catalog-home-art{position:absolute;right:0;bottom:-24px;width:230px;max-width:55%;opacity:.15;z-index:-1}.catalog-art-sofa{display:none}.catalog-home-copy{max-width:100%}}
 @media(max-width:360px){.catalog-home-art{display:none}}
+
+/* v0.232 — shared header layout, independent portal label and offer palette */
+.bc-property-portal .brand {gap:10px;min-width:0;white-space:nowrap}
+.bc-property-portal .brand__logo {min-width:0;flex:0 1 auto}
+.bc-property-portal .portal-label {font-family:Georgia,serif;font-size:1.5rem;font-weight:400;letter-spacing:.04em;color:#934b32;border-left:1px solid #c8a38f;padding-left:10px;flex:none;line-height:1.15}
+@media(max-width:1199px){.bc-property-portal .brand {gap:6px}.bc-property-portal .brand__logo {width:auto;max-width:calc(100% - 58px)}.bc-property-portal .portal-label {font-size:1rem;padding-left:6px}}
+@media(max-width:420px){.bc-property-portal .brand__logo {max-width:calc(100% - 46px)}.bc-property-portal .portal-label {font-size:.8rem}}
+.offer-track .offer-preview:nth-child(4n+1){background:#F3ECD6}
+.offer-track .offer-preview:nth-child(4n+2){background:#E2EADD}
+.offer-track .offer-preview:nth-child(4n+3){background:#DCE7EF}
+.offer-track .offer-preview:nth-child(4n+4){background:#EFDDD2}
