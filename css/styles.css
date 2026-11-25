@@ -2547,7 +2547,7 @@ a.property-card{display:block;color:inherit;text-decoration:none;cursor:pointer;
 .gran-tech-details>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;color:#51866a;font-weight:600;font-size:14px;padding:12px 0;border-top:1px solid #dce5df}.gran-tech-details>summary::-webkit-details-marker{display:none}.gran-tech-details>summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-right:5px;flex-shrink:0}.gran-tech-details[open]>summary::after{transform:rotate(225deg)}.gran-tech-details>summary:focus-visible{outline:2px solid #51866a;outline-offset:3px}.gran-tech:has(.gran-tech-details)>.gran-tech-grid{margin-bottom:10px}
 
 
-/* Property detail: compact light-green header and consistent plan layout (0.217). */
+/* Property detail: compact light-green header and consistent plan layout (0.218). */
 .section.property-detail-section{padding-block:clamp(28px,4vw,56px) clamp(64px,9vw,120px)}
 .property-intro{margin-bottom:20px}
 .property-intro>.link-arrow{display:inline-block;margin-bottom:16px;color:#21482f}
@@ -2566,3 +2566,14 @@ a.property-card{display:block;color:inherit;text-decoration:none;cursor:pointer;
 .unit-drawing+.unit-drawing{margin-top:8px}
 .unit-inner .unit-request{align-self:flex-start;margin-top:0}
 @media(max-width:480px){.property-facts{padding:14px;gap:12px}.property-intro>.link-arrow{margin-bottom:12px}}
+
+/* v0.219 — Rio natural palette, property detail only */
+.section.property-detail-section{background:#faf9f6}
+.property-intro .property-location{color:#ad674b}
+.gran-detail .property-intro h1{color:#202520}
+.property-facts{background:transparent;padding:0;gap:12px;align-items:stretch}
+.property-facts>div{min-width:0;border-radius:12px;padding:16px 20px;background:#52785d}
+.property-facts>div+div{background:#527d90}
+.property-facts .property-fact-label{color:#fff}
+.property-facts h2{color:#fff}
+@media(max-width:480px){.property-facts>div{padding:14px}}
