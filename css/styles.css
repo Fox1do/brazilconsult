@@ -2508,3 +2508,12 @@ body.bc-inner-page .detail-related__links { margin-top: 24px; }
   .why-us__people .person__name { min-height: 2.6em; }
   .why-us__people .person__socials a:first-child { min-height: 3.1em; }
 }
+
+/* v0.200 — property catalog */
+.header-properties{display:none;box-sizing:border-box;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border-radius:12px;background:#244c35;color:#fff;border:1px solid #244c35;text-decoration:none;transform:none!important}
+.header-properties svg{width:24px;height:24px;flex:none}
+@media(min-width:1200px){.header__inner > .nav .header-properties--desktop{display:inline-flex}.header__inner > .nav .header-whatsapp--desktop{margin-left:0}}
+@media(max-width:1199px){.header__inner > .header-properties--mobile{display:inline-flex;position:relative;z-index:2}.header__inner > .brand{padding-right:0;flex:1 1 0}.header .brand__logo{width:100%;max-width:255px}.header__inner > .header-whatsapp--mobile{margin-left:0}}
+@media(max-width:420px){.header__inner > .header-properties--mobile{width:40px;height:40px;flex-basis:40px}.header__inner{gap:6px}}
+@media(max-width:360px){.header__inner{gap:4px}.header__inner > .brand{padding-right:0}}
+.property-home{background:#f3f1ea}.property-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:24px}.property-grid:empty{display:none}.property-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}.property-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.property-card__body{padding:22px}.property-card h2,.property-card h3{font-family:var(--font-serif);font-weight:500;margin:8px 0}.property-card p{margin:8px 0}.property-status{color:var(--muted);margin:0 0 24px}.property-status[hidden],.property-filters[hidden]{display:none}.property-filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}.property-filters button{font:inherit;border:1px solid var(--line);border-radius:30px;background:transparent;padding:9px 16px;cursor:pointer}.property-filters button[aria-pressed=true]{background:#244c35;color:white}.property-service{margin-top:24px}.property-home .section__head p:last-child{max-width:650px}.property-catalog .property-status{max-width:650px}@media(max-width:900px){.property-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.property-grid{grid-template-columns:1fr}}
