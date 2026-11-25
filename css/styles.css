@@ -2544,3 +2544,25 @@ a.property-card{display:block;color:inherit;text-decoration:none;cursor:pointer;
 .unit-option{overflow:visible}.unit-meta{display:flex!important;align-items:center;flex-wrap:wrap;gap:6px}.unit-tip{position:relative;display:inline-block;white-space:nowrap;cursor:help}.unit-tip::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:0;z-index:20;background:#233b32;color:white;padding:5px 8px;border-radius:5px;font-size:12px;font-weight:400;white-space:nowrap;opacity:0;pointer-events:none}.unit-tip:hover::after,.unit-tip:focus::after{opacity:1}.unit-tip:focus-visible{outline:2px solid #244c35;border-radius:3px}
 
  .gran-tech{margin:32px 0}.gran-tech-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0 24px}.gran-tech-grid>div{border:1px solid #dce5df;border-radius:12px;padding:16px;min-width:0}.gran-tech-grid small{display:block;color:#59665f;font-size:13px}.gran-tech-grid strong{display:block;color:#51866a;font-size:25px;line-height:1.3;margin:5px 0}.gran-tech-area{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px}.gran-tech-area svg{flex-shrink:0}.gran-tech-table{overflow-x:auto}.gran-tech-table table{width:100%;border-collapse:collapse;font-size:14px}.gran-tech-table th,.gran-tech-table td{text-align:left;padding:10px 8px;border-bottom:1px solid #dce5df}.gran-tech-table td:not(:first-child),.gran-tech-table th:not(:first-child){white-space:nowrap}.gran-team{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;font-size:14px}.gran-team dd{margin:0}.property-disclaimer{font-size:12px;color:#68716c;line-height:1.6;margin:28px 0 0}@media(max-width:480px){.gran-tech-grid>div{padding:12px}.gran-tech-grid strong{font-size:21px}.gran-team{grid-template-columns:1fr;gap:4px}.gran-team dd{margin-bottom:10px}}
+.gran-tech-details>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;color:#51866a;font-weight:600;font-size:14px;padding:12px 0;border-top:1px solid #dce5df}.gran-tech-details>summary::-webkit-details-marker{display:none}.gran-tech-details>summary::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);margin-right:5px;flex-shrink:0}.gran-tech-details[open]>summary::after{transform:rotate(225deg)}.gran-tech-details>summary:focus-visible{outline:2px solid #51866a;outline-offset:3px}.gran-tech:has(.gran-tech-details)>.gran-tech-grid{margin-bottom:10px}
+
+
+/* Property detail: compact light-green header and consistent plan layout (0.217). */
+.section.property-detail-section{padding-block:clamp(28px,4vw,56px) clamp(64px,9vw,120px)}
+.property-intro{margin-bottom:20px}
+.property-intro>.link-arrow{display:inline-block;margin-bottom:16px;color:#21482f}
+.property-intro .property-location{margin:0 0 4px;color:#51866a;letter-spacing:.09em}
+.gran-detail .property-intro h1{color:#21482f;margin:0 0 4px;line-height:1.12;font-size:clamp(2.2rem,4.5vw,3.5rem)}
+.property-intro .gran-developer{margin:0 0 16px}
+.property-facts{background:#e8eee7;border-radius:12px;padding:16px 20px;gap:12px 24px}
+.property-fact-label{color:#59665f;font-size:.85rem;margin:0 0 4px}
+.property-facts h2{color:#21482f;font-size:clamp(1.25rem,2.3vw,1.8rem);line-height:1.25;margin:0}
+.property-intro .property-price-note{margin:8px 0 0}
+.unit-inner{width:100%;max-width:900px;display:flex;flex-direction:column;align-items:stretch;gap:16px}
+.unit-inner>h3,.unit-inner>p,.unit-inner .gran-caption{margin:0}
+.unit-inner>h3{margin-bottom:-8px}
+.unit-inner>a[data-lightbox],.unit-drawing>a[data-lightbox]{display:block;width:100%;max-width:none}
+.unit-drawing{display:flex;flex-direction:column;gap:8px}
+.unit-drawing+.unit-drawing{margin-top:8px}
+.unit-inner .unit-request{align-self:flex-start;margin-top:0}
+@media(max-width:480px){.property-facts{padding:14px;gap:12px}.property-intro>.link-arrow{margin-bottom:12px}}
