@@ -1,0 +1,24 @@
+(() => {
+  const locations = {
+    peninsula: {name: 'Península · Barra da Tijuca · Рио-де-Жанейро', photos: [
+      {src: 'locations/peninsula/0182.webp', full: 'locations/peninsula/0182.jpg', caption: 'Península — общий вид'},
+      {src: 'locations/peninsula/0593.webp', full: 'locations/peninsula/0593.jpg', caption: 'Península — вид сверху'},
+      {src: 'locations/peninsula/0597.webp', full: 'locations/peninsula/0597.jpg', caption: 'Окружение и строительная площадка'}
+    ]}
+  };
+  document.querySelectorAll('[data-location-gallery]').forEach(section => {
+    const location = locations[section.dataset.locationGallery];
+    if (!location) return;
+    const photos = location.photos.filter(photo => photo.src);
+    if (!photos.length) return;
+    section.querySelector('.location-gallery__name').textContent = location.name;
+    const grid = section.querySelector('.gran-gallery__grid');
+    photos.forEach(photo => {
+      const figure = document.createElement('figure');
+      const link = document.createElement('a'); link.href = photo.full || photo.src; link.dataset.lightbox = ''; link.setAttribute('aria-label', 'Увеличить: ' + photo.caption);
+      const img = document.createElement('img'); img.src = photo.src; img.alt = photo.caption; img.loading = 'lazy'; link.append(img); figure.append(link);
+      const caption = document.createElement('figcaption'); caption.textContent = photo.caption; figure.append(caption); grid.append(figure);
+    });
+    section.hidden = false;
+  });
+})();
