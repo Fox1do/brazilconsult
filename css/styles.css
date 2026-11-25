@@ -2510,7 +2510,7 @@ body.bc-inner-page .detail-related__links { margin-top: 24px; }
 }
 
 /* v0.200 — property catalog */
-.header-properties{display:none;box-sizing:border-box;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border-radius:12px;background:#244c35;color:#fff;border:1px solid #244c35;text-decoration:none;transform:none!important}
+.header-properties{display:none;box-sizing:border-box;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border-radius:12px;background:#CB8565;color:#fff;border:1px solid #CB8565;text-decoration:none;transform:none!important}
 .header-properties svg{width:24px;height:24px;flex:none}
 @media(min-width:1200px){.header__inner > .nav .header-properties--desktop{display:inline-flex}.header__inner > .nav .header-whatsapp--desktop{margin-left:0}}
 @media(max-width:1199px){.header__inner > .header-properties--mobile{display:inline-flex;position:relative;z-index:2}.header__inner > .brand{padding-right:0;flex:1 1 0}.header .brand__logo{width:100%;max-width:255px}.header__inner > .header-whatsapp--mobile{margin-left:0}}
