@@ -314,6 +314,8 @@
         "regular": 4300230,
         "promo": 3440184
       }
-    ]
+    ],
+    "carouselLimit": 3,
+    "priority": 1
   }
 ]
