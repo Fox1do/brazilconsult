@@ -2693,3 +2693,8 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 
 /* v0.287 */
 .fact-currencies{display:flex;align-items:center;flex-wrap:wrap;gap:8px;color:#fff;font-weight:500;margin:6px 0 0;line-height:1.4}.fact-currencies[hidden],.fact-currencies [hidden]{display:none!important}.currency-separator{opacity:.75}.fact-currencies>span{white-space:nowrap}
+/* 0.288 — consistent property prices and sales alignment */
+.property-intro .sales-badge-row{display:flex;justify-content:flex-start;align-items:center;width:100%;margin:0 0 8px}
+.property-intro .sales-badge-row .sales-badge{margin:0;min-height:44px}
+.currency-price{font-weight:500;gap:0 6px}.currency-price .currency-extra:not([hidden])::before,.result-price .currency-extra:not([hidden])::before{content:'·';margin-right:6px}.currency-price .currency-extra{white-space:normal}.currency-extra[hidden]{display:none!important}.catalog-price .currency-extra{display:block;font-size:.9em;font-weight:400}.catalog-price{font-weight:500}.result-price{color:#A35F46;font-weight:500}.result-price .currency-extra{margin-left:6px}.fact-currencies .currency-extra{white-space:normal}.currency-price>span{max-width:100%}
+@media(max-width:600px){.property-intro .sales-badge-row{margin-bottom:12px}.property-intro .sales-badge-row .sales-badge{width:100%;justify-content:center}}
