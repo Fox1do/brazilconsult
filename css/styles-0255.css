@@ -2677,3 +2677,12 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .sales-badge--launch{background:#00B84A}.sales-badge--sold70{background:#A020C0}.sales-badge--sold90{background:#E54825}
 .sales-badge-row{display:flex;justify-content:flex-end;margin:0 0 8px}
 .property-card{position:relative}.property-card>.sales-badge--compact{position:absolute;top:10px;right:10px;max-width:calc(100% - 20px);font-size:.8rem;padding:5px 8px;gap:4px}.sales-badge--compact svg{width:16px;height:16px;flex-basis:16px}
+
+/* v0.284: mobile property-detail sales status */
+@media (max-width:600px){
+  .property-intro .gran-developer:has(+ .sales-badge-row){margin-bottom:10px}
+  .property-intro .sales-badge-row{justify-content:flex-start;margin-bottom:8px}
+  .property-intro .sales-badge-row .sales-badge{font-size:.85rem;padding:6px 10px;gap:6px;min-width:0}
+  .property-intro .sales-badge-row .sales-badge svg{width:19px;height:19px;flex-basis:19px}
+  .property-intro .sales-badge-row .sales-badge span{min-width:0;white-space:normal;overflow-wrap:anywhere}
+}
