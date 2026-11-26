@@ -10,7 +10,14 @@
     "completion": "Сентябрь 2027",
     "offerImage": "gran-thai-cover.webp?v=0.208",
     "developer": "tegra",
-    "developerName": "Tegra"
+    "developerName": "Tegra",
+    "sales": {
+      "total": null,
+      "sold": null,
+      "available": null,
+      "updated": null,
+      "previewPercent": null
+    }
   },
   {
     "title": "Singular",
@@ -18,11 +25,18 @@
     "district": "Barra da Tijuca · Península",
     "description": "Застройщик Tegra",
     "price": "От R$ 3 435 000",
-    "image": "singular-facade.webp",
+    "image": "singular-balconies.webp",
     "page": "singular.html",
     "completion": "Октябрь 2028",
-    "offerImage": "singular-facade.webp",
+    "offerImage": "singular-balconies.webp",
     "developer": "tegra",
-    "developerName": "Tegra"
+    "developerName": "Tegra",
+    "sales": {
+      "total": 62,
+      "sold": null,
+      "available": 38,
+      "updated": null,
+      "previewPercent": 70
+    }
   }
 ]
