@@ -11,5 +11,18 @@
     "offerImage": "gran-thai-cover.webp?v=0.208",
     "developer": "tegra",
     "developerName": "Tegra"
+  },
+  {
+    "title": "Singular",
+    "city": "Рио-де-Жанейро",
+    "district": "Barra da Tijuca · Península",
+    "description": "Застройщик Tegra",
+    "price": "От R$ 3 435 000",
+    "image": "singular-facade.webp",
+    "page": "singular.html",
+    "completion": "Октябрь 2028",
+    "offerImage": "singular-facade.webp",
+    "developer": "tegra",
+    "developerName": "Tegra"
   }
 ]

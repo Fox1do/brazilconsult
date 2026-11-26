@@ -1,5 +1,6 @@
 (() => {
   const locations = {
+    singular: {name: 'Península · Barra da Tijuca · Рио-де-Жанейро', photos: [{src:'locations/peninsula/0182.webp',full:'locations/peninsula/0182.jpg',caption:'Península — общий вид'},{src:'locations/peninsula/singular-1.webp',full:'locations/peninsula/singular-1.jpg',caption:'Singular — строительная площадка'},{src:'locations/peninsula/singular-2.webp',full:'locations/peninsula/singular-2.jpg',caption:'Singular — строительная площадка'},{src:'locations/peninsula/singular-3.webp',full:'locations/peninsula/singular-3.jpg',caption:'Singular — окружение'}]},
     peninsula: {name: 'Península · Barra da Tijuca · Рио-де-Жанейро', photos: [
       {src: 'locations/peninsula/0182.webp', full: 'locations/peninsula/0182.jpg', caption: 'Península — общий вид'},
       {src: 'locations/peninsula/0593.webp', full: 'locations/peninsula/0593.jpg', caption: 'Península — вид сверху'},
