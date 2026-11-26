@@ -2648,3 +2648,8 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .bedroom-group>.unit-option{border-left:8px solid #E5E5E5}
 .bedroom-group>.unit-option:nth-of-type(even){border-left-color:#CCCCCC}
 .bedroom-group>.unit-option.unit-promo-active{border-left-color:#E5D9B9}
+
+/* 0.249 — neutral plan cards and aligned actions */
+.bedroom-group>.unit-option{background:#fff;border-left:8px solid #E5E5E5}.bedroom-group>.unit-option:nth-of-type(even){border-left-color:#CCCCCC}.bedroom-group>.unit-option>summary{background:#fff}
+.unit-inner .unit-share-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:10px}.unit-inner .unit-share-row .unit-request,.unit-inner .unit-share-row .unit-share{display:flex;align-items:center;justify-content:center;align-self:stretch;text-align:center;white-space:normal;min-width:0;min-height:44px;margin:0;padding:10px 8px;line-height:1.25;font-size:.9rem}.unit-share-status:not(:empty){grid-column:1/-1}
+@media(max-width:480px){.unit-inner .unit-share-row .unit-request,.unit-inner .unit-share-row .unit-share{font-size:.78rem;padding:8px 5px}.unit-share svg{flex-shrink:0}}

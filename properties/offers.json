@@ -1,8 +1,8 @@
 [
   {
     "page": "gran-thai.html",
-    "active": true,
-    "featured": true,
+    "active": false,
+    "featured": false,
     "updated": "2026-11-25",
     "expires": null,
     "units": [

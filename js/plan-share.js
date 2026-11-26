@@ -7,10 +7,10 @@
     plan.dataset.selectedVariant=value;
     for(const panel of panels)panel.hidden=panel.dataset.variant!==value;
     for(const button of plan.querySelectorAll('[data-select-variant]'))button.setAttribute('aria-pressed',String(button.dataset.selectVariant===value));
-    const promo=plan.querySelector('.unit-variant-offer'); if(promo)promo.hidden=value!==plan.dataset.promoVariant;
-    const request=plan.querySelector('.unit-request'); if(request){const panel=panels.find(p=>p.dataset.variant===value);request.href='https://wa.me/5524999592093?text='+encodeURIComponent('Здравствуйте! Интересует Gran Thai, '+plan.dataset.shareTitle+', вариант '+value+' — '+panel.querySelector('.gran-caption').textContent+'. Уточните цену и наличие.');}
+    
+    const request=plan.querySelector('.unit-request'); if(request&&!request.hasAttribute('data-specific')){const panel=panels.find(p=>p.dataset.variant===value);request.href='https://wa.me/5524999592093?text='+encodeURIComponent('Здравствуйте! Интересует Gran Thai, '+plan.dataset.shareTitle+', вариант '+value+' — '+panel.querySelector('.gran-caption').textContent+'. Уточните цену и наличие.');}
   }
-  for(const plan of plans){if(plan.dataset.variants){choose(plan,plan.dataset.promoVariant||'1');for(const button of plan.querySelectorAll('[data-select-variant]'))button.addEventListener('click',()=>choose(plan,button.dataset.selectVariant));}}
+  for(const plan of plans){if(plan.dataset.variants){choose(plan,'1');for(const button of plan.querySelectorAll('[data-select-variant]'))button.addEventListener('click',()=>choose(plan,button.dataset.selectVariant));}}
   function reveal(){
     let id; try { id=decodeURIComponent(location.hash.slice(1)); } catch { return; }
     const [base,variant]=id.split("/variant-"); const plan=plans.find(p=>p.id===base); if(!plan)return;
