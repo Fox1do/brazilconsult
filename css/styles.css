@@ -2687,3 +2687,11 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 
 /* Investment residence */
 .immigration-mark{display:block;color:#487C65!important;font-size:14px;font-weight:500;line-height:1.4;margin-top:5px}.immigration-info{margin:16px 0;padding:16px 20px;border:1px solid #d8e0d3;border-radius:12px;color:#487C65}.immigration-info p{margin:6px 0;color:var(--text,#374151)}.immigration-info a{color:#487C65;text-decoration:underline;font-size:14px}.immigration-filter{display:flex;align-items:flex-start;gap:8px;margin:16px 0;font-size:14px}.immigration-filter input{flex:none;accent-color:#487C65}
+
+/* Plan sharing menu */
+.unit-inner .unit-share-row{position:relative}
+.plan-share-menu[hidden],.plan-share-menu [hidden]{display:none!important}
+.plan-share-menu{position:absolute;right:0;top:calc(100% + 6px);z-index:20;width:min(280px,100%);padding:6px;background:#fff;border:1px solid #d8e0d3;border-radius:10px;box-shadow:0 8px 24px #203b2926;box-sizing:border-box}
+.plan-share-menu a,.plan-share-menu button{display:flex;align-items:center;gap:10px;width:100%;box-sizing:border-box;padding:11px 10px;border:0;border-radius:6px;background:none;color:#244d35;font:inherit;font-size:.9rem;text-align:left;text-decoration:none;cursor:pointer}
+.plan-share-menu a:hover,.plan-share-menu button:hover,.plan-share-menu a:focus-visible,.plan-share-menu button:focus-visible{background:#e8eee7}
+.plan-share-menu svg{flex:none}
