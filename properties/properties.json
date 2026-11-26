@@ -16,7 +16,8 @@
       "sold": null,
       "available": null,
       "updated": null,
-      "previewPercent": null
+      "status": "launch",
+      "preview": true
     }
   },
   {
@@ -36,7 +37,8 @@
       "sold": null,
       "available": 38,
       "updated": null,
-      "previewPercent": 70
+      "status": "sold90",
+      "preview": true
     }
   }
 ]
