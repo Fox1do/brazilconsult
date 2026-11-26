@@ -8,7 +8,6 @@
     for(const panel of panels)panel.hidden=panel.dataset.variant!==value;
     for(const button of plan.querySelectorAll('[data-select-variant]'))button.setAttribute('aria-pressed',String(button.dataset.selectVariant===value));
     
-    const request=plan.querySelector('.unit-request'); if(request&&!request.hasAttribute('data-specific')){const panel=panels.find(p=>p.dataset.variant===value);request.href='https://wa.me/5524999592093?text='+encodeURIComponent('Здравствуйте! Интересует Gran Thai, '+plan.dataset.shareTitle+', вариант '+value+' — '+panel.querySelector('.gran-caption').textContent+'. Уточните цену и наличие.');}
   }
   for(const plan of plans){if(plan.dataset.variants){choose(plan,'1');for(const button of plan.querySelectorAll('[data-select-variant]'))button.addEventListener('click',()=>choose(plan,button.dataset.selectVariant));}}
   function reveal(){
