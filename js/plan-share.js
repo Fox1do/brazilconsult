@@ -14,7 +14,7 @@
   function reveal(){
     let id; try { id=decodeURIComponent(location.hash.slice(1)); } catch { return; }
     const [base,variant]=id.split("/variant-"); const plan=plans.find(p=>p.id===base); if(!plan)return;
-    plan.open=true; const group=plan.closest(".bedroom-group"); if(group)group.open=true; if(variant)choose(plan,variant);
+    plan.open=true; const merged=plan.closest(".merged-unit");if(merged)merged.open=true; const group=plan.closest(".bedroom-group"); if(group)group.open=true; if(variant)choose(plan,variant);
     requestAnimationFrame(()=>plan.scrollIntoView({block:'start'}));
   }
   window.addEventListener('hashchange',reveal);
