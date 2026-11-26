@@ -2668,3 +2668,5 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 
 /* 0.255 category stripes */
 .bedroom-group>summary{border-left:8px solid #BCCCB5;box-sizing:border-box}.bedroom-group:nth-of-type(even)>summary{border-left-color:#A3B39C}
+
+.apartment-dialog .apt-consent{display:block;font-size:13px;line-height:1.5}.apartment-dialog .apt-consent input[type=checkbox]{display:inline-block;width:16px;height:16px;padding:0;margin:0 7px 0 0;vertical-align:middle;accent-color:#214831}.apt-consent .apt-error:not([hidden]){display:block;margin-top:6px}

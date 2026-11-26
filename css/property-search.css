@@ -22,3 +22,7 @@
   color: #f1d5b9;
   border-bottom-color: #f1d5b9;
 }
+
+.ps-consultation-page{min-height:100vh;display:flex;flex-direction:column}.ps-consultation-page .ps-main{flex:1}.ps-consultation-sent .ps-main{display:flex;align-items:center}.ps-consultation-sent .ps-main>.container{width:100%}.ps-success{text-align:center;padding:24px 0}.ps-success-icon{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#E2EADD;color:#214831;margin:0 auto 24px}.ps-success h1{font-size:clamp(22px,3vw,30px);margin:0 0 16px}.ps-success p{color:#647064;max-width:460px;margin:0 auto 24px}.ps-success .btn{width:auto;display:inline-flex}.ps-success h1:focus{outline:none}.ps-consultation-sent #lead-status{display:none}
+
+.ps-panel #lead>label.ps-consent input[type=checkbox]{display:inline-block;width:16px;height:16px;padding:0;margin:0 7px 0 0;vertical-align:middle;accent-color:#214831}.ps-panel .ps-consent input[aria-invalid=true]{outline:2px solid #b42318;outline-offset:2px}
