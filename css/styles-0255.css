@@ -2667,4 +2667,4 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .apt-error{color:#a93232;font-size:.85em}.apartment-dialog input[aria-invalid=true]{border-color:#a93232;outline:1px solid #a93232}.apt-success,.request-confirmation{text-align:center;display:grid;gap:16px;padding:16px;justify-items:center}.apt-success[hidden],.request-confirmation[hidden],form[data-request-form][hidden],.apartment-dialog form[hidden]{display:none!important}.request-check{display:grid;place-items:center;border:2px solid #487C65;color:#487C65;border-radius:50%;width:48px;height:48px;font-size:30px}.apt-done,.request-confirmation button{background:#214831;color:white;width:100%;max-width:320px}.apt-success p,.request-confirmation p{margin:0}.apt-success h2,.request-confirmation h2{margin:0}
 
 /* 0.255 category stripes */
-.bedroom-group{border-left:8px solid #BCCCB5;overflow:hidden}.bedroom-group:nth-of-type(even){border-left-color:#A3B39C}
+.bedroom-group>summary{border-left:8px solid #BCCCB5;box-sizing:border-box}.bedroom-group:nth-of-type(even)>summary{border-left-color:#A3B39C}
