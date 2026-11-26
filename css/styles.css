@@ -2670,3 +2670,6 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .bedroom-group>summary{border-left:8px solid #BCCCB5;box-sizing:border-box}.bedroom-group:nth-of-type(even)>summary{border-left-color:#A3B39C}
 
 .apartment-dialog .apt-consent{display:block;font-size:13px;line-height:1.5}.apartment-dialog .apt-consent input[type=checkbox]{display:inline-block;width:16px;height:16px;padding:0;margin:0 7px 0 0;vertical-align:middle;accent-color:#214831}.apt-consent .apt-error:not([hidden]){display:block;margin-top:6px}
+
+/* 0.290: equal currency typography */
+.unit-price.currency-price,.unit-price.price-unknown,.result-price{font-size:.85rem;font-weight:400;line-height:1.35}.unit-price.currency-price{display:block}.unit-price.currency-price>span,.unit-price.currency-price .currency-value,.result-price .currency-extra{display:inline;font:inherit;white-space:normal}.unit-price.currency-price .currency-extra:not([hidden])::before,.result-price .currency-extra:not([hidden])::before{content:" · ";margin:0}.result-price .currency-extra{margin:0}
