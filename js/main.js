@@ -109,6 +109,13 @@
   var status = form.querySelector('[data-form-status]');
   var submitButton = form.querySelector('[type="submit"]');
   var serviceSelect = form.elements.service;
+  var confirmation = document.createElement('section');
+  confirmation.className = 'request-confirmation';
+  confirmation.hidden = true;
+  confirmation.tabIndex = -1;
+  confirmation.innerHTML = '<span class="request-check" aria-hidden="true">✓</span><h2>Заявка отправлена!</h2><p>Спасибо! Мы свяжемся с вами в ближайшее время.</p><button type="button" class="apartment-request">Отправить ещё один запрос</button>';
+  form.after(confirmation);
+  confirmation.querySelector('button').addEventListener('click', function(){confirmation.hidden=true;form.hidden=false;form.querySelector('input,select,textarea').focus();});
 
   // Соответствие карточек услуг русским названиям
   var serviceNames = {
@@ -248,6 +255,7 @@
   // Отправка формы
   form.addEventListener('submit', function (event) {
     event.preventDefault();
+    if (submitButton.disabled) return;
     setStatus(null, '');
 
     if (!validate()) return;
@@ -301,6 +309,7 @@
           'success',
           'Спасибо! Запрос отправлен — мы свяжемся с вами.'
         );
+        form.hidden=true;confirmation.hidden=false;confirmation.focus();
       })
       .catch(function () {
         setStatus(
