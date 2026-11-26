@@ -49,7 +49,36 @@
           },
           "pt": null
         },
-        "search": null
+        "search": null,
+        "spec": {
+          "areaMin": 125.0,
+          "areaMax": 128.0,
+          "bedrooms": 3,
+          "suites": 3,
+          "bathrooms": 5,
+          "parking": 2,
+          "garden": false,
+          "staff": false,
+          "pool": false,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "shanti",
+            "floorMin": null,
+            "floorMax": null,
+            "columns": "",
+            "unit": ""
+          },
+          {
+            "buildingId": "sawasdee",
+            "floorMin": null,
+            "floorMax": null,
+            "columns": "",
+            "unit": ""
+          }
+        ]
       },
       {
         "id": "sawasdee-125-128",
@@ -64,7 +93,29 @@
           },
           "pt": null
         },
-        "search": null
+        "search": null,
+        "spec": {
+          "areaMin": 125.0,
+          "areaMax": 128.0,
+          "bedrooms": 3,
+          "suites": 3,
+          "bathrooms": 5,
+          "parking": 2,
+          "garden": false,
+          "staff": false,
+          "pool": false,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "sawasdee",
+            "floorMin": 1,
+            "floorMax": 13,
+            "columns": "",
+            "unit": ""
+          }
+        ]
       },
       {
         "id": "shanti-128",
@@ -83,7 +134,29 @@
           "rooms": "3",
           "area": "128 м²",
           "image": "gran-thai-plan.webp"
-        }
+        },
+        "spec": {
+          "areaMin": 128.0,
+          "areaMax": 128.0,
+          "bedrooms": 3,
+          "suites": 3,
+          "bathrooms": 5,
+          "parking": 2,
+          "garden": false,
+          "staff": false,
+          "pool": false,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "shanti",
+            "floorMin": 1,
+            "floorMax": 14,
+            "columns": "",
+            "unit": ""
+          }
+        ]
       },
       {
         "id": "sawasdee-143-151",
@@ -102,7 +175,29 @@
           "rooms": "3",
           "area": "143–151 м²",
           "image": "gran-thai-plan-sawasdee-12.webp"
-        }
+        },
+        "spec": {
+          "areaMin": 143.0,
+          "areaMax": 151.0,
+          "bedrooms": 3,
+          "suites": 3,
+          "bathrooms": 5,
+          "parking": 2,
+          "garden": false,
+          "staff": true,
+          "pool": false,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "sawasdee",
+            "floorMin": 1,
+            "floorMax": 14,
+            "columns": "",
+            "unit": ""
+          }
+        ]
       },
       {
         "id": "shanti-174",
@@ -121,7 +216,29 @@
           "rooms": "4+",
           "area": "174 м²",
           "image": "gran-thai-plan-4.webp"
-        }
+        },
+        "spec": {
+          "areaMin": 174.0,
+          "areaMax": 174.0,
+          "bedrooms": 4,
+          "suites": 2,
+          "bathrooms": 5,
+          "parking": 2,
+          "garden": false,
+          "staff": true,
+          "pool": false,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "shanti",
+            "floorMin": 2,
+            "floorMax": 14,
+            "columns": "",
+            "unit": ""
+          }
+        ]
       },
       {
         "id": "shanti-223",
@@ -140,7 +257,29 @@
           "rooms": "4+",
           "area": "223 м²",
           "image": "gran-thai-plan-garden.webp"
-        }
+        },
+        "spec": {
+          "areaMin": 223.0,
+          "areaMax": 223.0,
+          "bedrooms": 4,
+          "suites": 2,
+          "bathrooms": 5,
+          "parking": 2,
+          "garden": true,
+          "staff": true,
+          "pool": false,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "shanti",
+            "floorMin": 1,
+            "floorMax": 1,
+            "columns": "",
+            "unit": ""
+          }
+        ]
       },
       {
         "id": "sawasdee-302",
@@ -159,7 +298,29 @@
           "rooms": "4+",
           "area": "Пентхаус · 302 м²",
           "image": "gran-thai-plan-duplex.webp"
-        }
+        },
+        "spec": {
+          "areaMin": 302.51,
+          "areaMax": 302.51,
+          "bedrooms": 4,
+          "suites": 4,
+          "bathrooms": 7,
+          "parking": 4,
+          "garden": true,
+          "staff": true,
+          "pool": true,
+          "sauna": true,
+          "duplex": true
+        },
+        "locations": [
+          {
+            "buildingId": "sawasdee",
+            "floorMin": 14,
+            "floorMax": 15,
+            "columns": "",
+            "unit": "1401"
+          }
+        ]
       },
       {
         "id": "shanti-321",
@@ -178,9 +339,89 @@
           "rooms": "4+",
           "area": "Пентхаус · 321 м²",
           "image": "gran-thai-plan-penthouse.webp"
-        }
+        },
+        "spec": {
+          "areaMin": 321.12,
+          "areaMax": 321.12,
+          "bedrooms": 4,
+          "suites": 4,
+          "bathrooms": 6,
+          "parking": 4,
+          "garden": true,
+          "staff": true,
+          "pool": true,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "shanti",
+            "floorMin": 15,
+            "floorMax": 15,
+            "columns": "",
+            "unit": "1501"
+          }
+        ]
       }
-    ]
+    ],
+    "territoryArea": 8032,
+    "buildings": [
+      {
+        "id": "shanti",
+        "name": "Shanti"
+      },
+      {
+        "id": "sawasdee",
+        "name": "Sawasdee"
+      },
+      {
+        "id": "siam",
+        "name": "Siam"
+      }
+    ],
+    "buildingMode": "multiple",
+    "technical": {
+      "total": 245,
+      "floors": 14,
+      "perFloor": null,
+      "parkingLevels": 2,
+      "guestParking": null,
+      "penthouseFloor": true,
+      "parkingSize": "5 × 2,5 м",
+      "types": [
+        {
+          "name": "3 спальни",
+          "area": "127–145",
+          "count": 135
+        },
+        {
+          "name": "4 спальни",
+          "area": "172–203",
+          "count": 91
+        },
+        {
+          "name": "Garden · 3 спальни",
+          "area": "162–227",
+          "count": 3
+        },
+        {
+          "name": "Garden · 4 спальни",
+          "area": "222",
+          "count": 4
+        },
+        {
+          "name": "Одноуровневые пентхаусы · 4 спальни",
+          "area": "249–405",
+          "count": 9
+        },
+        {
+          "name": "Двухуровневые пентхаусы · 4 спальни",
+          "area": "309–400",
+          "count": 3
+        }
+      ]
+    },
+    "longDescription": ""
   },
   {
     "title": "Singular",
@@ -236,8 +477,60 @@
           "rooms": "4+",
           "area": "222–229 м²",
           "image": "singular-plan-1.webp"
-        }
+        },
+        "spec": {
+          "areaMin": 222.0,
+          "areaMax": 229.0,
+          "bedrooms": 4,
+          "suites": 4,
+          "bathrooms": 6,
+          "parking": 3,
+          "garden": false,
+          "staff": true,
+          "pool": false,
+          "sauna": false,
+          "duplex": false
+        },
+        "locations": [
+          {
+            "buildingId": "",
+            "floorMin": 1,
+            "floorMax": 15,
+            "columns": "",
+            "unit": ""
+          }
+        ]
       }
-    ]
+    ],
+    "territoryArea": 2783,
+    "buildings": [
+      {
+        "id": "",
+        "name": ""
+      }
+    ],
+    "buildingMode": "single",
+    "technical": {
+      "total": 62,
+      "floors": 15,
+      "perFloor": 4,
+      "parkingLevels": 2,
+      "guestParking": 7,
+      "penthouseFloor": true,
+      "parkingSize": "",
+      "types": [
+        {
+          "name": "4 спальни",
+          "area": "222–229",
+          "count": 60
+        },
+        {
+          "name": "Одноуровневые пентхаусы (проданы)",
+          "area": "—",
+          "count": 2
+        }
+      ]
+    },
+    "longDescription": ""
   }
 ]
