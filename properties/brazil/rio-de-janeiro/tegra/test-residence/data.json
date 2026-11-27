@@ -4,7 +4,7 @@
   "developer": "tegra",
   "developerName": "Tegra",
   "page": "brazil/rio-de-janeiro/tegra/test-residence/",
-  "active": false,
+  "active": true,
   "plans": [
     {
       "id": "d214f3de-2b63-482b-a900-214e8817698c",
