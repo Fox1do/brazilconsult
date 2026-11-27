@@ -392,15 +392,18 @@
     "buildings": [
       {
         "id": "shanti",
-        "name": "Shanti"
+        "name": "Shanti",
+        "active": true
       },
       {
         "id": "sawasdee",
-        "name": "Sawasdee"
+        "name": "Sawasdee",
+        "active": true
       },
       {
         "id": "siam",
-        "name": "Siam"
+        "name": "Siam",
+        "active": true
       }
     ],
     "buildingMode": "multiple",
@@ -483,7 +486,9 @@
       "neighborhood": "Península",
       "address": "",
       "mapsUrl": ""
-    }
+    },
+    "completionMonth": "2027-09",
+    "completed": false
   },
   {
     "title": "Singular",
@@ -571,7 +576,8 @@
     "buildings": [
       {
         "id": "",
-        "name": ""
+        "name": "",
+        "active": true
       }
     ],
     "buildingMode": "single",
@@ -614,6 +620,8 @@
       "neighborhood": "Península",
       "address": "",
       "mapsUrl": ""
-    }
+    },
+    "completionMonth": "2028-10",
+    "completed": false
   }
 ]

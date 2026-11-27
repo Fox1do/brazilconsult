@@ -574,15 +574,18 @@
     "buildings": [
       {
         "id": "shanti",
-        "name": "Shanti"
+        "name": "Shanti",
+        "active": true
       },
       {
         "id": "sawasdee",
-        "name": "Sawasdee"
+        "name": "Sawasdee",
+        "active": true
       },
       {
         "id": "siam",
-        "name": "Siam"
+        "name": "Siam",
+        "active": true
       }
     ],
     "buildingMode": "multiple",
@@ -720,7 +723,9 @@
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       }
-    ]
+    ],
+    "completionMonth": "2027-09",
+    "completed": false
   },
   {
     "title": "Singular",
@@ -1008,7 +1013,8 @@
     "buildings": [
       {
         "id": "",
-        "name": ""
+        "name": "",
+        "active": true
       }
     ],
     "buildingMode": "single",
@@ -1160,6 +1166,8 @@
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       }
-    ]
+    ],
+    "completionMonth": "2028-10",
+    "completed": false
   }
 ]
