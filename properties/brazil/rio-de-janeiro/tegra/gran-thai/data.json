@@ -1,0 +1,505 @@
+{
+  "title": "Gran Thai",
+  "city": "Рио-де-Жанейро",
+  "district": "Barra da Tijuca · Península",
+  "description": "Застройщик Tegra",
+  "price": "От R$ 2 210 000",
+  "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.224",
+  "page": "brazil/rio-de-janeiro/tegra/gran-thai/",
+  "completion": "Сентябрь 2027",
+  "offerImage": "brazil/rio-de-janeiro/tegra/gran-thai/images/main/gran-thai-cover.webp?v=0.208",
+  "developer": "tegra",
+  "developerName": "Tegra",
+  "sales": {
+    "total": null,
+    "sold": null,
+    "available": null,
+    "updated": null,
+    "status": "launch",
+    "preview": true
+  },
+  "priceBrl": 2210000,
+  "id": "gran-thai",
+  "translations": {
+    "ru": {
+      "city": "Рио-де-Жанейро",
+      "district": "Barra da Tijuca · Península",
+      "description": "Застройщик Tegra",
+      "completion": "Сентябрь 2027"
+    },
+    "pt": {
+      "city": "Rio de Janeiro",
+      "district": "Barra da Tijuca · Península",
+      "description": "Incorporadora Tegra",
+      "completion": "Setembro de 2027"
+    }
+  },
+  "plans": [
+    {
+      "id": "three-standard",
+      "available": true,
+      "priceBrl": 2210000,
+      "parentId": null,
+      "translations": {
+        "ru": {
+          "title": "3 спальни",
+          "characteristics": "125–128 м² · 🚿 5 · 🚗 2",
+          "location": "🏢 Shanti, Sawasdee"
+        },
+        "pt": null
+      },
+      "search": null,
+      "spec": {
+        "areaMin": 125.0,
+        "areaMax": 128.0,
+        "bedrooms": 3,
+        "suites": 3,
+        "bathrooms": 5,
+        "parking": 2,
+        "garden": false,
+        "staff": false,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "shanti",
+          "floorMin": null,
+          "floorMax": null,
+          "columns": "",
+          "unit": ""
+        },
+        {
+          "buildingId": "sawasdee",
+          "floorMin": null,
+          "floorMax": null,
+          "columns": "",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "id": "sawasdee-125-128",
+      "available": true,
+      "priceBrl": null,
+      "parentId": "three-standard",
+      "translations": {
+        "ru": {
+          "title": "3 спальни",
+          "characteristics": "125–128 м² · 🚿 5 · 🚗 2",
+          "location": "🏢 Sawasdee · этажи: 1–13"
+        },
+        "pt": null
+      },
+      "search": null,
+      "spec": {
+        "areaMin": 125.0,
+        "areaMax": 128.0,
+        "bedrooms": 3,
+        "suites": 3,
+        "bathrooms": 5,
+        "parking": 2,
+        "garden": false,
+        "staff": false,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "sawasdee",
+          "floorMin": 1,
+          "floorMax": 13,
+          "columns": "",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "id": "shanti-128",
+      "available": true,
+      "priceBrl": 2210000,
+      "parentId": "three-standard",
+      "translations": {
+        "ru": {
+          "title": "3 спальни",
+          "characteristics": "128 м² · 🚿 5 · 🚗 2",
+          "location": "🏢 Shanti · этажи: 1–14"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "3",
+        "area": "128 м²",
+        "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan.webp"
+      },
+      "spec": {
+        "areaMin": 128.0,
+        "areaMax": 128.0,
+        "bedrooms": 3,
+        "suites": 3,
+        "bathrooms": 5,
+        "parking": 2,
+        "garden": false,
+        "staff": false,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "shanti",
+          "floorMin": 1,
+          "floorMax": 14,
+          "columns": "",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "id": "sawasdee-143-151",
+      "available": true,
+      "priceBrl": 2405510,
+      "parentId": null,
+      "translations": {
+        "ru": {
+          "title": "3 спальни 🛎️",
+          "characteristics": "143–151 м² · 🚿 5 · 🚗 2",
+          "location": "🏢 Sawasdee · этажи: 1–14"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "3",
+        "area": "143–151 м²",
+        "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
+      },
+      "spec": {
+        "areaMin": 143.0,
+        "areaMax": 151.0,
+        "bedrooms": 3,
+        "suites": 3,
+        "bathrooms": 5,
+        "parking": 2,
+        "garden": false,
+        "staff": true,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "sawasdee",
+          "floorMin": 1,
+          "floorMax": 14,
+          "columns": "",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "id": "shanti-174",
+      "available": true,
+      "priceBrl": 3120000,
+      "parentId": null,
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🛎️",
+          "characteristics": "174 м² · 🚿 5 · 🚗 2",
+          "location": "🏢 Shanti · этажи: 2–14"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "174 м²",
+        "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp"
+      },
+      "spec": {
+        "areaMin": 174.0,
+        "areaMax": 174.0,
+        "bedrooms": 4,
+        "suites": 2,
+        "bathrooms": 5,
+        "parking": 2,
+        "garden": false,
+        "staff": true,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "shanti",
+          "floorMin": 2,
+          "floorMax": 14,
+          "columns": "",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "id": "shanti-223",
+      "available": true,
+      "priceBrl": 3230000,
+      "parentId": null,
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🪴 🛎️",
+          "characteristics": "223 м² · 🚿 5 · 🚗 2",
+          "location": "🏢 Shanti · этаж: 1"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "223 м²",
+        "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp"
+      },
+      "spec": {
+        "areaMin": 223.0,
+        "areaMax": 223.0,
+        "bedrooms": 4,
+        "suites": 2,
+        "bathrooms": 5,
+        "parking": 2,
+        "garden": true,
+        "staff": true,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "garden",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "shanti",
+          "floorMin": 1,
+          "floorMax": 1,
+          "columns": "",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "id": "sawasdee-302",
+      "available": true,
+      "priceBrl": 4787610,
+      "parentId": null,
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🪴 💧 🛎️",
+          "characteristics": "302,51 м² · 🚿 7 · 🚗 4",
+          "location": "🏢 Sawasdee · этажи: 14–15 · квартира 1401"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "Пентхаус · 302 м²",
+        "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp"
+      },
+      "spec": {
+        "areaMin": 302.51,
+        "areaMax": 302.51,
+        "bedrooms": 4,
+        "suites": 4,
+        "bathrooms": 7,
+        "parking": 4,
+        "garden": true,
+        "staff": true,
+        "pool": true,
+        "sauna": true,
+        "duplex": true,
+        "apartmentType": "penthouse-duplex",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "sawasdee",
+          "floorMin": 14,
+          "floorMax": 15,
+          "columns": "",
+          "unit": "1401"
+        }
+      ]
+    },
+    {
+      "id": "shanti-321",
+      "available": true,
+      "priceBrl": 6460000,
+      "parentId": null,
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🪴 💧 🛎️",
+          "characteristics": "321,12 м² · 🚿 6 · 🚗 4",
+          "location": "🏢 Shanti · этаж: 15 · квартира 1501"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "Пентхаус · 321 м²",
+        "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp"
+      },
+      "spec": {
+        "areaMin": 321.12,
+        "areaMax": 321.12,
+        "bedrooms": 4,
+        "suites": 4,
+        "bathrooms": 6,
+        "parking": 4,
+        "garden": true,
+        "staff": true,
+        "pool": true,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "penthouse",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "shanti",
+          "floorMin": 15,
+          "floorMax": 15,
+          "columns": "",
+          "unit": "1501"
+        }
+      ]
+    }
+  ],
+  "territoryArea": 8032,
+  "buildings": [
+    {
+      "id": "shanti",
+      "name": "Shanti",
+      "active": true
+    },
+    {
+      "id": "sawasdee",
+      "name": "Sawasdee",
+      "active": true
+    },
+    {
+      "id": "siam",
+      "name": "Siam",
+      "active": true
+    }
+  ],
+  "buildingMode": "multiple",
+  "technical": {
+    "total": 245,
+    "floors": 14,
+    "perFloor": null,
+    "parkingLevels": 2,
+    "guestParking": null,
+    "penthouseFloor": true,
+    "parkingSize": "5 × 2,5 м",
+    "types": [
+      {
+        "name": "3 спальни",
+        "area": "127–145",
+        "count": 135,
+        "bedrooms": 3,
+        "apartmentType": "standard",
+        "areaMin": 127.0,
+        "areaMax": 145.0,
+        "sold": false
+      },
+      {
+        "name": "4 спальни",
+        "area": "172–203",
+        "count": 91,
+        "bedrooms": 4,
+        "apartmentType": "standard",
+        "areaMin": 172.0,
+        "areaMax": 203.0,
+        "sold": false
+      },
+      {
+        "name": "Garden · 3 спальни",
+        "area": "162–227",
+        "count": 3,
+        "bedrooms": 3,
+        "apartmentType": "garden",
+        "areaMin": 162.0,
+        "areaMax": 227.0,
+        "sold": false
+      },
+      {
+        "name": "Garden · 4 спальни",
+        "area": "222",
+        "count": 4,
+        "bedrooms": 4,
+        "apartmentType": "garden",
+        "areaMin": 222.0,
+        "areaMax": 222.0,
+        "sold": false
+      },
+      {
+        "name": "Одноуровневые пентхаусы · 4 спальни",
+        "area": "249–405",
+        "count": 9,
+        "bedrooms": 4,
+        "apartmentType": "penthouse",
+        "areaMin": 249.0,
+        "areaMax": 405.0,
+        "sold": false
+      },
+      {
+        "name": "Двухуровневые пентхаусы · 4 спальни",
+        "area": "309–400",
+        "count": 3,
+        "bedrooms": 4,
+        "apartmentType": "penthouse-duplex",
+        "areaMin": 309.0,
+        "areaMax": 400.0,
+        "sold": false
+      }
+    ]
+  },
+  "longDescription": "",
+  "location": {
+    "state": "RJ",
+    "city": "Rio de Janeiro",
+    "district": "Barra da Tijuca",
+    "neighborhood": "Península",
+    "address": "",
+    "mapsUrl": "",
+    "latitude": null,
+    "longitude": null
+  },
+  "completionMonth": "2027-09",
+  "completed": false,
+  "architectureDesign": {
+    "architecture": "FEU Arquitetura",
+    "interiors": "Studio RO+CA",
+    "landscape": "Benedito Abbud",
+    "development": "Tegra",
+    "jointDevelopment": "Carvalho Hosken"
+  },
+  "countryId": "brazil",
+  "cityId": "rio-de-janeiro",
+  "uid": "br-rio-tegra-gran-thai",
+  "priceUpdatedAt": null,
+  "source": null
+}
