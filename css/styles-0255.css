@@ -2742,3 +2742,5 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .installment-disclaimer,.currency-note,[data-currency-note]{font-size:12px;line-height:1.4;text-indent:0;color:#666;}
 
 .bc-amenities h3{font-size:14px;font-weight:600;margin:18px 0 8px}.bc-amenities ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 16px;list-style:none;padding:0;margin:0}.bc-amenities li{font-size:14px;line-height:1.4;margin:0;overflow-wrap:anywhere}@media(max-width:760px){.bc-amenities ul{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:380px){.bc-amenities ul{grid-template-columns:1fr}}
+
+.bc-public-fold>summary{cursor:pointer;font-weight:600;font-size:1.1rem;padding:12px 14px;background:#e0e8db;border-radius:8px}.bc-public-fold[open]>summary{margin-bottom:16px}
