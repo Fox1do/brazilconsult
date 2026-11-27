@@ -6,6 +6,485 @@
     "state": "RJ",
     "latitude": -22.9068,
     "longitude": -43.1729,
-    "zoom": 11
+    "zoom": 11,
+    "districts": [
+      {
+        "name": "Barra da Tijuca",
+        "neighborhoods": [
+          "Península",
+          "Jardim Oceânico",
+          "ABM",
+          "Nova Ipanema",
+          "Novo Leblon",
+          "Mandala",
+          "Riviera da Lagoa",
+          "Santa Mônica",
+          "Barra Sul",
+          "Jardim Marapendi"
+        ]
+      },
+      {
+        "name": "Recreio dos Bandeirantes",
+        "neighborhoods": [
+          "Pontal Oceânico",
+          "Gleba A",
+          "Gleba B",
+          "Gleba C",
+          "Barra Bonita",
+          "Nova Barra"
+        ]
+      },
+      {
+        "name": "Barra Olímpica",
+        "neighborhoods": [
+          "Cidade Jardim",
+          "Rio 2",
+          "Ilha Pura",
+          "Villas da Barra",
+          "Metropolitano"
+        ]
+      },
+      {
+        "name": "Jacarepaguá",
+        "neighborhoods": []
+      },
+      {
+        "name": "Freguesia (Jacarepaguá)",
+        "neighborhoods": []
+      },
+      {
+        "name": "Anil",
+        "neighborhoods": []
+      },
+      {
+        "name": "Camorim",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vargem Pequena",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vargem Grande",
+        "neighborhoods": []
+      },
+      {
+        "name": "Itanhangá",
+        "neighborhoods": []
+      },
+      {
+        "name": "Joá",
+        "neighborhoods": []
+      },
+      {
+        "name": "Leblon",
+        "neighborhoods": [
+          "Alto Leblon"
+        ]
+      },
+      {
+        "name": "Ipanema",
+        "neighborhoods": []
+      },
+      {
+        "name": "Copacabana",
+        "neighborhoods": [
+          "Bairro Peixoto",
+          "Posto 6"
+        ]
+      },
+      {
+        "name": "Leme",
+        "neighborhoods": []
+      },
+      {
+        "name": "Botafogo",
+        "neighborhoods": []
+      },
+      {
+        "name": "Flamengo",
+        "neighborhoods": []
+      },
+      {
+        "name": "Lagoa",
+        "neighborhoods": [
+          "Fonte da Saudade"
+        ]
+      },
+      {
+        "name": "Jardim Botânico",
+        "neighborhoods": []
+      },
+      {
+        "name": "Gávea",
+        "neighborhoods": [
+          "Alto Gávea"
+        ]
+      },
+      {
+        "name": "São Conrado",
+        "neighborhoods": []
+      },
+      {
+        "name": "Urca",
+        "neighborhoods": []
+      },
+      {
+        "name": "Humaitá",
+        "neighborhoods": []
+      },
+      {
+        "name": "Laranjeiras",
+        "neighborhoods": []
+      },
+      {
+        "name": "Cosme Velho",
+        "neighborhoods": []
+      },
+      {
+        "name": "Catete",
+        "neighborhoods": []
+      },
+      {
+        "name": "Glória",
+        "neighborhoods": []
+      },
+      {
+        "name": "Centro",
+        "neighborhoods": []
+      },
+      {
+        "name": "Santo Cristo",
+        "neighborhoods": [
+          "Porto Maravilha"
+        ]
+      },
+      {
+        "name": "Gamboa",
+        "neighborhoods": [
+          "Porto Maravilha"
+        ]
+      },
+      {
+        "name": "Saúde",
+        "neighborhoods": [
+          "Porto Maravilha"
+        ]
+      },
+      {
+        "name": "Lapa",
+        "neighborhoods": []
+      },
+      {
+        "name": "Santa Teresa",
+        "neighborhoods": []
+      },
+      {
+        "name": "Cidade Nova",
+        "neighborhoods": []
+      },
+      {
+        "name": "São Cristóvão",
+        "neighborhoods": []
+      },
+      {
+        "name": "Tijuca",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vila Isabel",
+        "neighborhoods": []
+      },
+      {
+        "name": "Grajaú",
+        "neighborhoods": []
+      },
+      {
+        "name": "Maracanã",
+        "neighborhoods": []
+      },
+      {
+        "name": "Méier",
+        "neighborhoods": []
+      },
+      {
+        "name": "Cachambi",
+        "neighborhoods": []
+      },
+      {
+        "name": "Del Castilho",
+        "neighborhoods": []
+      },
+      {
+        "name": "Andaraí",
+        "neighborhoods": []
+      },
+      {
+        "name": "Jardim Guanabara",
+        "neighborhoods": []
+      },
+      {
+        "name": "Campo Grande",
+        "neighborhoods": []
+      },
+      {
+        "name": "Guaratiba",
+        "neighborhoods": []
+      },
+      {
+        "name": "Barra de Guaratiba",
+        "neighborhoods": []
+      },
+      {
+        "name": "Pedra de Guaratiba",
+        "neighborhoods": []
+      }
+    ]
+  },
+  {
+    "id": "sao-paulo",
+    "countryId": "brazil",
+    "name": "Сан-Паулу",
+    "state": "SP",
+    "latitude": -23.5505,
+    "longitude": -46.6333,
+    "zoom": 11,
+    "districts": [
+      {
+        "name": "Pinheiros",
+        "neighborhoods": [
+          "Vila Madalena",
+          "Vila Beatriz"
+        ]
+      },
+      {
+        "name": "Alto de Pinheiros",
+        "neighborhoods": []
+      },
+      {
+        "name": "Perdizes",
+        "neighborhoods": [
+          "Pompéia",
+          "Sumaré"
+        ]
+      },
+      {
+        "name": "Lapa",
+        "neighborhoods": [
+          "Alto da Lapa",
+          "Vila Romana"
+        ]
+      },
+      {
+        "name": "Vila Leopoldina",
+        "neighborhoods": []
+      },
+      {
+        "name": "Butantã",
+        "neighborhoods": []
+      },
+      {
+        "name": "Morumbi",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vila Sônia",
+        "neighborhoods": []
+      },
+      {
+        "name": "Itaim Bibi",
+        "neighborhoods": [
+          "Vila Olímpia",
+          "Brooklin Novo"
+        ]
+      },
+      {
+        "name": "Moema",
+        "neighborhoods": [
+          "Moema Pássaros",
+          "Moema Índios"
+        ]
+      },
+      {
+        "name": "Vila Nova Conceição",
+        "neighborhoods": []
+      },
+      {
+        "name": "Campo Belo",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vila Mariana",
+        "neighborhoods": []
+      },
+      {
+        "name": "Saúde",
+        "neighborhoods": []
+      },
+      {
+        "name": "Ipiranga",
+        "neighborhoods": []
+      },
+      {
+        "name": "Santo Amaro",
+        "neighborhoods": [
+          "Chácara Santo Antônio"
+        ]
+      },
+      {
+        "name": "Campo Grande",
+        "neighborhoods": []
+      },
+      {
+        "name": "Jardim São Luís",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vila Andrade",
+        "neighborhoods": [
+          "Panamby"
+        ]
+      },
+      {
+        "name": "Jabaquara",
+        "neighborhoods": []
+      },
+      {
+        "name": "Jardim Paulista",
+        "neighborhoods": [
+          "Jardim América",
+          "Jardim Europa",
+          "Jardim Paulista",
+          "Jardim Paulistano"
+        ]
+      },
+      {
+        "name": "Bela Vista",
+        "neighborhoods": [
+          "Bixiga"
+        ]
+      },
+      {
+        "name": "Consolação",
+        "neighborhoods": [
+          "Higienópolis"
+        ]
+      },
+      {
+        "name": "Liberdade",
+        "neighborhoods": []
+      },
+      {
+        "name": "República",
+        "neighborhoods": []
+      },
+      {
+        "name": "Sé",
+        "neighborhoods": []
+      },
+      {
+        "name": "Santa Cecília",
+        "neighborhoods": []
+      },
+      {
+        "name": "Bom Retiro",
+        "neighborhoods": []
+      },
+      {
+        "name": "Tatuapé",
+        "neighborhoods": []
+      },
+      {
+        "name": "Mooca",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vila Prudente",
+        "neighborhoods": []
+      },
+      {
+        "name": "Anália Franco",
+        "neighborhoods": []
+      },
+      {
+        "name": "Belém",
+        "neighborhoods": []
+      },
+      {
+        "name": "Santana",
+        "neighborhoods": []
+      },
+      {
+        "name": "Tucuruvi",
+        "neighborhoods": []
+      },
+      {
+        "name": "Mandaqui",
+        "neighborhoods": []
+      },
+      {
+        "name": "Casa Verde",
+        "neighborhoods": []
+      }
+    ]
+  },
+  {
+    "id": "taubate",
+    "countryId": "brazil",
+    "name": "Taubaté",
+    "state": "SP",
+    "latitude": -23.0264,
+    "longitude": -45.5553,
+    "zoom": 11,
+    "districts": [
+      {
+        "name": "Centro",
+        "neighborhoods": []
+      },
+      {
+        "name": "Jardim das Nações",
+        "neighborhoods": []
+      },
+      {
+        "name": "Independência",
+        "neighborhoods": []
+      },
+      {
+        "name": "Estiva",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vila São José",
+        "neighborhoods": []
+      },
+      {
+        "name": "Vila Ema",
+        "neighborhoods": []
+      },
+      {
+        "name": "Jardim Santa Clara",
+        "neighborhoods": []
+      },
+      {
+        "name": "Parque Senhor do Bonfim",
+        "neighborhoods": []
+      },
+      {
+        "name": "Quiririm",
+        "neighborhoods": []
+      },
+      {
+        "name": "Piracangaguá",
+        "neighborhoods": []
+      },
+      {
+        "name": "Barranco",
+        "neighborhoods": []
+      },
+      {
+        "name": "Esplanada Independência",
+        "neighborhoods": []
+      }
+    ]
   }
 ]
