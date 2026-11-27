@@ -17,48 +17,48 @@
       <link rel="canonical" href="https://brazilconsult.com/properties/brazil/rio-de-janeiro/tegra/gran-thai/">
       
       <style id="gran-reference-layout">
-.gran-detail{max-width:1500px!important}
-.gran-reference-intro{margin:0 0 22px!important}
-.gran-reference-intro .property-location{font-size:clamp(1rem,2vw,1.85rem);letter-spacing:0;color:#666;margin:0 0 24px!important}
-.gran-reference-intro h1{font-size:clamp(2.5rem,4vw,3.1rem)!important;color:#21482f!important;margin:0 0 28px!important;line-height:1.15}
-.gran-reference-intro .gran-developer,.gran-reference-intro .gran-territory{font-size:clamp(1.15rem,2vw,1.85rem);line-height:1.45;margin:0 0 16px!important;color:#171717}
-.gran-reference-intro .gran-territory{margin-bottom:36px!important}
-.gran-reference-intro .gran-territory span{font-weight:400}
-.gran-reference-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:26px 0 44px}
-.gran-reference-highlight{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;min-height:110px;font-size:clamp(1.05rem,2vw,1.85rem);line-height:1.3;color:#171717}
-.gran-reference-icon{font-size:clamp(2.1rem,3vw,3rem);line-height:1}
-.gran-reference-facts{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important;margin:0!important}
-.gran-reference-facts>div{min-width:0;border-radius:22px!important;padding:24px!important;background:#52785d!important;color:#fff!important;min-height:160px}
-.gran-reference-facts>div+div{background:#527d90!important}
-.gran-reference-facts .property-fact-label{font-size:clamp(1.05rem,2vw,1.8rem);color:#fff!important;margin:0 0 22px!important}
-.gran-reference-facts h2{font-size:clamp(1.45rem,2.5vw,2.4rem)!important;line-height:1.25;color:#fff!important;margin:0!important}
-.gran-reference-installment{font-size:clamp(1rem,1.8vw,1.7rem);color:#fff;margin:22px 0 0!important}
-.gran-detail>a[data-lightbox]{display:block;margin:0 0 24px}
-.gran-detail>a[data-lightbox] img{display:block;width:100%;height:auto;max-height:none;object-fit:cover;border-radius:28px}
-@media(max-width:700px){
- .gran-reference-intro .property-location{font-size:1rem;margin-bottom:16px!important}
- .gran-reference-intro h1{font-size:2.35rem!important;margin-bottom:18px!important}
- .gran-reference-intro .gran-developer,.gran-reference-intro .gran-territory{font-size:1.08rem}
- .gran-reference-intro .gran-territory{margin-bottom:24px!important}
- .gran-reference-highlights{gap:8px;margin:20px 0 28px}
- .gran-reference-highlight{font-size:.9rem;gap:9px;min-height:90px}
- .gran-reference-icon{font-size:2rem}
- .gran-reference-facts{grid-template-columns:1fr!important;gap:12px!important}
- .gran-reference-facts>div{min-height:0;padding:20px!important;border-radius:16px!important}
- .gran-reference-facts .property-fact-label{font-size:1.05rem;margin-bottom:12px!important}
- .gran-reference-facts h2{font-size:1.45rem!important}
- .gran-reference-installment{font-size:1.05rem;margin-top:12px!important}
- .gran-detail>a[data-lightbox] img{border-radius:16px}
-}
-
-/* v0.328: final hero cleanup */
+/* v0.329 — tighter desktop proportions, preserving the reference layout */
 body .property-detail-section > .container.gran-detail{
-  width:calc(100% - 64px)!important;
-  max-width:1500px!important;
+  box-sizing:border-box!important;
+  width:calc(100% - 48px)!important;
+  max-width:1460px!important;
 }
+.gran-detail{max-width:1460px!important}
+.gran-reference-intro{margin:0 0 18px!important}
+.gran-reference-intro .property-location{font-size:clamp(1rem,1.7vw,1.65rem);letter-spacing:0;color:#666;margin:0 0 20px!important}
+.gran-reference-intro h1{font-size:clamp(2.4rem,3.6vw,3rem)!important;color:#21482f!important;margin:0 0 22px!important;line-height:1.12}
+.gran-reference-intro .gran-developer,.gran-reference-intro .gran-territory{font-size:clamp(1.1rem,1.7vw,1.55rem);line-height:1.4;margin:0 0 13px!important;color:#171717}
+.gran-reference-intro .gran-territory{margin-bottom:28px!important}
+.gran-reference-intro .gran-territory span{font-weight:400}
+.gran-reference-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0 30px}
+.gran-reference-highlight{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;min-height:96px;font-size:clamp(1rem,1.65vw,1.55rem);line-height:1.25;color:#171717}
+.gran-reference-icon{font-size:clamp(2rem,2.6vw,2.6rem);line-height:1}
+.gran-reference-facts{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important;margin:0!important}
+.gran-reference-facts>div{box-sizing:border-box;min-width:0;border-radius:20px!important;padding:22px 24px!important;background:#52785d!important;color:#fff!important;min-height:190px}
+.gran-reference-facts>div+div{background:#527d90!important}
+.gran-reference-facts .property-fact-label{font-size:clamp(1rem,1.55vw,1.45rem);color:#fff!important;margin:0 0 16px!important}
+.gran-reference-facts h2{font-size:clamp(1.4rem,2.2vw,2.1rem)!important;line-height:1.22;color:#fff!important;margin:0!important}
+.gran-reference-installment{font-size:clamp(1rem,1.5vw,1.45rem);color:#fff;margin:16px 0 0!important}
+.gran-detail>a[data-lightbox]{display:block;margin:0 0 24px}
+.gran-detail>a[data-lightbox] img{display:block;width:100%;height:auto;max-height:none;object-fit:cover;border-radius:26px}
 .gran-detail .bc-highlights{display:none!important}
 .gran-reference-facts .installment-note{display:none!important}
-
+@media(max-width:700px){
+ body .property-detail-section > .container.gran-detail{width:calc(100% - 32px)!important}
+ .gran-reference-intro .property-location{font-size:1rem;margin-bottom:14px!important}
+ .gran-reference-intro h1{font-size:2.25rem!important;margin-bottom:16px!important}
+ .gran-reference-intro .gran-developer,.gran-reference-intro .gran-territory{font-size:1.05rem}
+ .gran-reference-intro .gran-territory{margin-bottom:22px!important}
+ .gran-reference-highlights{gap:8px;margin:18px 0 24px}
+ .gran-reference-highlight{font-size:.88rem;gap:8px;min-height:82px}
+ .gran-reference-icon{font-size:1.9rem}
+ .gran-reference-facts{grid-template-columns:1fr!important;gap:10px!important}
+ .gran-reference-facts>div{min-height:0;padding:18px!important;border-radius:15px!important}
+ .gran-reference-facts .property-fact-label{font-size:1rem;margin-bottom:10px!important}
+ .gran-reference-facts h2{font-size:1.4rem!important}
+ .gran-reference-installment{font-size:1rem;margin-top:10px!important}
+ .gran-detail>a[data-lightbox] img{border-radius:15px}
+}
 </style>
 </head>
     
