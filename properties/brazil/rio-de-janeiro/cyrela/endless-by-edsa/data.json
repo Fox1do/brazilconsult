@@ -1,0 +1,195 @@
+{
+  "id": "endless-by-edsa",
+  "title": "Endless by Edsa",
+  "developer": "cyrela",
+  "developerName": "Cyrela",
+  "page": "brazil/rio-de-janeiro/cyrela/endless-by-edsa/",
+  "active": true,
+  "plans": [
+    {
+      "id": "98a34c92-334e-4012-aad4-236b1731abc9",
+      "parentId": null,
+      "available": true,
+      "priceBrl": 1235000,
+      "spec": {
+        "apartmentType": "standard",
+        "bedrooms": 2,
+        "areaMin": 71,
+        "parking": 1,
+        "bathrooms": 2,
+        "suites": 1
+      },
+      "locations": [],
+      "technical": {
+        "count": null,
+        "sold": false
+      },
+      "typePriceMigrated": true
+    },
+    {
+      "id": "bb333540-8c9e-4f2a-9fed-35c4941f1a32",
+      "parentId": "98a34c92-334e-4012-aad4-236b1731abc9",
+      "available": true,
+      "locations": [],
+      "media": {
+        "id": "2f5cfd60-e20c-4b3c-a398-0d6ed7ddbb3d",
+        "name": "plantas_Page_17 copy.jpg",
+        "original": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/2cc9d2b7368889ab63c3ca88e1cd7b6802b6c86e.webp",
+        "src": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/2cc9d2b7368889ab63c3ca88e1cd7b6802b6c86e.webp"
+      }
+    },
+    {
+      "id": "03e3db70-6b7a-47c5-8331-e4900905ecc7",
+      "parentId": null,
+      "available": true,
+      "priceBrl": null,
+      "spec": {
+        "apartmentType": "standard",
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "suites": 1,
+        "parking": 1,
+        "areaMin": 90
+      },
+      "locations": [],
+      "technical": {
+        "count": null,
+        "sold": false
+      },
+      "typePriceMigrated": true
+    },
+    {
+      "id": "6b73e0fd-69a2-42b7-b07a-cf4d9ce69dfa",
+      "parentId": "03e3db70-6b7a-47c5-8331-e4900905ecc7",
+      "available": true,
+      "locations": [],
+      "media": {
+        "id": "088165bf-4947-43ea-b919-33eafd6595d1",
+        "name": "plantas_Page_20_3q_90.jpg",
+        "original": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/7181b559b806cb287406e4cb85f1590373dd7797.webp",
+        "src": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/7181b559b806cb287406e4cb85f1590373dd7797.webp"
+      }
+    },
+    {
+      "id": "2ed9909b-06aa-40a6-b003-ad1b2987ac70",
+      "parentId": null,
+      "available": true,
+      "priceBrl": 1858000,
+      "spec": {
+        "apartmentType": "standard",
+        "bedrooms": 4,
+        "areaMin": 118,
+        "bathrooms": 3,
+        "suites": 1
+      },
+      "locations": [],
+      "technical": {
+        "count": null,
+        "sold": false
+      },
+      "typePriceMigrated": true
+    }
+  ],
+  "technical": {
+    "types": [],
+    "total": 655,
+    "floors": 58
+  },
+  "buildings": [
+    {
+      "id": "1f62aff7-ef12-439a-958b-c484652b7771",
+      "name": "Parque",
+      "active": true
+    },
+    {
+      "id": "7bf0353c-b5e6-4b67-8ab7-f5e926c58333",
+      "name": "Lagoa",
+      "active": true
+    },
+    {
+      "id": "2bcd616c-f044-44b2-ac01-b2693d87adeb",
+      "name": "Reserva",
+      "active": true
+    },
+    {
+      "id": "cd4a9102-a3e3-478f-9248-cf6f928c59a2",
+      "name": "Pedra da Gávea",
+      "active": true
+    }
+  ],
+  "buildingMode": "multiple",
+  "location": {
+    "city": "Рио-де-Жанейро",
+    "state": "RJ",
+    "latitude": null,
+    "longitude": null,
+    "neighborhood": "Península"
+  },
+  "sales": {
+    "status": "none"
+  },
+  "hero": [
+    {
+      "id": "2b373d6c-7755-430c-9d70-cfebeb6db2c3",
+      "name": "Ilustração Artística - Fachada do edifício Pedra da Gávea .jpg",
+      "original": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/main/3064749acb2fc3943160761cb4afc8ad94758fa2.webp",
+      "src": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/main/3064749acb2fc3943160761cb4afc8ad94758fa2.webp"
+    }
+  ],
+  "gallery": [],
+  "locationGallery": [],
+  "countryId": "brazil",
+  "cityId": "rio-de-janeiro",
+  "uid": "c830f65d-8c3b-4df9-9a13-7e99ce1688c5",
+  "priceUpdatedAt": "2026-11-27T20:42:04.526Z",
+  "source": null,
+  "amenities": [
+    "outdoor-pool",
+    "pool-25",
+    "heated-indoor",
+    "kids-pool",
+    "gym",
+    "sand",
+    "massage",
+    "relax",
+    "spa",
+    "playroom",
+    "playground",
+    "party",
+    "barbecue",
+    "gourmet",
+    "coworking",
+    "pet-care",
+    "market",
+    "laundry",
+    "delivery",
+    "visitor-parking",
+    "bike",
+    "ev",
+    "security",
+    "garden",
+    "walk",
+    "picnic"
+  ],
+  "highlights": [
+    "near-school",
+    "near-park",
+    "near-kindergarten"
+  ],
+  "surroundings": [],
+  "architectureDesign": {
+    "landscape": "Edsa",
+    "development": "RJZ Cyrela",
+    "architecture": "Sergio Gattáss Arquitetos Associados",
+    "interiors": "Carol Miluzzi Arquitetura"
+  },
+  "completionMonth": "2028-12",
+  "completion": "декабрь 2028 г.",
+  "longDescription": "Жилой комплекс бизнес-класса в престижном микрорайоне Península с авторским ландшафтным дизайном от известного американского бюро EDSA.",
+  "image": "brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/main/3064749acb2fc3943160761cb4afc8ad94758fa2.webp",
+  "priceBrl": 1235000,
+  "price": "R$ 1 235 000",
+  "district": "Península",
+  "city": "Рио-де-Жанейро",
+  "description": "Застройщик Cyrela"
+}

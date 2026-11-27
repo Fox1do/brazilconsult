@@ -142,102 +142,6 @@
         }
       },
       {
-        "id": "sawasdee-128-odd",
-        "available": true,
-        "priceBrl": null,
-        "parentId": "three-standard",
-        "translations": {
-          "ru": {
-            "title": "3 спальни",
-            "characteristics": "125–128 м² · 🚿 5 · 🚗 2",
-            "location": "🏢 Sawasdee · этажи: 1–13"
-          },
-          "pt": null
-        },
-        "search": null,
-        "spec": {
-          "areaMin": 125,
-          "areaMax": 128,
-          "bedrooms": 3,
-          "suites": 3,
-          "bathrooms": 5,
-          "parking": 2,
-          "garden": false,
-          "staff": false,
-          "pool": false,
-          "sauna": false,
-          "duplex": false,
-          "apartmentType": "standard",
-          "sun": "",
-          "views": []
-        },
-        "locations": [
-          {
-            "buildingId": "sawasdee",
-            "floorMin": 1,
-            "floorMax": 13,
-            "columns": "",
-            "unit": ""
-          }
-        ],
-        "media": {
-          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
-          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
-          "caption": "",
-          "category": "Другое"
-        }
-      },
-      {
-        "id": "shanti-128",
-        "available": true,
-        "priceBrl": 2210000,
-        "parentId": "three-standard",
-        "translations": {
-          "ru": {
-            "title": "3 спальни",
-            "characteristics": "128 м² · 🚿 5 · 🚗 2",
-            "location": "🏢 Shanti · этажи: 1–14"
-          },
-          "pt": null
-        },
-        "search": {
-          "rooms": "3",
-          "area": "128 м²",
-          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan.webp"
-        },
-        "spec": {
-          "areaMin": 128,
-          "areaMax": 128,
-          "bedrooms": 3,
-          "suites": 3,
-          "bathrooms": 5,
-          "parking": 2,
-          "garden": false,
-          "staff": false,
-          "pool": false,
-          "sauna": false,
-          "duplex": false,
-          "apartmentType": "standard",
-          "sun": "",
-          "views": []
-        },
-        "locations": [
-          {
-            "buildingId": "shanti",
-            "floorMin": 1,
-            "floorMax": 14,
-            "columns": "",
-            "unit": ""
-          }
-        ],
-        "media": {
-          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
-          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
-          "caption": "",
-          "category": "Другое"
-        }
-      },
-      {
         "id": "sawasdee-143-151",
         "available": true,
         "priceBrl": 2405510,
@@ -557,56 +461,6 @@
         }
       },
       {
-        "id": "sawasdee-143-151-variant-2",
-        "available": true,
-        "priceBrl": 2405510,
-        "parentId": "sawasdee-143-151",
-        "translations": {
-          "ru": {
-            "title": "3 спальни 🛎️",
-            "characteristics": "143–151 м² · 🚿 5 · 🚗 2",
-            "location": "🏢 Sawasdee · этажи: 1–14"
-          },
-          "pt": null
-        },
-        "search": {
-          "rooms": "3",
-          "area": "143–151 м²",
-          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
-        },
-        "spec": {
-          "areaMin": 143,
-          "areaMax": 151,
-          "bedrooms": 3,
-          "suites": 3,
-          "bathrooms": 5,
-          "parking": 2,
-          "garden": false,
-          "staff": true,
-          "pool": false,
-          "sauna": false,
-          "duplex": false,
-          "apartmentType": "standard",
-          "sun": "",
-          "views": []
-        },
-        "locations": [
-          {
-            "buildingId": "sawasdee",
-            "floorMin": 1,
-            "floorMax": 14,
-            "columns": "",
-            "unit": ""
-          }
-        ],
-        "media": {
-          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
-          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
-          "caption": "",
-          "category": "Другое"
-        }
-      },
-      {
         "id": "shanti-174-variant-1",
         "available": true,
         "priceBrl": 3120000,
@@ -887,28 +741,13 @@
     ],
     "gallery": [
       {
-        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
-        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
-        "caption": "Gran Thai — визуализация входной группы и фасада",
-        "category": "Входная группа"
-      },
-      {
-        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
-        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
-        "caption": "Gran Thai — визуализация открытого бассейна",
-        "category": "Бассейн"
-      },
-      {
-        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
-        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
-        "caption": "Gran Thai — лаунж-зона у бассейна",
-        "category": "Бассейн"
-      },
-      {
-        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
-        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
-        "caption": "Gran Thai — тренажёрный зал",
-        "category": "Тренажёрный зал"
+        "id": "21d366b9-14c9-411c-be38-36fe9780075c",
+        "name": "Ilustração Artística - Fachada do edifício Pedra da Gávea .jpg",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/3064749acb2fc3943160761cb4afc8ad94758fa2.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/3064749acb2fc3943160761cb4afc8ad94758fa2.webp",
+        "category": "Фасад здания",
+        "caption": "",
+        "captionPt": ""
       }
     ],
     "locationGallery": [
@@ -1448,5 +1287,200 @@
       "delivery"
     ],
     "highlights": []
+  },
+  {
+    "id": "endless-by-edsa",
+    "title": "Endless by Edsa",
+    "developer": "cyrela",
+    "developerName": "Cyrela",
+    "page": "brazil/rio-de-janeiro/cyrela/endless-by-edsa/",
+    "active": true,
+    "plans": [
+      {
+        "id": "98a34c92-334e-4012-aad4-236b1731abc9",
+        "parentId": null,
+        "available": true,
+        "priceBrl": 1235000,
+        "spec": {
+          "apartmentType": "standard",
+          "bedrooms": 2,
+          "areaMin": 71,
+          "parking": 1,
+          "bathrooms": 2,
+          "suites": 1
+        },
+        "locations": [],
+        "technical": {
+          "count": null,
+          "sold": false
+        },
+        "typePriceMigrated": true
+      },
+      {
+        "id": "bb333540-8c9e-4f2a-9fed-35c4941f1a32",
+        "parentId": "98a34c92-334e-4012-aad4-236b1731abc9",
+        "available": true,
+        "locations": [],
+        "media": {
+          "id": "2f5cfd60-e20c-4b3c-a398-0d6ed7ddbb3d",
+          "name": "plantas_Page_17 copy.jpg",
+          "original": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/2cc9d2b7368889ab63c3ca88e1cd7b6802b6c86e.webp",
+          "src": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/2cc9d2b7368889ab63c3ca88e1cd7b6802b6c86e.webp"
+        }
+      },
+      {
+        "id": "03e3db70-6b7a-47c5-8331-e4900905ecc7",
+        "parentId": null,
+        "available": true,
+        "priceBrl": null,
+        "spec": {
+          "apartmentType": "standard",
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "suites": 1,
+          "parking": 1,
+          "areaMin": 90
+        },
+        "locations": [],
+        "technical": {
+          "count": null,
+          "sold": false
+        },
+        "typePriceMigrated": true
+      },
+      {
+        "id": "6b73e0fd-69a2-42b7-b07a-cf4d9ce69dfa",
+        "parentId": "03e3db70-6b7a-47c5-8331-e4900905ecc7",
+        "available": true,
+        "locations": [],
+        "media": {
+          "id": "088165bf-4947-43ea-b919-33eafd6595d1",
+          "name": "plantas_Page_20_3q_90.jpg",
+          "original": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/7181b559b806cb287406e4cb85f1590373dd7797.webp",
+          "src": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/floorplans/7181b559b806cb287406e4cb85f1590373dd7797.webp"
+        }
+      },
+      {
+        "id": "2ed9909b-06aa-40a6-b003-ad1b2987ac70",
+        "parentId": null,
+        "available": true,
+        "priceBrl": 1858000,
+        "spec": {
+          "apartmentType": "standard",
+          "bedrooms": 4,
+          "areaMin": 118,
+          "bathrooms": 3,
+          "suites": 1
+        },
+        "locations": [],
+        "technical": {
+          "count": null,
+          "sold": false
+        },
+        "typePriceMigrated": true
+      }
+    ],
+    "technical": {
+      "types": [],
+      "total": 655,
+      "floors": 58
+    },
+    "buildings": [
+      {
+        "id": "1f62aff7-ef12-439a-958b-c484652b7771",
+        "name": "Parque",
+        "active": true
+      },
+      {
+        "id": "7bf0353c-b5e6-4b67-8ab7-f5e926c58333",
+        "name": "Lagoa",
+        "active": true
+      },
+      {
+        "id": "2bcd616c-f044-44b2-ac01-b2693d87adeb",
+        "name": "Reserva",
+        "active": true
+      },
+      {
+        "id": "cd4a9102-a3e3-478f-9248-cf6f928c59a2",
+        "name": "Pedra da Gávea",
+        "active": true
+      }
+    ],
+    "buildingMode": "multiple",
+    "location": {
+      "city": "Рио-де-Жанейро",
+      "state": "RJ",
+      "latitude": null,
+      "longitude": null,
+      "neighborhood": "Península"
+    },
+    "sales": {
+      "status": "none"
+    },
+    "hero": [
+      {
+        "id": "2b373d6c-7755-430c-9d70-cfebeb6db2c3",
+        "name": "Ilustração Artística - Fachada do edifício Pedra da Gávea .jpg",
+        "original": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/main/3064749acb2fc3943160761cb4afc8ad94758fa2.webp",
+        "src": "../properties/brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/main/3064749acb2fc3943160761cb4afc8ad94758fa2.webp"
+      }
+    ],
+    "gallery": [],
+    "locationGallery": [],
+    "countryId": "brazil",
+    "cityId": "rio-de-janeiro",
+    "uid": "c830f65d-8c3b-4df9-9a13-7e99ce1688c5",
+    "priceUpdatedAt": "2026-11-27T20:42:04.526Z",
+    "source": null,
+    "amenities": [
+      "outdoor-pool",
+      "pool-25",
+      "heated-indoor",
+      "kids-pool",
+      "gym",
+      "sand",
+      "massage",
+      "relax",
+      "spa",
+      "playroom",
+      "playground",
+      "party",
+      "barbecue",
+      "gourmet",
+      "coworking",
+      "pet-care",
+      "market",
+      "laundry",
+      "delivery",
+      "visitor-parking",
+      "bike",
+      "ev",
+      "security",
+      "garden",
+      "walk",
+      "picnic"
+    ],
+    "highlights": [
+      "near-school",
+      "near-park",
+      "near-kindergarten"
+    ],
+    "surroundings": [],
+    "architectureDesign": {
+      "landscape": "Edsa",
+      "development": "RJZ Cyrela",
+      "architecture": "Sergio Gattáss Arquitetos Associados",
+      "interiors": "Carol Miluzzi Arquitetura"
+    },
+    "completionMonth": "2028-12",
+    "completion": "декабрь 2028 г.",
+    "longDescription": "Жилой комплекс бизнес-класса в престижном микрорайоне Península с авторским ландшафтным дизайном от известного американского бюро EDSA.",
+    "image": "brazil/rio-de-janeiro/cyrela/endless-by-edsa/images/main/3064749acb2fc3943160761cb4afc8ad94758fa2.webp",
+    "priceBrl": 1235000,
+    "price": "R$ 1 235 000",
+    "district": "Península",
+    "city": "Рио-де-Жанейро",
+    "description": "Застройщик Cyrela"
   }
 ]
