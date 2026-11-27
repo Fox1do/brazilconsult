@@ -1,4 +1,4 @@
-/* Property detail layout 0.336; scoped to property pages. */
+/* Property detail layout 0.341; scoped to property pages. */
 .bc-property-portal .gran-detail { max-width: 1080px; }
 .gran-detail .property-intro { margin-bottom: 12px; }
 .gran-detail .property-intro .gran-territory { margin-bottom: 14px; }
@@ -13,8 +13,8 @@
 .bc-property-hero-side .property-facts { grid-template-columns:1fr; flex:1; gap:10px; margin:0; }
 .bc-property-hero-side .property-facts > div { padding:13px 16px; display:flex; flex-direction:column; justify-content:center; }
 .bc-property-hero-side .property-facts h2 { font-size:clamp(1.25rem,2.2vw,1.75rem); overflow-wrap:anywhere; }
-.bc-property-hero + .gran-price { padding:10px 0 0; margin:0; border:0; gap:0; justify-content:flex-end; }
-.bc-property-hero + .gran-price .btn { text-align:center; justify-content:center; }
+.bc-property-hero-side > .gran-price { padding:0; margin:0; border:0; gap:0; display:flex; flex:none; }
+.bc-property-hero-side > .gran-price .btn { width:100%; min-width:0; box-sizing:border-box; text-align:center; justify-content:center; white-space:normal; }
 .bc-property-description { margin:16px 0 0; line-height:1.6; white-space:pre-line; overflow-wrap:anywhere; }
 .bc-property-description[hidden] { display:none!important; }
 .gran-detail .gran-plans { padding-top:14px; }

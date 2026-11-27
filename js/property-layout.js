@@ -17,11 +17,11 @@
   } else grid.classList.add('bc-property-hero-no-photo');
   grid.append(side);
   side.append(facts);
-  if (request) grid.after(request);
+  if (request) side.append(request);
   const description = document.createElement('p');
   description.className = 'bc-property-description';
   description.hidden = true;
-  (request || grid).after(description);
+  grid.after(description);
   // Remove only the old description fold, not other technical sections.
   for (const section of detail.querySelectorAll(':scope > .gran-tech')) {
     const fold = section.querySelector(':scope > details');
