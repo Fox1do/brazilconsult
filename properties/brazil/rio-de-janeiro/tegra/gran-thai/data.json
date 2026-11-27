@@ -946,10 +946,23 @@
   "source": null,
   "amenities": [
     "outdoor-pool",
-    "gym"
+    "gym",
+    "spa",
+    "playroom",
+    "playground",
+    "gourmet",
+    "party",
+    "barbecue",
+    "games",
+    "coworking",
+    "market",
+    "delivery",
+    "ev"
   ],
   "highlights": [
-    "pool-50"
+    "near-park",
+    "pool-25",
+    "near-kindergarten"
   ],
   "surroundings": []
 }
