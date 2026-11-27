@@ -5,3 +5,7 @@ header small{font-size:16px;font-weight:700;color:#487c65}.active-control{displa
 .plan-group{margin:12px 0;border:1px solid #d1dcd0;border-radius:10px;background:#fff}.plan-group>summary{cursor:pointer;padding:12px 14px;background:#e0e8db;border-radius:9px;font-weight:600}.plan-group>article{position:relative;margin:0;border:0;box-shadow:none}.plan-group>article>h3{display:none}.plan-group .plan-group>summary{background:#f0f3ed}.plan-group>article>.remove{position:absolute;right:8px;top:4px}
 
 .basic-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px}.basic-heading h3,.basic-heading .active-control{margin:0}.hotel-control{margin:16px 0}.nested-plans{border-top:1px solid #d1dcd0;margin-top:20px;padding-top:8px}.nested-plans>.plan-group{margin-left:8px}.nested-plans>.upload{margin-top:8px}input[type=checkbox]{accent-color:#487c65}
+
+header small{font-weight:400}
+
+aside>button{width:100%;margin:10px 0 24px}aside h2{font-size:19px}

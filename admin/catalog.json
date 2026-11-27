@@ -5,10 +5,10 @@
     "district": "Barra da Tijuca · Península",
     "description": "Застройщик Tegra",
     "price": "От R$ 2 210 000",
-    "image": "gran-thai-facade.webp?v=0.224",
-    "page": "gran-thai.html",
+    "image": "tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.224",
+    "page": "tegra/gran-thai/",
     "completion": "Сентябрь 2027",
-    "offerImage": "gran-thai-cover.webp?v=0.208",
+    "offerImage": "tegra/gran-thai/images/main/gran-thai-cover.webp?v=0.208",
     "developer": "tegra",
     "developerName": "Tegra",
     "sales": {
@@ -123,8 +123,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-sawasdee-125.webp",
-          "original": "../properties/gran-thai-plan-sawasdee-125.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-125.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-125.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -169,8 +169,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-sawasdee-128.webp",
-          "original": "../properties/gran-thai-plan-sawasdee-128.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -191,7 +191,7 @@
         "search": {
           "rooms": "3",
           "area": "128 м²",
-          "image": "gran-thai-plan.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan.webp"
         },
         "spec": {
           "areaMin": 128.0,
@@ -219,8 +219,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan.webp",
-          "original": "../properties/gran-thai-plan.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -241,7 +241,7 @@
         "search": {
           "rooms": "3",
           "area": "143–151 м²",
-          "image": "gran-thai-plan-sawasdee-12.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
         },
         "spec": {
           "areaMin": 143.0,
@@ -285,7 +285,7 @@
         "search": {
           "rooms": "4+",
           "area": "174 м²",
-          "image": "gran-thai-plan-4.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp"
         },
         "spec": {
           "areaMin": 174.0,
@@ -313,8 +313,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-4.webp",
-          "original": "../properties/gran-thai-plan-4.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -335,7 +335,7 @@
         "search": {
           "rooms": "4+",
           "area": "223 м²",
-          "image": "gran-thai-plan-garden.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp"
         },
         "spec": {
           "areaMin": 223.0,
@@ -363,8 +363,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-garden.webp",
-          "original": "../properties/gran-thai-plan-garden.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -385,7 +385,7 @@
         "search": {
           "rooms": "4+",
           "area": "Пентхаус · 302 м²",
-          "image": "gran-thai-plan-duplex.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp"
         },
         "spec": {
           "areaMin": 302.51,
@@ -413,8 +413,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-duplex.webp",
-          "original": "../properties/gran-thai-plan-duplex.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -435,7 +435,7 @@
         "search": {
           "rooms": "4+",
           "area": "Пентхаус · 321 м²",
-          "image": "gran-thai-plan-penthouse.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp"
         },
         "spec": {
           "areaMin": 321.12,
@@ -463,8 +463,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-penthouse.webp",
-          "original": "../properties/gran-thai-plan-penthouse.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -485,7 +485,7 @@
         "search": {
           "rooms": "3",
           "area": "143–151 м²",
-          "image": "gran-thai-plan-sawasdee-12.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
         },
         "spec": {
           "areaMin": 143.0,
@@ -513,8 +513,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-sawasdee-12.webp",
-          "original": "../properties/gran-thai-plan-sawasdee-12.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -535,7 +535,7 @@
         "search": {
           "rooms": "3",
           "area": "143–151 м²",
-          "image": "gran-thai-plan-sawasdee-12.webp"
+          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
         },
         "spec": {
           "areaMin": 143.0,
@@ -563,8 +563,8 @@
           }
         ],
         "media": {
-          "src": "../properties/gran-thai-plan-sawasdee-13.webp",
-          "original": "../properties/gran-thai-plan-sawasdee-13.webp",
+          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
+          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -672,54 +672,54 @@
     "active": true,
     "hero": [
       {
-        "src": "../properties/gran-thai-facade.webp?v=0.226",
-        "original": "../properties/gran-thai-facade.webp?v=0.226",
+        "src": "../properties/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.226",
+        "original": "../properties/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.226",
         "caption": "",
         "category": "Другое"
       }
     ],
     "gallery": [
       {
-        "src": "../properties/gran-thai-entrance.webp?v=0.208",
-        "original": "../properties/gran-thai-entrance.webp?v=0.208",
+        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
+        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
         "caption": "Gran Thai — визуализация входной группы и фасада",
         "category": "Входная группа"
       },
       {
-        "src": "../properties/gran-thai-pool.webp?v=0.208",
-        "original": "../properties/gran-thai-pool.webp?v=0.208",
+        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
+        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
         "caption": "Gran Thai — визуализация открытого бассейна",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/gran-thai-pool-lounge.webp?v=0.227",
-        "original": "../properties/gran-thai-pool-lounge.webp?v=0.227",
+        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
+        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
         "caption": "Gran Thai — лаунж-зона у бассейна",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/gran-thai-gym.webp?v=0.227",
-        "original": "../properties/gran-thai-gym.webp?v=0.227",
+        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
+        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
         "caption": "Gran Thai — тренажёрный зал",
         "category": "Тренажёрный зал"
       }
     ],
     "locationGallery": [
       {
-        "src": "../properties/locations/peninsula/0182.webp",
-        "original": "../properties/locations/peninsula/0182.jpg",
+        "src": "../properties/shared/peninsula/images/0182.webp",
+        "original": "../properties/shared/peninsula/images/0182.jpg",
         "caption": "Península — общий вид",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/locations/peninsula/0593.webp",
-        "original": "../properties/locations/peninsula/0593.jpg",
+        "src": "../properties/shared/peninsula/images/0593.webp",
+        "original": "../properties/shared/peninsula/images/0593.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/locations/peninsula/0597.webp",
-        "original": "../properties/locations/peninsula/0597.jpg",
+        "src": "../properties/shared/peninsula/images/0597.webp",
+        "original": "../properties/shared/peninsula/images/0597.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       }
@@ -733,10 +733,10 @@
     "district": "Barra da Tijuca · Península",
     "description": "Застройщик Tegra",
     "price": "От R$ 3 435 000",
-    "image": "singular-balconies.webp",
-    "page": "singular.html",
+    "image": "tegra/singular/images/main/singular-balconies.webp",
+    "page": "tegra/singular/",
     "completion": "Октябрь 2028",
-    "offerImage": "singular-balconies.webp",
+    "offerImage": "tegra/singular/images/main/singular-balconies.webp",
     "developer": "tegra",
     "developerName": "Tegra",
     "sales": {
@@ -780,7 +780,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "singular-plan-1.webp"
+          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -824,7 +824,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "singular-plan-1.webp"
+          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -852,8 +852,8 @@
           }
         ],
         "media": {
-          "src": "../properties/singular-plan-1.webp",
-          "original": "../properties/singular-plan-1.webp",
+          "src": "../properties/tegra/singular/images/floorplans/singular-plan-1.webp",
+          "original": "../properties/tegra/singular/images/floorplans/singular-plan-1.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -874,7 +874,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "singular-plan-1.webp"
+          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -902,8 +902,8 @@
           }
         ],
         "media": {
-          "src": "../properties/singular-plan-2.webp",
-          "original": "../properties/singular-plan-2.webp",
+          "src": "../properties/tegra/singular/images/floorplans/singular-plan-2.webp",
+          "original": "../properties/tegra/singular/images/floorplans/singular-plan-2.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -924,7 +924,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "singular-plan-1.webp"
+          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -952,8 +952,8 @@
           }
         ],
         "media": {
-          "src": "../properties/singular-plan-3.webp",
-          "original": "../properties/singular-plan-3.webp",
+          "src": "../properties/tegra/singular/images/floorplans/singular-plan-3.webp",
+          "original": "../properties/tegra/singular/images/floorplans/singular-plan-3.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -974,7 +974,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "singular-plan-1.webp"
+          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -1002,8 +1002,8 @@
           }
         ],
         "media": {
-          "src": "../properties/singular-plan-4.webp",
-          "original": "../properties/singular-plan-4.webp",
+          "src": "../properties/tegra/singular/images/floorplans/singular-plan-4.webp",
+          "original": "../properties/tegra/singular/images/floorplans/singular-plan-4.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -1061,108 +1061,108 @@
     "active": true,
     "hero": [
       {
-        "src": "../properties/singular-balconies.webp",
-        "original": "../properties/singular-balconies.webp",
+        "src": "../properties/tegra/singular/images/main/singular-balconies.webp",
+        "original": "../properties/tegra/singular/images/main/singular-balconies.webp",
         "caption": "",
         "category": "Другое"
       }
     ],
     "gallery": [
       {
-        "src": "../properties/singular-entrance.webp",
-        "original": "../properties/singular-entrance.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-entrance.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-entrance.webp",
         "caption": "Входная группа",
         "category": "Входная группа"
       },
       {
-        "src": "../properties/singular-party.webp",
-        "original": "../properties/singular-party.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-party.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-party.webp",
         "caption": "Зал для мероприятий",
         "category": "Зал для мероприятий"
       },
       {
-        "src": "../properties/singular-pool-top.webp",
-        "original": "../properties/singular-pool-top.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-pool-top.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-pool-top.webp",
         "caption": "Бассейн — вид сверху",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/singular-pool.webp",
-        "original": "../properties/singular-pool.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-pool.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-pool.webp",
         "caption": "Бассейн и зона отдыха",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/singular-gym.webp",
-        "original": "../properties/singular-gym.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-gym.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-gym.webp",
         "caption": "Тренажёрный зал",
         "category": "Тренажёрный зал"
       },
       {
-        "src": "../properties/singular-gym-2.webp",
-        "original": "../properties/singular-gym-2.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-gym-2.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-gym-2.webp",
         "caption": "Тренажёрный зал — силовая зона",
         "category": "Тренажёрный зал"
       },
       {
-        "src": "../properties/singular-kids-room.webp",
-        "original": "../properties/singular-kids-room.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-kids-room.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-kids-room.webp",
         "caption": "Детская игровая комната",
         "category": "Детская игровая комната"
       },
       {
-        "src": "../properties/singular-kids-room-2.webp",
-        "original": "../properties/singular-kids-room-2.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-kids-room-2.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-kids-room-2.webp",
         "caption": "Детская игровая комната — второй ракурс",
         "category": "Детская игровая комната"
       },
       {
-        "src": "../properties/singular-playground.webp",
-        "original": "../properties/singular-playground.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-playground.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-playground.webp",
         "caption": "Детская площадка",
         "category": "Детская площадка"
       },
       {
-        "src": "../properties/singular-balcony-view.webp",
-        "original": "../properties/singular-balcony-view.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-balcony-view.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-balcony-view.webp",
         "caption": "Вид с балкона квартиры",
         "category": "Вид из квартиры"
       },
       {
-        "src": "../properties/singular-bike-room.webp",
-        "original": "../properties/singular-bike-room.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-bike-room.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-bike-room.webp",
         "caption": "Велопарковка",
         "category": "Велопарковка"
       },
       {
-        "src": "../properties/singular-delivery-room.webp",
-        "original": "../properties/singular-delivery-room.webp",
+        "src": "../properties/tegra/singular/images/gallery/singular-delivery-room.webp",
+        "original": "../properties/tegra/singular/images/gallery/singular-delivery-room.webp",
         "caption": "Помещение для приёма доставок",
         "category": "Помещение для доставки"
       }
     ],
     "locationGallery": [
       {
-        "src": "../properties/locations/peninsula/0182.webp",
-        "original": "../properties/locations/peninsula/0182.jpg",
+        "src": "../properties/shared/peninsula/images/0182.webp",
+        "original": "../properties/shared/peninsula/images/0182.jpg",
         "caption": "Península — общий вид",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/locations/peninsula/singular-1.webp",
-        "original": "../properties/locations/peninsula/singular-1.jpg",
+        "src": "../properties/tegra/singular/images/location/singular-1.webp",
+        "original": "../properties/tegra/singular/images/location/singular-1.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/locations/peninsula/singular-2.webp",
-        "original": "../properties/locations/peninsula/singular-2.jpg",
+        "src": "../properties/tegra/singular/images/location/singular-2.webp",
+        "original": "../properties/tegra/singular/images/location/singular-2.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/locations/peninsula/singular-3.webp",
-        "original": "../properties/locations/peninsula/singular-3.jpg",
+        "src": "../properties/tegra/singular/images/location/singular-3.webp",
+        "original": "../properties/tegra/singular/images/location/singular-3.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       }
