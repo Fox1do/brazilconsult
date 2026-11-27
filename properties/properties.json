@@ -1448,7 +1448,7 @@
         "id": "d214f3de-2b63-482b-a900-214e8817698c",
         "parentId": null,
         "available": true,
-        "priceBrl": 100000,
+        "priceBrl": 150000,
         "spec": {
           "apartmentType": "loft",
           "bedrooms": 0,
@@ -1530,7 +1530,7 @@
     "countryId": "brazil",
     "cityId": "rio-de-janeiro",
     "uid": "d78a3071-746c-4705-acc0-29b403319511",
-    "priceUpdatedAt": "2026-11-27T14:56:42.914Z",
+    "priceUpdatedAt": "2026-11-27T15:06:21.254Z",
     "source": null,
     "amenities": [
       "relax",
@@ -1551,8 +1551,8 @@
     "completionMonth": "2032-02",
     "completion": "февраль 2032 г.",
     "image": "brazil/rio-de-janeiro/tegra/test-residence/images/main/8b9d105e-fedf-434e-a72e-1c1e75c08ccf.webp",
-    "priceBrl": 100000,
-    "price": "R$ 100 000",
+    "priceBrl": 150000,
+    "price": "R$ 150 000",
     "district": "",
     "city": "Рио-де-Жанейро",
     "description": "Застройщик Tegra"
