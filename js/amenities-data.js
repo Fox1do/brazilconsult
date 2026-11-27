@@ -341,9 +341,9 @@ window.BCAmenities = [
   {
     "id": "services",
     "labels": {
-      "ru": "Работа и сервис",
-      "pt": "Trabalho e serviços",
-      "en": "Work and services"
+      "ru": "Работа и удобства",
+      "pt": "Trabalho e conveniências",
+      "en": "Work and conveniences"
     },
     "items": [
       {
@@ -371,6 +371,79 @@ window.BCAmenities = [
           "ru": "Минимаркет",
           "pt": "Minimercado",
           "en": "Mini market"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hospitality",
+    "labels": {
+      "ru": "Сервис",
+      "pt": "Serviços",
+      "en": "Services"
+    },
+    "items": [
+      {
+        "id": "concierge",
+        "emoji": "🛎️",
+        "labels": {
+          "ru": "Консьерж",
+          "pt": "Concierge",
+          "en": "Concierge"
+        }
+      },
+      {
+        "id": "hotel-service",
+        "emoji": "🏨",
+        "labels": {
+          "ru": "Отельный сервис",
+          "pt": "Serviços de hotelaria",
+          "en": "Hotel services"
+        }
+      },
+      {
+        "id": "housekeeping",
+        "emoji": "🧹",
+        "labels": {
+          "ru": "Уборка квартир",
+          "pt": "Limpeza de apartamentos",
+          "en": "Housekeeping"
+        }
+      },
+      {
+        "id": "valet",
+        "emoji": "🚗",
+        "labels": {
+          "ru": "Услуги парковщика",
+          "pt": "Manobrista",
+          "en": "Valet parking"
+        }
+      },
+      {
+        "id": "maintenance",
+        "emoji": "🔧",
+        "labels": {
+          "ru": "Бытовое обслуживание",
+          "pt": "Manutenção residencial",
+          "en": "Home maintenance"
+        }
+      },
+      {
+        "id": "food-delivery",
+        "emoji": "🍽️",
+        "labels": {
+          "ru": "Доставка еды в квартиру",
+          "pt": "Entrega de refeições no apartamento",
+          "en": "In-apartment meal delivery"
+        }
+      },
+      {
+        "id": "laundry-service",
+        "emoji": "🧺",
+        "labels": {
+          "ru": "Услуги прачечной",
+          "pt": "Serviço de lavanderia",
+          "en": "Laundry service"
         }
       },
       {
