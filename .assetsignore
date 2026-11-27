@@ -1,1 +1,9 @@
-
+.git/
+.github/
+node_modules/
+.wrangler/
+.gitignore
+.assetsignore
+wrangler.toml
+wrangler.json
+wrangler.jsonc
