@@ -1,0 +1,7 @@
+/* Align catalog cards with or without optional highlights. */
+.property-grid a.property-card {display:flex;flex-direction:column;min-width:0;}
+.property-card > .catalog-photo {flex:none;}
+.property-card > .property-card__body {display:flex;flex:1 1 auto;flex-direction:column;min-width:0;}
+.property-card__body .bc-highlights--compact {justify-content:start;align-self:stretch;}
+.property-card__body .bc-highlights--compact li {justify-content:flex-start;}
+.property-card__body > .link-arrow {align-self:flex-start;margin-top:auto;padding-top:16px;}
