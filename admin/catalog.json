@@ -725,7 +725,14 @@
       }
     ],
     "completionMonth": "2027-09",
-    "completed": false
+    "completed": false,
+    "architectureDesign": {
+      "architecture": "FEU Arquitetura",
+      "interiors": "Studio RO+CA",
+      "landscape": "Benedito Abbud",
+      "development": "Tegra",
+      "jointDevelopment": "Carvalho Hosken"
+    }
   },
   {
     "title": "Singular",
@@ -1168,6 +1175,13 @@
       }
     ],
     "completionMonth": "2028-10",
-    "completed": false
+    "completed": false,
+    "architectureDesign": {
+      "architecture": "A+Arquitetura",
+      "interiors": "Carol Miluzzi",
+      "landscape": "Escritório Burle Marx",
+      "development": "Tegra",
+      "jointDevelopment": "Carvalho Hosken"
+    }
   }
 ]

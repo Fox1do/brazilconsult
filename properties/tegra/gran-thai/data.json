@@ -487,5 +487,12 @@
     "mapsUrl": ""
   },
   "completionMonth": "2027-09",
-  "completed": false
+  "completed": false,
+  "architectureDesign": {
+    "architecture": "FEU Arquitetura",
+    "interiors": "Studio RO+CA",
+    "landscape": "Benedito Abbud",
+    "development": "Tegra",
+    "jointDevelopment": "Carvalho Hosken"
+  }
 }
