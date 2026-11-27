@@ -1,0 +1,321 @@
+[
+  {
+    "page": "tegra/gran-thai/",
+    "active": false,
+    "featured": false,
+    "updated": "2026-11-25",
+    "expires": null,
+    "units": [
+      {
+        "block": "Shanti",
+        "unit": "AP0103",
+        "floor": 1,
+        "regular": 2210340,
+        "promo": 1768272
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0203",
+        "floor": 2,
+        "regular": 2257640,
+        "promo": 1806112
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0205",
+        "floor": 2,
+        "regular": 2211330,
+        "promo": 1769064
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0303",
+        "floor": 3,
+        "regular": 2306290,
+        "promo": 1845032
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0305",
+        "floor": 3,
+        "regular": 2258800,
+        "promo": 1807040
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0405",
+        "floor": 4,
+        "regular": 2305110,
+        "promo": 1844088
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0503",
+        "floor": 5,
+        "regular": 2402230,
+        "promo": 1921784
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0505",
+        "floor": 5,
+        "regular": 2352610,
+        "promo": 1882088
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0603",
+        "floor": 6,
+        "regular": 2426350,
+        "promo": 1941080
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0605",
+        "floor": 6,
+        "regular": 2375750,
+        "promo": 1900600
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0703",
+        "floor": 7,
+        "regular": 2450660,
+        "promo": 1960528
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0705",
+        "floor": 7,
+        "regular": 2399900,
+        "promo": 1919920
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0803",
+        "floor": 8,
+        "regular": 2473820,
+        "promo": 1979056
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0805",
+        "floor": 8,
+        "regular": 2423080,
+        "promo": 1938464
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0903",
+        "floor": 9,
+        "regular": 2498110,
+        "promo": 1998488
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP0905",
+        "floor": 9,
+        "regular": 2446230,
+        "promo": 1956984
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1003",
+        "floor": 10,
+        "regular": 2522460,
+        "promo": 2017968
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1005",
+        "floor": 10,
+        "regular": 2470550,
+        "promo": 1976440
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1103",
+        "floor": 11,
+        "regular": 2546600,
+        "promo": 2037280
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1105",
+        "floor": 11,
+        "regular": 2493710,
+        "promo": 1994968
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1203",
+        "floor": 12,
+        "regular": 2569770,
+        "promo": 2055816
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1205",
+        "floor": 12,
+        "regular": 2516860,
+        "promo": 2013488
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1303",
+        "floor": 13,
+        "regular": 2594060,
+        "promo": 2075248
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1403",
+        "floor": 14,
+        "regular": 2618390,
+        "promo": 2094712
+      },
+      {
+        "block": "Shanti",
+        "unit": "AP1405",
+        "floor": 14,
+        "regular": 2564350,
+        "promo": 2051480
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP0106",
+        "floor": 1,
+        "regular": 2564350,
+        "promo": 2051480
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP0206",
+        "floor": 2,
+        "regular": 2662410,
+        "promo": 2129928
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP0306",
+        "floor": 3,
+        "regular": 2675720,
+        "promo": 2140576
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP0406",
+        "floor": 4,
+        "regular": 2776080,
+        "promo": 2220864
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP0506",
+        "floor": 5,
+        "regular": 2787100,
+        "promo": 2229680
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP0606",
+        "floor": 6,
+        "regular": 2861040,
+        "promo": 2288832
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP0906",
+        "floor": 9,
+        "regular": 2918360,
+        "promo": 2334688
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP1206",
+        "floor": 12,
+        "regular": 3030890,
+        "promo": 2424712
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP1306",
+        "floor": 13,
+        "regular": 3030890,
+        "promo": 2424712
+      },
+      {
+        "block": "Sawasdee",
+        "unit": "AP1406",
+        "floor": 14,
+        "regular": 3088230,
+        "promo": 2470584
+      },
+      {
+        "block": "Siam",
+        "unit": "AP0102",
+        "floor": 1,
+        "regular": 3525990,
+        "promo": 2820792
+      },
+      {
+        "block": "Siam",
+        "unit": "AP0202",
+        "floor": 2,
+        "regular": 3603200,
+        "promo": 2882560
+      },
+      {
+        "block": "Siam",
+        "unit": "AP0302",
+        "floor": 3,
+        "regular": 3679250,
+        "promo": 2943400
+      },
+      {
+        "block": "Siam",
+        "unit": "AP0402",
+        "floor": 4,
+        "regular": 3756460,
+        "promo": 3005168
+      },
+      {
+        "block": "Siam",
+        "unit": "AP0702",
+        "floor": 7,
+        "regular": 3909750,
+        "promo": 3127800
+      },
+      {
+        "block": "Siam",
+        "unit": "AP1102",
+        "floor": 11,
+        "regular": 4063000,
+        "promo": 3250400
+      },
+      {
+        "block": "Siam",
+        "unit": "AP1202",
+        "floor": 12,
+        "regular": 4139230,
+        "promo": 3311384
+      },
+      {
+        "block": "Siam",
+        "unit": "AP1302",
+        "floor": 13,
+        "regular": 4216450,
+        "promo": 3373160
+      },
+      {
+        "block": "Siam",
+        "unit": "AP1402",
+        "floor": 14,
+        "regular": 4300230,
+        "promo": 3440184
+      }
+    ],
+    "carouselLimit": 3,
+    "priority": 1
+  }
+]
