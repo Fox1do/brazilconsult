@@ -908,6 +908,15 @@
       "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
       "caption": "Gran Thai — тренажёрный зал",
       "category": "Тренажёрный зал"
+    },
+    {
+      "id": "0fab0c58-e1fe-46b9-86dd-5c1acdf9b82c",
+      "name": "be_parque_photo.jpg",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/84fa6d72-d108-48a3-841e-3787ed2f1c29.webp",
+      "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/84fa6d72-d108-48a3-841e-3787ed2f1c29.webp",
+      "category": "Фасад здания",
+      "caption": "",
+      "captionPt": ""
     }
   ],
   "locationGallery": [
