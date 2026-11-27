@@ -1,1 +1,29 @@
-(()=>{const target=document.querySelector('.gran-plans');if(!target)return;fetch('./data.json?v=0.317').then(r=>{if(!r.ok)throw Error();return r.json()}).then(p=>{const selected=new Set(p.amenities||[]);if(p.hotelService===true)selected.add("hotel-service");const groups=window.BCAmenities.filter(g=>g.items.some(i=>selected.has(i.id)));if(!groups.length)return;const lang=(document.documentElement.lang||'ru').slice(0,2);const label=o=>o[lang]||o.ru;const section=document.createElement('section');section.className='gran-tech bc-amenities';const title=document.createElement('h2');title.textContent=label({ru:'Инфраструктура ЖК',pt:'Lazer e conveniências',en:'Amenities'});section.append(title);for(const g of groups){const h=document.createElement('h3');h.textContent=label(g.labels);section.append(h);const list=document.createElement('ul');for(const i of g.items.filter(i=>selected.has(i.id))){const li=document.createElement('li');li.textContent=i.emoji+' '+label(i.labels);list.append(li);}section.append(list);}const d=document.createElement('details'),summary=document.createElement('summary');summary.textContent=title.textContent;d.className='bc-public-fold';title.remove();d.append(summary,...Array.from(section.children));section.append(d);target.before(section);}).catch(()=>{});})();
+(() => {
+  const detail = document.querySelector('.gran-detail');
+  if (!detail) return;
+  const ready = window.bcPropertyPricesReady || fetch('./data.json', {cache:'no-store'}).then(r => {if (!r.ok) throw Error('HTTP '+r.status); return r.json();});
+  ready.then(p => {
+    if (!p || !Array.isArray(window.BCAmenities) || detail.querySelector('.bc-amenities')) return;
+    const selected = new Set(Array.isArray(p.amenities) ? p.amenities : []);
+    if (p.hotelService === true) selected.add('hotel-service');
+    const groups = window.BCAmenities.filter(g => g.items.some(i => selected.has(i.id)));
+    if (!groups.length) return;
+    const lang = (document.documentElement.lang || 'ru').slice(0,2);
+    const label = o => o[lang] || o.ru;
+    const make = (tag, text, parent) => {const n = document.createElement(tag); if (text != null) n.textContent = text; if (parent) parent.append(n); return n;};
+    const section = make('section'); section.className = 'gran-tech bc-amenities';
+    make('h2', label({ru:'Инфраструктура комплекса',pt:'Lazer e conveniências',en:'Amenities'}), section);
+    for (const g of groups) {
+      make('h3', label(g.labels), section);
+      const list = make('ul', null, section); list.className = 'bc-amenities-grid';
+      for (const i of g.items.filter(i => selected.has(i.id))) {
+        const li = make('li', null, list);
+        const icon = make('span', i.emoji, li); icon.className = 'bc-amenity-icon'; icon.setAttribute('aria-hidden','true');
+        make('span', label(i.labels), li);
+      }
+    }
+    const plans = detail.querySelector('.gran-plans');
+    const next = detail.querySelector('.gran-gallery, .bc-surroundings, .property-disclaimer');
+    if (plans) plans.after(section); else if (next) next.before(section); else detail.append(section);
+  }).catch(error => console.warn('Amenities:', error));
+})();
