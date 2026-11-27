@@ -1,0 +1,11 @@
+[
+  {
+    "id": "rio-de-janeiro",
+    "countryId": "brazil",
+    "name": "Рио-де-Жанейро",
+    "state": "RJ",
+    "latitude": -22.9068,
+    "longitude": -43.1729,
+    "zoom": 11
+  }
+]

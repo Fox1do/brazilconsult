@@ -707,7 +707,7 @@ textarea {
   font-size: clamp(2.125rem, 0.9rem + 3.6vw, 4.375rem);
   font-weight: 400;
   line-height: 1.08;
-  letter-spacing: -0.012em;
+  letter-spacing: -0.013em;
   text-wrap: balance;
 }
 
@@ -2702,3 +2702,5 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .property-facts .installment-note{color:#fff}.unit-inner a.installment-link,.installment-link{display:inline-flex;align-items:center;gap:6px;max-width:100%;width:fit-content}.installment-link svg,.installment-calculator h2 svg{flex:none;width:18px;height:18px}.installment-calculator h2{display:flex;align-items:center;gap:10px}.installment-calculator h2 svg{width:24px;height:24px}.installment-part input:disabled{opacity:.65}
 
 .installment-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.installment-heading h2{margin:0}.installment-currencies{display:inline-flex;border:1px solid #b8c9b8;border-radius:8px;overflow:hidden}.installment-currencies button{font:inherit;font-size:14px;padding:7px 12px;border:0;background:transparent;color:#305d46;cursor:pointer}.installment-currencies button[aria-pressed=true]{background:#305d46;color:white}.installment-currencies button:disabled{opacity:.4;cursor:not-allowed}.installment-disclaimer[hidden]{display:none}
+
+.installment-disclaimer,.currency-note,[data-currency-note]{font-size:12px;line-height:1.4;text-indent:0;color:#666;}

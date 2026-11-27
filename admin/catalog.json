@@ -5,10 +5,10 @@
     "district": "Barra da Tijuca · Península",
     "description": "Застройщик Tegra",
     "price": "От R$ 2 210 000",
-    "image": "tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.224",
-    "page": "tegra/gran-thai/",
+    "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.224",
+    "page": "brazil/rio-de-janeiro/tegra/gran-thai/",
     "completion": "Сентябрь 2027",
-    "offerImage": "tegra/gran-thai/images/main/gran-thai-cover.webp?v=0.208",
+    "offerImage": "brazil/rio-de-janeiro/tegra/gran-thai/images/main/gran-thai-cover.webp?v=0.208",
     "developer": "tegra",
     "developerName": "Tegra",
     "sales": {
@@ -123,8 +123,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-125.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-125.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-125.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-125.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -169,8 +169,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-128.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -191,7 +191,7 @@
         "search": {
           "rooms": "3",
           "area": "128 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan.webp"
         },
         "spec": {
           "areaMin": 128.0,
@@ -219,8 +219,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -241,7 +241,7 @@
         "search": {
           "rooms": "3",
           "area": "143–151 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
         },
         "spec": {
           "areaMin": 143.0,
@@ -285,7 +285,7 @@
         "search": {
           "rooms": "4+",
           "area": "174 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp"
         },
         "spec": {
           "areaMin": 174.0,
@@ -313,8 +313,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-4.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -335,7 +335,7 @@
         "search": {
           "rooms": "4+",
           "area": "223 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp"
         },
         "spec": {
           "areaMin": 223.0,
@@ -363,8 +363,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-garden.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -385,7 +385,7 @@
         "search": {
           "rooms": "4+",
           "area": "Пентхаус · 302 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp"
         },
         "spec": {
           "areaMin": 302.51,
@@ -413,8 +413,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-duplex.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -435,7 +435,7 @@
         "search": {
           "rooms": "4+",
           "area": "Пентхаус · 321 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp"
         },
         "spec": {
           "areaMin": 321.12,
@@ -463,8 +463,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-penthouse.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -485,7 +485,7 @@
         "search": {
           "rooms": "3",
           "area": "143–151 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
         },
         "spec": {
           "areaMin": 143.0,
@@ -513,8 +513,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -535,7 +535,7 @@
         "search": {
           "rooms": "3",
           "area": "143–151 м²",
-          "image": "tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
+          "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-12.webp"
         },
         "spec": {
           "areaMin": 143.0,
@@ -563,8 +563,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
-          "original": "../properties/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/gran-thai-plan-sawasdee-13.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -667,59 +667,61 @@
       "district": "Barra da Tijuca",
       "neighborhood": "Península",
       "address": "",
-      "mapsUrl": ""
+      "mapsUrl": "",
+      "latitude": null,
+      "longitude": null
     },
     "active": true,
     "hero": [
       {
-        "src": "../properties/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.226",
-        "original": "../properties/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.226",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.226",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.226",
         "caption": "",
         "category": "Другое"
       }
     ],
     "gallery": [
       {
-        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
-        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-entrance.webp?v=0.208",
         "caption": "Gran Thai — визуализация входной группы и фасада",
         "category": "Входная группа"
       },
       {
-        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
-        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool.webp?v=0.208",
         "caption": "Gran Thai — визуализация открытого бассейна",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
-        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-pool-lounge.webp?v=0.227",
         "caption": "Gran Thai — лаунж-зона у бассейна",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
-        "original": "../properties/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/gran-thai-gym.webp?v=0.227",
         "caption": "Gran Thai — тренажёрный зал",
         "category": "Тренажёрный зал"
       }
     ],
     "locationGallery": [
       {
-        "src": "../properties/shared/peninsula/images/0182.webp",
-        "original": "../properties/shared/peninsula/images/0182.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0182.webp",
+        "original": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0182.jpg",
         "caption": "Península — общий вид",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/shared/peninsula/images/0593.webp",
-        "original": "../properties/shared/peninsula/images/0593.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0593.webp",
+        "original": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0593.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/shared/peninsula/images/0597.webp",
-        "original": "../properties/shared/peninsula/images/0597.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0597.webp",
+        "original": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0597.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       }
@@ -732,7 +734,12 @@
       "landscape": "Benedito Abbud",
       "development": "Tegra",
       "jointDevelopment": "Carvalho Hosken"
-    }
+    },
+    "countryId": "brazil",
+    "cityId": "rio-de-janeiro",
+    "uid": "br-rio-tegra-gran-thai",
+    "priceUpdatedAt": null,
+    "source": null
   },
   {
     "title": "Singular",
@@ -740,10 +747,10 @@
     "district": "Barra da Tijuca · Península",
     "description": "Застройщик Tegra",
     "price": "От R$ 3 435 000",
-    "image": "tegra/singular/images/main/singular-balconies.webp",
-    "page": "tegra/singular/",
+    "image": "brazil/rio-de-janeiro/tegra/singular/images/main/singular-balconies.webp",
+    "page": "brazil/rio-de-janeiro/tegra/singular/",
     "completion": "Октябрь 2028",
-    "offerImage": "tegra/singular/images/main/singular-balconies.webp",
+    "offerImage": "brazil/rio-de-janeiro/tegra/singular/images/main/singular-balconies.webp",
     "developer": "tegra",
     "developerName": "Tegra",
     "sales": {
@@ -787,7 +794,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
+          "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -831,7 +838,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
+          "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -859,8 +866,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/singular/images/floorplans/singular-plan-1.webp",
-          "original": "../properties/tegra/singular/images/floorplans/singular-plan-1.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -881,7 +888,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
+          "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -909,8 +916,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/singular/images/floorplans/singular-plan-2.webp",
-          "original": "../properties/tegra/singular/images/floorplans/singular-plan-2.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-2.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-2.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -931,7 +938,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
+          "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -959,8 +966,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/singular/images/floorplans/singular-plan-3.webp",
-          "original": "../properties/tegra/singular/images/floorplans/singular-plan-3.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-3.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-3.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -981,7 +988,7 @@
         "search": {
           "rooms": "4+",
           "area": "222–229 м²",
-          "image": "tegra/singular/images/floorplans/singular-plan-1.webp"
+          "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
         },
         "spec": {
           "areaMin": 222.0,
@@ -1009,8 +1016,8 @@
           }
         ],
         "media": {
-          "src": "../properties/tegra/singular/images/floorplans/singular-plan-4.webp",
-          "original": "../properties/tegra/singular/images/floorplans/singular-plan-4.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-4.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-4.webp",
           "caption": "",
           "category": "Другое"
         }
@@ -1063,113 +1070,115 @@
       "district": "Barra da Tijuca",
       "neighborhood": "Península",
       "address": "",
-      "mapsUrl": ""
+      "mapsUrl": "",
+      "latitude": null,
+      "longitude": null
     },
     "active": true,
     "hero": [
       {
-        "src": "../properties/tegra/singular/images/main/singular-balconies.webp",
-        "original": "../properties/tegra/singular/images/main/singular-balconies.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/main/singular-balconies.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/main/singular-balconies.webp",
         "caption": "",
         "category": "Другое"
       }
     ],
     "gallery": [
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-entrance.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-entrance.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-entrance.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-entrance.webp",
         "caption": "Входная группа",
         "category": "Входная группа"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-party.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-party.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-party.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-party.webp",
         "caption": "Зал для мероприятий",
         "category": "Зал для мероприятий"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-pool-top.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-pool-top.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool-top.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool-top.webp",
         "caption": "Бассейн — вид сверху",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-pool.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-pool.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool.webp",
         "caption": "Бассейн и зона отдыха",
         "category": "Бассейн"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-gym.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-gym.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym.webp",
         "caption": "Тренажёрный зал",
         "category": "Тренажёрный зал"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-gym-2.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-gym-2.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym-2.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym-2.webp",
         "caption": "Тренажёрный зал — силовая зона",
         "category": "Тренажёрный зал"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-kids-room.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-kids-room.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room.webp",
         "caption": "Детская игровая комната",
         "category": "Детская игровая комната"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-kids-room-2.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-kids-room-2.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room-2.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room-2.webp",
         "caption": "Детская игровая комната — второй ракурс",
         "category": "Детская игровая комната"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-playground.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-playground.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-playground.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-playground.webp",
         "caption": "Детская площадка",
         "category": "Детская площадка"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-balcony-view.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-balcony-view.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-balcony-view.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-balcony-view.webp",
         "caption": "Вид с балкона квартиры",
         "category": "Вид из квартиры"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-bike-room.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-bike-room.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-bike-room.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-bike-room.webp",
         "caption": "Велопарковка",
         "category": "Велопарковка"
       },
       {
-        "src": "../properties/tegra/singular/images/gallery/singular-delivery-room.webp",
-        "original": "../properties/tegra/singular/images/gallery/singular-delivery-room.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-delivery-room.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-delivery-room.webp",
         "caption": "Помещение для приёма доставок",
         "category": "Помещение для доставки"
       }
     ],
     "locationGallery": [
       {
-        "src": "../properties/shared/peninsula/images/0182.webp",
-        "original": "../properties/shared/peninsula/images/0182.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0182.webp",
+        "original": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0182.jpg",
         "caption": "Península — общий вид",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/tegra/singular/images/location/singular-1.webp",
-        "original": "../properties/tegra/singular/images/location/singular-1.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-1.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-1.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/tegra/singular/images/location/singular-2.webp",
-        "original": "../properties/tegra/singular/images/location/singular-2.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-2.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-2.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       },
       {
-        "src": "../properties/tegra/singular/images/location/singular-3.webp",
-        "original": "../properties/tegra/singular/images/location/singular-3.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-3.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-3.jpg",
         "caption": "Окружение комплекса",
         "category": "Вид с дрона"
       }
@@ -1182,6 +1191,11 @@
       "landscape": "Escritório Burle Marx",
       "development": "Tegra",
       "jointDevelopment": "Carvalho Hosken"
-    }
+    },
+    "countryId": "brazil",
+    "cityId": "rio-de-janeiro",
+    "uid": "br-rio-tegra-singular",
+    "priceUpdatedAt": null,
+    "source": null
   }
 ]
