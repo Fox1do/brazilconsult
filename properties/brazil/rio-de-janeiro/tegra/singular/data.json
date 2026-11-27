@@ -1,9 +1,9 @@
 {
   "title": "Singular",
-  "city": "Рио-де-Жанейро",
+  "city": "Rio de Janeiro",
   "district": "Barra da Tijuca · Península",
   "description": "Застройщик Tegra",
-  "price": "От R$ 3 435 000",
+  "price": "R$ 3 435 000",
   "image": "brazil/rio-de-janeiro/tegra/singular/images/main/singular-balconies.webp",
   "page": "brazil/rio-de-janeiro/tegra/singular/",
   "completion": "Октябрь 2028",
@@ -54,8 +54,8 @@
         "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
       },
       "spec": {
-        "areaMin": 222.0,
-        "areaMax": 229.0,
+        "areaMin": 222,
+        "areaMax": 229,
         "bedrooms": 4,
         "suites": 4,
         "bathrooms": 6,
@@ -77,7 +77,244 @@
           "columns": "",
           "unit": ""
         }
-      ]
+      ],
+      "typePriceMigrated": true,
+      "technicalKey": "technical-0",
+      "technical": {
+        "name": "4 спальни",
+        "area": "222–229",
+        "count": 60,
+        "bedrooms": 4,
+        "apartmentType": "standard",
+        "areaMin": 222,
+        "areaMax": 229,
+        "sold": false
+      }
+    },
+    {
+      "id": "singular-4-variant-1",
+      "available": true,
+      "priceBrl": 3435000,
+      "parentId": "singular-4",
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🛎️",
+          "characteristics": "222–229 м² · 🚿 6 · 🚗 3",
+          "location": "🏢 Singular · этажи: 1–15"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "222–229 м²",
+        "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
+      },
+      "spec": {
+        "areaMin": 222,
+        "areaMax": 229,
+        "bedrooms": 4,
+        "suites": 4,
+        "bathrooms": 6,
+        "parking": 3,
+        "garden": false,
+        "staff": true,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "",
+          "floorMin": 1,
+          "floorMax": 15,
+          "columns": "",
+          "unit": ""
+        }
+      ],
+      "media": {
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp",
+        "caption": "",
+        "category": "Другое"
+      }
+    },
+    {
+      "id": "singular-4-variant-2",
+      "available": true,
+      "priceBrl": 3435000,
+      "parentId": "singular-4",
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🛎️",
+          "characteristics": "222–229 м² · 🚿 6 · 🚗 3",
+          "location": "🏢 Singular · этажи: 1–15"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "222–229 м²",
+        "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
+      },
+      "spec": {
+        "areaMin": 222,
+        "areaMax": 229,
+        "bedrooms": 4,
+        "suites": 4,
+        "bathrooms": 6,
+        "parking": 3,
+        "garden": false,
+        "staff": true,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "",
+          "floorMin": 1,
+          "floorMax": 15,
+          "columns": "",
+          "unit": ""
+        }
+      ],
+      "media": {
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-2.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-2.webp",
+        "caption": "",
+        "category": "Другое"
+      }
+    },
+    {
+      "id": "singular-4-variant-3",
+      "available": true,
+      "priceBrl": 3435000,
+      "parentId": "singular-4",
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🛎️",
+          "characteristics": "222–229 м² · 🚿 6 · 🚗 3",
+          "location": "🏢 Singular · этажи: 1–15"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "222–229 м²",
+        "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
+      },
+      "spec": {
+        "areaMin": 222,
+        "areaMax": 229,
+        "bedrooms": 4,
+        "suites": 4,
+        "bathrooms": 6,
+        "parking": 3,
+        "garden": false,
+        "staff": true,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "",
+          "floorMin": 1,
+          "floorMax": 15,
+          "columns": "",
+          "unit": ""
+        }
+      ],
+      "media": {
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-3.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-3.webp",
+        "caption": "",
+        "category": "Другое"
+      }
+    },
+    {
+      "id": "singular-4-variant-4",
+      "available": true,
+      "priceBrl": 3435000,
+      "parentId": "singular-4",
+      "translations": {
+        "ru": {
+          "title": "4 спальни 🛎️",
+          "characteristics": "222–229 м² · 🚿 6 · 🚗 3",
+          "location": "🏢 Singular · этажи: 1–15"
+        },
+        "pt": null
+      },
+      "search": {
+        "rooms": "4+",
+        "area": "222–229 м²",
+        "image": "brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-1.webp"
+      },
+      "spec": {
+        "areaMin": 222,
+        "areaMax": 229,
+        "bedrooms": 4,
+        "suites": 4,
+        "bathrooms": 6,
+        "parking": 3,
+        "garden": false,
+        "staff": true,
+        "pool": false,
+        "sauna": false,
+        "duplex": false,
+        "apartmentType": "standard",
+        "sun": "",
+        "views": []
+      },
+      "locations": [
+        {
+          "buildingId": "",
+          "floorMin": 1,
+          "floorMax": 15,
+          "columns": "",
+          "unit": ""
+        }
+      ],
+      "media": {
+        "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-4.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/floorplans/singular-plan-4.webp",
+        "caption": "",
+        "category": "Другое"
+      }
+    },
+    {
+      "id": "9593ed37-87a6-49b8-8b2c-950d8dc4463a",
+      "parentId": null,
+      "available": false,
+      "priceBrl": null,
+      "spec": {
+        "apartmentType": "penthouse",
+        "bedrooms": null,
+        "areaMin": null,
+        "areaMax": null
+      },
+      "locations": [],
+      "technicalKey": "technical-1",
+      "technical": {
+        "name": "Одноуровневые пентхаусы (проданы)",
+        "area": "—",
+        "count": 2,
+        "bedrooms": null,
+        "apartmentType": "penthouse",
+        "areaMin": null,
+        "areaMax": null,
+        "sold": true
+      },
+      "typePriceMigrated": true
     }
   ],
   "territoryArea": 2783,
@@ -97,28 +334,7 @@
     "guestParking": 7,
     "penthouseFloor": true,
     "parkingSize": "",
-    "types": [
-      {
-        "name": "4 спальни",
-        "area": "222–229",
-        "count": 60,
-        "bedrooms": 4,
-        "apartmentType": "standard",
-        "areaMin": 222.0,
-        "areaMax": 229.0,
-        "sold": false
-      },
-      {
-        "name": "Одноуровневые пентхаусы (проданы)",
-        "area": "—",
-        "count": 2,
-        "bedrooms": null,
-        "apartmentType": "penthouse",
-        "areaMin": null,
-        "areaMax": null,
-        "sold": true
-      }
-    ]
+    "types": []
   },
   "longDescription": "",
   "location": {
@@ -131,6 +347,115 @@
     "latitude": null,
     "longitude": null
   },
+  "active": true,
+  "hero": [
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/main/singular-balconies.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/main/singular-balconies.webp",
+      "caption": "",
+      "category": "Другое"
+    }
+  ],
+  "gallery": [
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-entrance.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-entrance.webp",
+      "caption": "Входная группа",
+      "category": "Входная группа"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-party.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-party.webp",
+      "caption": "Зал для мероприятий",
+      "category": "Зал для мероприятий"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool-top.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool-top.webp",
+      "caption": "Бассейн — вид сверху",
+      "category": "Бассейн"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-pool.webp",
+      "caption": "Бассейн и зона отдыха",
+      "category": "Бассейн"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym.webp",
+      "caption": "Тренажёрный зал",
+      "category": "Тренажёрный зал"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym-2.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-gym-2.webp",
+      "caption": "Тренажёрный зал — силовая зона",
+      "category": "Тренажёрный зал"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room.webp",
+      "caption": "Детская игровая комната",
+      "category": "Детская игровая комната"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room-2.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-kids-room-2.webp",
+      "caption": "Детская игровая комната — второй ракурс",
+      "category": "Детская игровая комната"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-playground.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-playground.webp",
+      "caption": "Детская площадка",
+      "category": "Детская площадка"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-balcony-view.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-balcony-view.webp",
+      "caption": "Вид с балкона квартиры",
+      "category": "Вид из квартиры"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-bike-room.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-bike-room.webp",
+      "caption": "Велопарковка",
+      "category": "Велопарковка"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-delivery-room.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/gallery/singular-delivery-room.webp",
+      "caption": "Помещение для приёма доставок",
+      "category": "Помещение для доставки"
+    }
+  ],
+  "locationGallery": [
+    {
+      "src": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0182.webp",
+      "original": "../properties/brazil/rio-de-janeiro/shared/peninsula/images/0182.jpg",
+      "caption": "Península — общий вид",
+      "category": "Вид с дрона"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-1.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-1.jpg",
+      "caption": "Окружение комплекса",
+      "category": "Вид с дрона"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-2.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-2.jpg",
+      "caption": "Окружение комплекса",
+      "category": "Вид с дрона"
+    },
+    {
+      "src": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-3.webp",
+      "original": "../properties/brazil/rio-de-janeiro/tegra/singular/images/location/singular-3.jpg",
+      "caption": "Окружение комплекса",
+      "category": "Вид с дрона"
+    }
+  ],
   "completionMonth": "2028-10",
   "completed": false,
   "architectureDesign": {

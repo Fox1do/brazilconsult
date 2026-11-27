@@ -950,9 +950,7 @@
       "gym"
     ],
     "highlights": [
-      "pool-50",
-      "leisure-6000",
-      "green-park-access"
+      "pool-50"
     ],
     "surroundings": []
   },
@@ -1437,5 +1435,126 @@
       "delivery"
     ],
     "highlights": []
+  },
+  {
+    "id": "test-residence",
+    "title": "Test Residence",
+    "developer": "tegra",
+    "developerName": "Tegra",
+    "page": "brazil/rio-de-janeiro/tegra/test-residence/",
+    "active": false,
+    "plans": [
+      {
+        "id": "d214f3de-2b63-482b-a900-214e8817698c",
+        "parentId": null,
+        "available": true,
+        "priceBrl": 100000,
+        "spec": {
+          "apartmentType": "loft",
+          "bedrooms": 0,
+          "duplex": false,
+          "areaMin": 10,
+          "bathrooms": 3,
+          "parking": 5,
+          "garden": true
+        },
+        "locations": [],
+        "technical": {
+          "count": null,
+          "sold": false
+        },
+        "typePriceMigrated": true
+      },
+      {
+        "id": "6ea83101-7868-40ea-a2ac-bdb8d582fa26",
+        "parentId": "d214f3de-2b63-482b-a900-214e8817698c",
+        "available": true,
+        "locations": [],
+        "media": {
+          "id": "1f3d0390-f3f2-45e1-80b4-cc1321f3e2f2",
+          "name": "Captura de Tela 2025-06-06 às 17.35.32.png",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/floorplans/b86a90d9-79ed-4311-a20b-d0474e910ceb.webp",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/floorplans/b86a90d9-79ed-4311-a20b-d0474e910ceb.webp"
+        }
+      }
+    ],
+    "technical": {
+      "types": []
+    },
+    "buildings": [
+      {
+        "id": "6e769663-6ede-49b4-aba9-901a0707d9c6",
+        "name": "",
+        "active": true
+      }
+    ],
+    "buildingMode": "single",
+    "location": {
+      "city": "Рио-де-Жанейро",
+      "state": "RJ",
+      "latitude": null,
+      "longitude": null
+    },
+    "sales": {
+      "status": "none"
+    },
+    "hero": [
+      {
+        "id": "87abf27b-b5cd-4a93-bca0-a6e1b74ac6e7",
+        "name": "Ilustração Artística - Fachada do Endless Mall     .jpg",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/main/8b9d105e-fedf-434e-a72e-1c1e75c08ccf.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/main/8b9d105e-fedf-434e-a72e-1c1e75c08ccf.webp"
+      }
+    ],
+    "gallery": [
+      {
+        "id": "0088247a-4e35-4182-8018-eacdf24637cc",
+        "name": "Ilustração Artística - Coworking.jpg",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/gallery/2f2ed59f-ef61-4e2f-8cbc-e8153d09ab11.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/gallery/2f2ed59f-ef61-4e2f-8cbc-e8153d09ab11.webp",
+        "category": "Коворкинг",
+        "caption": "",
+        "captionPt": ""
+      },
+      {
+        "id": "7c991076-b8ea-4220-8a96-1d3f9442ffb0",
+        "name": "Ilustração Artística - Playground.jpg",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/gallery/0410424f-4b8a-4b4a-b65d-0f22e4ec0258.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/gallery/0410424f-4b8a-4b4a-b65d-0f22e4ec0258.webp",
+        "category": "Детская площадка",
+        "caption": "",
+        "captionPt": ""
+      }
+    ],
+    "locationGallery": [],
+    "countryId": "brazil",
+    "cityId": "rio-de-janeiro",
+    "uid": "d78a3071-746c-4705-acc0-29b403319511",
+    "priceUpdatedAt": "2026-11-27T14:56:42.914Z",
+    "source": null,
+    "amenities": [
+      "relax",
+      "sand",
+      "tennis",
+      "playground"
+    ],
+    "highlights": [
+      "food-delivery",
+      "outdoor-pool",
+      "kids-pool"
+    ],
+    "surroundings": [],
+    "architectureDesign": {
+      "architecture": "Хз кто это наворотил"
+    },
+    "territoryArea": 1000000,
+    "completionMonth": "2032-02",
+    "completion": "февраль 2032 г.",
+    "image": "brazil/rio-de-janeiro/tegra/test-residence/images/main/8b9d105e-fedf-434e-a72e-1c1e75c08ccf.webp",
+    "priceBrl": 100000,
+    "price": "R$ 100 000",
+    "district": "",
+    "city": "Рио-де-Жанейро",
+    "description": "Застройщик Tegra"
   }
 ]
