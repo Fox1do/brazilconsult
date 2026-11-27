@@ -739,7 +739,11 @@
     "cityId": "rio-de-janeiro",
     "uid": "br-rio-tegra-gran-thai",
     "priceUpdatedAt": null,
-    "source": null
+    "source": null,
+    "amenities": [
+      "outdoor-pool",
+      "gym"
+    ]
   },
   {
     "title": "Singular",
@@ -1196,6 +1200,14 @@
     "cityId": "rio-de-janeiro",
     "uid": "br-rio-tegra-singular",
     "priceUpdatedAt": null,
-    "source": null
+    "source": null,
+    "amenities": [
+      "gym",
+      "party",
+      "playroom",
+      "playground",
+      "bike",
+      "delivery"
+    ]
   }
 ]

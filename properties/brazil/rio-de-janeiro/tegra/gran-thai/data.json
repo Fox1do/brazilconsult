@@ -501,5 +501,9 @@
   "cityId": "rio-de-janeiro",
   "uid": "br-rio-tegra-gran-thai",
   "priceUpdatedAt": null,
-  "source": null
+  "source": null,
+  "amenities": [
+    "outdoor-pool",
+    "gym"
+  ]
 }
