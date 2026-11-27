@@ -1442,5 +1442,62 @@
       "delivery"
     ],
     "highlights": []
+  },
+  {
+    "id": "test-residence",
+    "title": "Test Residence",
+    "developer": "tegra",
+    "developerName": "Tegra",
+    "page": "brazil/rio-de-janeiro/tegra/test-residence/",
+    "active": false,
+    "plans": [],
+    "technical": {
+      "types": []
+    },
+    "buildings": [
+      {
+        "id": "16fac509-66ac-4a6f-bda2-186fb32773d7",
+        "name": "",
+        "active": true
+      }
+    ],
+    "buildingMode": "single",
+    "location": {
+      "city": "Рио-де-Жанейро",
+      "state": "RJ",
+      "latitude": null,
+      "longitude": null
+    },
+    "sales": {
+      "status": "none"
+    },
+    "hero": [],
+    "gallery": [
+      {
+        "id": "975d90e5-0a77-4a45-9ab8-664853dcf827",
+        "name": "be_parque_3S_96.jpg",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/gallery/65ed5054-6e26-4ab1-8dd6-c57aa01f0650.webp",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/test-residence/images/gallery/65ed5054-6e26-4ab1-8dd6-c57aa01f0650.webp",
+        "category": "Фасад здания",
+        "caption": "",
+        "captionPt": ""
+      }
+    ],
+    "locationGallery": [],
+    "countryId": "brazil",
+    "cityId": "rio-de-janeiro",
+    "uid": "3203f3c1-6b1e-437f-aa9d-66207e264320",
+    "priceUpdatedAt": null,
+    "source": null,
+    "amenities": [],
+    "highlights": [],
+    "surroundings": [],
+    "architectureDesign": {},
+    "image": "",
+    "priceBrl": null,
+    "price": "По запросу",
+    "district": "",
+    "city": "Рио-де-Жанейро",
+    "description": "Застройщик Tegra"
   }
 ]
