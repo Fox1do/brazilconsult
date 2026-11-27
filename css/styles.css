@@ -2695,3 +2695,6 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .plan-share-menu a,.plan-share-menu button{display:flex;align-items:center;gap:10px;width:100%;box-sizing:border-box;padding:11px 10px;border:0;border-radius:6px;background:none;color:#244d35;font:inherit;font-size:.9rem;text-align:left;text-decoration:none;cursor:pointer}
 .plan-share-menu a:hover,.plan-share-menu button:hover,.plan-share-menu a:focus-visible,.plan-share-menu button:focus-visible{background:#e8eee7}
 .plan-share-menu svg{flex:none}
+
+/* Compact catalog cards */
+.property-card__body{padding:18px 22px}.property-card__body p{margin:5px 0}.property-card__body .eyebrow{font-size:.68rem;letter-spacing:.045em;line-height:1.4}.catalog-title{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:5px 0}.catalog-title h2,.catalog-title h3{margin:0}.catalog-developer{border-left:1px solid #b9c5b8;padding-left:10px;color:var(--muted);font-size:.85rem}.catalog-area{display:flex;align-items:center;gap:7px}.catalog-area::before{content:'';display:inline-block;width:13px;height:13px;border:1.5px solid #487c65;flex:none;box-sizing:border-box}.catalog-price .currency-extra{color:#747870;font-size:.85em;font-weight:400}.catalog-completed{color:#487c65}.property-card__body .link-arrow{display:inline-block;margin-top:5px}
