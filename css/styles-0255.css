@@ -2744,3 +2744,7 @@ body.bc-property-portal .blog-hero {background:#934b32;padding:54px 0 46px}
 .bc-amenities h3{font-size:14px;font-weight:600;margin:18px 0 8px}.bc-amenities ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 16px;list-style:none;padding:0;margin:0}.bc-amenities li{font-size:14px;line-height:1.4;margin:0;overflow-wrap:anywhere}@media(max-width:760px){.bc-amenities ul{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:380px){.bc-amenities ul{grid-template-columns:1fr}}
 
 .bc-public-fold>summary{cursor:pointer;font-weight:600;font-size:1.1rem;padding:12px 14px;background:#e0e8db;border-radius:8px}.bc-public-fold[open]>summary{margin-bottom:16px}
+
+.bc-surroundings h3{font-size:14px;font-weight:600;margin:18px 0 8px}.bc-nearby-row{display:flex;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;padding:7px 0;border-bottom:1px solid #8883;font-size:14px}.bc-nearby-row span:last-child{font-size:13px}.bc-nearby-note{font-size:12px;opacity:.7;margin-top:12px}
+
+.property-intro .gran-developer:has(+ .gran-territory){margin-bottom:4px}.property-intro .gran-territory{color:var(--muted);margin:0 0 16px;font-size:inherit}.gran-territory span{font-size:.9em}
