@@ -743,7 +743,8 @@
     "amenities": [
       "outdoor-pool",
       "gym"
-    ]
+    ],
+    "highlights": []
   },
   {
     "title": "Singular",
@@ -1208,6 +1209,7 @@
       "playground",
       "bike",
       "delivery"
-    ]
+    ],
+    "highlights": []
   }
 ]
