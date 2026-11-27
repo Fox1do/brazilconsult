@@ -3,7 +3,7 @@
   "city": "Rio de Janeiro",
   "district": "Barra da Tijuca · Península",
   "description": "Застройщик Tegra",
-  "price": "R$ 2 210 001",
+  "price": "R$ 2 405 510",
   "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/main/gran-thai-facade.webp?v=0.226",
   "page": "brazil/rio-de-janeiro/tegra/gran-thai/",
   "completion": "Сентябрь 2027",
@@ -18,7 +18,7 @@
     "status": "launch",
     "preview": true
   },
-  "priceBrl": 2210001,
+  "priceBrl": 2405510,
   "id": "gran-thai",
   "translations": {
     "ru": {
@@ -38,7 +38,7 @@
     {
       "id": "three-standard",
       "available": true,
-      "priceBrl": 2210001,
+      "priceBrl": 3000000,
       "parentId": null,
       "translations": {
         "ru": {
@@ -942,7 +942,7 @@
   "countryId": "brazil",
   "cityId": "rio-de-janeiro",
   "uid": "br-rio-tegra-gran-thai",
-  "priceUpdatedAt": "2026-11-27T17:18:54.878Z",
+  "priceUpdatedAt": "2026-11-27T17:20:14.903Z",
   "source": null,
   "amenities": [
     "outdoor-pool",
