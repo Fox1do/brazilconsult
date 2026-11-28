@@ -48,3 +48,5 @@ aside>button{width:100%;margin:10px 0 24px}aside h2{font-size:19px}
 .field-error{outline:2px solid #bd3030!important;outline-offset:2px;} .plan-location{margin:.75rem 0;} .plan-location>summary{cursor:pointer;}
 
 .field-error-note{display:block;color:#a61c1c;font-size:.85rem;margin:.25rem 0;}
+
+.property-import-controls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.property-import-controls button{padding:8px 12px;font-size:13px}.import-status{flex-basis:100%;margin:0;overflow-wrap:anywhere}.import-status:empty{display:none}
