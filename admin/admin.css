@@ -32,3 +32,19 @@ aside>button{width:100%;margin:10px 0 24px}aside h2{font-size:19px}
 #conflict-panel:not([hidden]){padding:16px;border:1px solid #c6a875;border-radius:8px;margin:12px 0}#conflict-panel label{display:flex;align-items:center;gap:8px;margin:8px 0}#conflict-panel input{width:auto}#conflict-panel button,#deleted-properties button{margin:4px 6px 4px 0}#deleted-properties button{display:block} [hidden]{display:none!important}
 
 .geo-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.geo-actions button{padding:8px 12px;font-size:14px}#lock-toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:9999;max-width:calc(100vw - 32px);width:max-content;background:#244d35;color:#fff;padding:12px 18px;border-radius:10px;box-shadow:0 4px 18px #0003;font-size:14px}#editor [data-locked-hit]:disabled,#list [data-locked-hit]:disabled{pointer-events:none}
+
+/* Mutually exclusive sales status; separate from plan visibility. */
+.sales-status{min-width:0;margin:0;padding:0;border:0;align-self:start}
+.sales-status legend{padding:0;margin-bottom:6px;font-size:13px}
+.sales-status-options{display:flex;border:1px solid #b8c1bb;border-radius:8px;overflow:hidden}
+.sales-status-options label{position:relative;flex:1;min-width:0;display:block;margin:0;cursor:pointer}
+.sales-status-options label+label{border-left:1px solid #b8c1bb}
+.sales-status-options input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.sales-status-options span{display:block;padding:8px 6px;text-align:center;font-size:13px;line-height:1.25}
+.sales-status-options input:checked+span{background:#487c65;color:white;font-weight:600}
+.sales-status-options input:focus-visible+span{outline:2px solid #244d35;outline-offset:-3px}
+.sales-status-options input:disabled+span{opacity:.6;cursor:not-allowed}
+
+.field-error{outline:2px solid #bd3030!important;outline-offset:2px;} .plan-location{margin:.75rem 0;} .plan-location>summary{cursor:pointer;}
+
+.field-error-note{display:block;color:#a61c1c;font-size:.85rem;margin:.25rem 0;}

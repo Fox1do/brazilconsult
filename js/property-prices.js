@@ -27,7 +27,7 @@
   function showCost(price, pending = false) {
     if (!cost) return;
     clearCurrency(cost);
-    cost.textContent = price ? fmt(price) : pending ? 'Уточняем цену…' : 'По запросу';
+    cost.textContent = price ? fmt(price) : pending ? 'Уточняем цену…' : 'Цена уточняется';
     if (factCurrencies) {
       clearCurrency(factCurrencies);
       factCurrencies.hidden = true;
@@ -46,7 +46,7 @@
     label.classList.toggle('currency-price', !!price);
     label.classList.toggle('price-unknown', !price);
     if (!price) {
-      label.textContent = pending ? 'Уточняем цену…' : 'Цена по запросу';
+      label.textContent = pending ? 'Уточняем цену…' : 'Цена уточняется';
       return;
     }
     unit.dataset.startPrice = String(price);
