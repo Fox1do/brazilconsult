@@ -229,3 +229,14 @@
 .gran-detail .bc-nearby-row strong{text-align:right;font-weight:500;flex-shrink:0;max-width:60%}
 .gran-detail .bc-nearby-note{font-size:12px;color:#687580;margin:12px 0 0}
 @media(max-width:480px){.gran-detail .bc-nearby{padding:14px}.gran-detail .bc-nearby-row{flex-wrap:wrap;gap:4px}.gran-detail .bc-nearby-row strong{text-align:left;max-width:100%}}
+
+/* 0.386: compact nearby list; native keyboard-accessible disclosure. */
+.gran-detail .bc-nearby-more>summary{cursor:pointer;list-style:none;text-align:center;color:#4C616E;font-weight:500;padding:12px 0;overflow-wrap:anywhere}
+.gran-detail .bc-nearby-more>summary::-webkit-details-marker{display:none}
+.gran-detail .bc-nearby-more>summary::after{content:"⌄";display:inline-block;margin-left:8px}
+.gran-detail .bc-nearby-more[open]>summary::after{transform:rotate(180deg)}
+.gran-detail .bc-nearby-more:not([open]) .bc-nearby-close,.gran-detail .bc-nearby-more[open] .bc-nearby-open{display:none}
+.gran-detail .bc-nearby-more>summary:focus-visible{outline:2px solid #4C616E;outline-offset:2px}
+
+.gran-detail .bc-nearby-category{display:block;font-size:12px;color:#687580;margin-top:3px;font-weight:400}
+.gran-detail .bc-nearby-group h3{font-size:15px;color:#4C616E;margin:16px 0 2px}

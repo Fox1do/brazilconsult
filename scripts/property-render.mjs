@@ -87,16 +87,17 @@ function salesLabel(plan) {
   return n===1?'Осталась 1 квартира':`Осталось ${n} ${n<=4?'квартиры':'квартир'}`;
 }
 
-export function nearbyHTML(p,aroundById){
- const api=globalThis.BCNearbyDistance,seen=new Set(),rows=[];let straight=false,time=false;
- for(const link of p.surroundingsLinks||[]){const x=aroundById.get(link.objectId);if(seen.has(link.objectId)||!api.active(x)||x.cityId!==p.cityId||!String(x.name||'').trim())continue;seen.add(link.objectId);
- const d=api.describe(p.location,x,link);straight||=!!d.label&&!d.manual;time||=!!d.time;
- rows.push(`<li class="bc-nearby-row"><span>${esc(x.name)}</span>${d.text?`<strong>${esc(d.text)}</strong>`:''}</li>`);}
+export function nearbyHTML(p,aroundById,settings){
+ if(p.surroundingsEnabled===false)return '';
+ const api=globalThis.BCNearbyDistance,rows=api.orderedLinks(p,aroundById,settings);let straight=false,time=false;
  if(!rows.length)return '';
+ const renderRow=({x,link,categoryLabel})=>{const d=api.describe(p.location,x,link);straight||=!!d.label&&!d.manual;time||=!!d.time;return `<li class="bc-nearby-row"><span>${esc(x.name)}${categoryLabel?`<small class="bc-nearby-category">${esc(categoryLabel)}</small>`:''}</span>${d.text?`<strong>${esc(d.text)}</strong>`:''}</li>`;};
+ const first=rows.slice(0,5).map(renderRow).join('');
+ const extra=rows.length>5?`<details class="bc-nearby-more"><summary><span class="bc-nearby-open">Посмотреть, что ещё поблизости</span><span class="bc-nearby-close">Свернуть</span></summary>${api.groupedLinks(rows.slice(5)).map(([group,items])=>`<div class="bc-nearby-group"><h3>${esc(group)}</h3><ul>${items.map(renderRow).join('')}</ul></div>`).join('')}</details>`:'';
  const note=[straight?'Автоматически рассчитанные расстояния указаны по прямой.':'',time?'Время в пути ориентировочное.':''].filter(Boolean).join(' ');
- return `<section class="gran-tech bc-nearby"><h2>Окружение комплекса</h2><ul>${rows.join('')}</ul>${note?`<p class="bc-nearby-note">${esc(note)}</p>`:''}</section>`;
+ return `<section class="gran-tech bc-nearby"><h2>Что поблизости</h2><ul>${first}</ul>${extra}${note?`<p class="bc-nearby-note">${esc(note)}</p>`:''}</section>`;
 }
-export function pageHTML(p,template,aroundById=new Map()) {
+export function pageHTML(p,template,aroundById=new Map(),settings) {
   const e=esc,title=e(p.title);
   const pic=m=>m?.src?`<a data-lightbox href="${e(mediaUrl(m.original||m.src))}"><img loading="lazy" src="${e(mediaUrl(m.src))}" alt="${e(m.caption||m.category||p.title)}"></a>`:'';
   const gallery=(items,label)=>items?.length?`<section class="gran-gallery"><h2>${label}</h2><div class="gran-gallery__grid">${items.map(m=>`<figure>${pic(m)}<figcaption>${e(m.caption||m.category)}</figcaption></figure>`).join('')}</div></section>`:'';
@@ -150,7 +151,7 @@ export function pageHTML(p,template,aroundById=new Map()) {
     ${plans?`<section class="gran-plans"><h2>Квартиры и планировки</h2>${plans}</section>`:''}
     <section class="gran-tech bc-amenities" hidden></section>
     ${plans?'<section id="installment-calculator" class="installment-calculator" hidden></section>':''}
-    ${nearbyHTML(p,aroundById)}
+    ${nearbyHTML(p,aroundById,settings)}
     ${extraInfo?`<div class="bc-extra-panel">${extraInfo}</div>`:''}
     <p class="property-disclaimer">Информация носит ознакомительный характер. Цены, характеристики и наличие необходимо уточнять перед покупкой.</p>`;
   if(!template.includes('__TITLE__')||!template.includes('__BODY__')||!template.includes('</head>')) fail('Некорректный шаблон страницы ЖК',502);

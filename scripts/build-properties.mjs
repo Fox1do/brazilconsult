@@ -13,13 +13,16 @@ if(!Array.isArray(catalog)||!Array.isArray(developers)||!sitemap.includes('</url
 const nearby=await parse('admin/surroundings.json').catch(e=>{if(e.code==='ENOENT')return [];throw e;});
 if(!Array.isArray(nearby))throw Error('Некорректная база окружения');
 const aroundById=new Map(nearby.map(x=>[x.id,x]));
+const settings=globalThis.BCNearbyDistance.settings(await parse('admin/surroundings-settings.json').catch(e=>{if(e.code==='ENOENT')return undefined;throw e;}));
 const names=new Map(developers.map(d=>[d.id,d.name]));
 const entries=new Map();
 for(const p of catalog){
  const dir=root(p); if(entries.has(dir)||!names.has(p.developer)||!Array.isArray(p.plans))throw Error('Некорректный ЖК: '+dir);
  const data={...p,developerName:names.get(p.developer),page:dir.slice('properties/'.length)};
  // Render before changing the output; a malformed catalog must fail the build.
- entries.set(dir,{data,html:pageHTML(data,template,aroundById)});
+ const html=pageHTML(data,template,aroundById,settings);
+ const {audienceProfiles:internalAudience,...publicData}=data;
+ entries.set(dir,{data:publicData,html});
 }
 const skip=new Set(['dist','admin','scripts','node_modules','.git','.github','.wrangler','.assetsignore','.gitignore','wrangler.toml','wrangler.json','wrangler.jsonc']);
 const excluded=rel=>rel.split('/').some(s=>s.startsWith('.')&&s!=='.well-known');
