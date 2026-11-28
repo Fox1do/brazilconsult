@@ -177,9 +177,40 @@
 
 /* 0.372: match the upper panel to the existing white lower panels. */
 .gran-detail>.bc-property-back{display:inline-block;margin-bottom:16px;color:#21482f}
-.gran-detail>.property-intro[data-bc-layout="0.372"]{box-sizing:border-box;min-width:0;background:#fff;border:0;box-shadow:none;border-radius:16px;padding:clamp(16px,2.4vw,28px);margin:0 0 24px}
-@media(max-width:760px){.gran-detail>.property-intro[data-bc-layout="0.372"]{border-radius:12px;margin-bottom:18px}}
+.gran-detail>.property-intro[data-bc-layout="0.373"]{box-sizing:border-box;min-width:0;background:#fff;border:0;box-shadow:none;border-radius:16px;padding:clamp(16px,2.4vw,28px);margin:0 0 24px}
+@media(max-width:760px){.gran-detail>.property-intro[data-bc-layout="0.373"]{border-radius:12px;margin-bottom:18px}}
 
 /* Match the two lower headings; only technical characteristics has a wrench. */
 .gran-detail>.bc-extra-panel>.bc-extra-info>h2{display:flex;align-items:center;gap:8px;font-family:var(--font-sans);font-size:clamp(19px,2.1vw,22px);font-weight:600;line-height:1.3;letter-spacing:0;color:#26352B}
 .gran-detail>.bc-extra-panel .bc-tech-heading-icon{width:20px;height:20px;flex:0 0 20px}
+
+
+/* 0.373: agreed Graphite palette, terracotta apartment section, common site width. */
+.bc-property-portal .gran-detail{max-width:calc(var(--container) + var(--gutter) * 2)}
+.bc-property-portal main[data-bc-generated]>.property-detail-section{background:#E2E5E7;color:#293C46}
+.gran-detail>.property-intro[data-bc-layout="0.373"],
+.gran-detail>.bc-amenities,.gran-detail>.installment-calculator,.gran-detail>.bc-extra-panel{background:#F8F9F9}
+.gran-detail>.gran-plans{box-sizing:border-box;min-width:0;background:#A86B59;border:0;box-shadow:none;border-radius:16px;padding:clamp(16px,2.4vw,28px);margin:24px 0}
+.gran-detail>.gran-plans>h2{margin:0 0 16px;color:#fff}
+.gran-detail>.gran-plans>.unit-option:first-of-type{margin-top:0}
+.gran-detail .property-intro h1,.gran-detail .bc-title-line .gran-developer,.gran-detail .bc-property-description,
+.gran-detail>.bc-amenities>h2,.gran-detail>.installment-calculator h2,.gran-detail>.bc-extra-panel>.bc-extra-info>h2{color:#293C46}
+.gran-detail>.bc-property-back{color:#354F60}
+.gran-detail .bc-property-hero-side .property-facts>div{background:#E5E9EB}
+.gran-detail .bc-property-hero-side .property-facts>.bc-fact-date{background:#85939C}
+.gran-detail .bc-property-hero-side .property-facts>.bc-fact-price{background:#4C616E}
+.gran-detail .property-facts .bc-fact-location h2,.gran-detail .property-facts .bc-fact-location p,
+.gran-detail .property-intro>[data-bc-highlights] .bc-highlights li{color:#293C46}
+.gran-detail>.bc-amenities .bc-territory-card{background:#E5E9EB;color:#293C46}
+.gran-detail .bc-territory-card .bc-territory-comparison,.gran-detail .bc-territory-card .bc-territory-label{color:#293C46}
+.gran-detail>.bc-extra-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.gran-detail>.bc-extra-panel:has(>.bc-extra-info:only-child){grid-template-columns:1fr}
+.gran-detail>.bc-extra-panel>.bc-extra-info{min-width:0}
+.gran-detail>.bc-extra-panel>.bc-extra-info+.bc-extra-info{border:0;margin:0;padding:0}
+.gran-detail>.bc-extra-panel .bc-info-columns{grid-template-columns:1fr;color:#293C46}
+.gran-detail>.installment-calculator .installment-currencies,.gran-detail>.installment-calculator .installment-currencies button,.gran-detail>.installment-calculator .installment-currencies button[aria-pressed="true"]{color:#354F60}
+.gran-detail .installment-total,.gran-detail .installment-total strong{color:#293C46}
+@media(max-width:760px){
+ .gran-detail>.gran-plans{margin:18px 0;border-radius:12px}
+ .gran-detail>.bc-extra-panel{grid-template-columns:1fr;gap:22px}
+}

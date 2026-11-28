@@ -12,7 +12,7 @@
   const make=(tag,text,parent,cls)=>{const n=document.createElement(tag);if(text!=null)n.textContent=text;if(cls)n.className=cls;if(parent)parent.append(n);return n;};
   ready.then(p=>{
     if(!p)return;
-    const selected=new Set(Array.isArray(p.amenities)?p.amenities:[]);if(p.hotelService===true)selected.add('hotel-service');
+    const selected=new Set(Array.isArray(p.amenities)?p.amenities:[]);if(p.hotelService===true)selected.add('hotel-service');if(p.technical?.evCharging===true)selected.add('ev');
     const items=(window.BCAmenities||[]).flatMap(g=>g.items).filter(i=>selected.has(i.id));
     const area=Number(p.territoryArea),hasArea=Number.isFinite(area)&&area>0;
     const positive=v=>typeof v==='number'&&Number.isFinite(v)&&v>0;
