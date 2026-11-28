@@ -31,12 +31,12 @@ const excluded=rel=>rel.split('/').some(s=>s.startsWith('.')&&s!=='.well-known')
 function refreshBrasilDom(html){
  return html.replace(/<img\b[^>]*>/gi,tag=>{
   if(!/\bsrc\s*=\s*["'][^"']*\bassets\/img\/brazil-dom-logo(?:-light)?\.png(?:\?v=[0-9.]+)?["']/i.test(tag))return tag;
-  const updated=tag.replace(/(\bassets\/img\/brazil-dom-logo(?:-light)?\.png)(?:\?v=[0-9.]+)?(?=["'])/gi,'$1?v=0.391')
+  const updated=tag.replace(/(\bassets\/img\/brazil-dom-logo(?:-light)?\.png)(?:\?v=[0-9.]+)?(?=["'])/gi,'$1?v=0.392')
     .replace(/(\balt\s*=\s*)(["'])БРАЗИЛ\s*ДОМ\2/gi,(_,prefix,quote)=>prefix+quote+'BrasilDom'+quote)
     .replace(/(\balt\s*=\s*)(["'])BrasilDom\2/gi,(_,prefix,quote)=>prefix+quote+'BrasilDom — Недвижимость Бразилии'+quote);
   // Keep explicit image dimensions proportional when legacy markup sets both.
   const width=updated.match(/\swidth\s*=\s*(["'])(\d+)\1/i);
-  return width?updated.replace(/(\sheight\s*=\s*)(["'])\d+\2/i,(_,prefix,quote)=>prefix+quote+Math.max(1,Math.round(Number(width[2])*216/880))+quote):updated;
+  return width?updated.replace(/(\sheight\s*=\s*)(["'])\d+\2/i,(_,prefix,quote)=>prefix+quote+Math.max(1,Math.round(Number(width[2])*242/880))+quote):updated;
  });
 }
 // Recreate output, retaining all normal public files, including independent landing pages.
