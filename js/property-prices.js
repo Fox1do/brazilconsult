@@ -73,7 +73,7 @@ function typeOnSale(plans,type) {
 
   function restoreGeneratedPlans(property) {
     if (!document.querySelector('main[data-bc-generated="true"]')) return;
-    if(!document.querySelector('link[href="/css/plan-cards.css?v=0.363"]')){const css=document.createElement('link');css.rel='stylesheet';css.href='/css/plan-cards.css?v=0.363';document.head.append(css);}
+    if(!document.querySelector('link[href="/css/plan-cards.css?v=0.364"]')){const css=document.createElement('link');css.rel='stylesheet';css.href='/css/plan-cards.css?v=0.364';document.head.append(css);}
     const make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text)n.textContent=text;return n;};
     const map=new Map(property.plans.map(p=>[p.id,p]));
     const icon='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4m-6.8 7 6.8 4"/></svg>';
@@ -139,7 +139,7 @@ function planDescription(plan) {
       const toggle=make('span','plan-toggle-label');toggle.append(make('span','when-closed','Развернуть планировку'),make('span','when-open','Свернуть планировку'));summary.append(toggle);
       const variants=property.plans.filter(p=>p.parentId===parent.id&&p.available!==false);
       const legacyIds=Array.isArray(parent.legacyVariantIds)?parent.legacyVariantIds:variants.map(v=>v.id);
-      const entries=variants.length?variants:[parent];
+      const entries=property.plans.some(p=>p.parentId===parent.id)?variants:[parent];
       // HTML may be cached while data.json is fresh. Build the variant contents from
       // the same record as the share URL; never attach an ID to a drawing by position.
       unit.querySelectorAll(':scope > .unit-content').forEach(panel=>panel.remove());

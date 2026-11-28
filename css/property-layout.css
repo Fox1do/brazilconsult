@@ -64,3 +64,6 @@
 .bc-surroundings .gran-gallery__grid a{display:block}
 .bc-surroundings .gran-gallery__grid img{display:block;width:100%;height:auto;border-radius:10px}
 .bc-surroundings .gran-gallery__grid figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+
+.bc-property-hero-side > [data-bc-highlights][hidden]{display:none!important}
+.bc-property-hero-side > [data-bc-highlights] .bc-highlights{grid-template-columns:1fr;justify-content:start}
