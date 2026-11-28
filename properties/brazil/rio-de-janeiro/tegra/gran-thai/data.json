@@ -41,7 +41,10 @@
       "technical": {
         "count": null
       },
-      "typePriceMigrated": true
+      "typePriceMigrated": true,
+      "legacyVariantIds": [
+        "c9fe0c82-c9b1-41cd-8c44-fa56f99c30eb"
+      ]
     },
     {
       "id": "c9fe0c82-c9b1-41cd-8c44-fa56f99c30eb",
