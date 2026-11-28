@@ -109,23 +109,26 @@ export function pageHTML(p,template) {
   const photos=[...(p.hero||[]),...(p.gallery||[])].filter(m=>m?.src).filter((m,i,a)=>a.findIndex(x=>mediaUrl(x.src).split('?')[0]===mediaUrl(m.src).split('?')[0])===i);
   const first=photos[0];
   const hero=first?`<div class="bc-hero-carousel" role="region" aria-label="Фотографии комплекса"><a class="bc-property-hero-photo" data-lightbox href="${e(mediaUrl(first.original||first.src))}"><img src="${e(mediaUrl(first.src))}" alt="${e(first.caption||first.category||p.title)}" loading="eager"></a><template class="bc-hero-pictures">${photos.slice(1).map(pic).join('')}</template></div>`:'';
-  const area=Number(p.territoryArea); const courts=Math.max(1,Math.round(area/260.7569));
-  const courtWord=courts%100>=11&&courts%100<=14?'теннисных кортов':courts%10===1?'теннисный корт':courts%10>=2&&courts%10<=4?'теннисных корта':'теннисных кортов';
-  const comparison=area>=3570?'≈ '+(area/7140).toLocaleString('ru-RU',{maximumFractionDigits:1})+' футбольного поля':'≈ '+courts+' '+courtWord;
+  const location=p.location||{};
+  const city=location.city||p.city||'';
+  const district=location.district||p.district||'';
+  const neighborhood=location.neighborhood||'';
+  const date=p.completed?'Объект сдан':p.completionMonth&&/^\d{4}-(0[1-9]|1[0-2])$/.test(p.completionMonth)?new Intl.DateTimeFormat('ru-RU',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(p.completionMonth+'-15T12:00:00Z')).replace(/ г\.$/,'').replace(/^./,c=>c.toUpperCase()):p.completion||'По запросу';
+  const minPrices=p.plans.filter(a=>typeOnSale(p.plans,a)&&Number(a.priceBrl)>0).map(a=>Number(a.priceBrl));
+  const minPrice=minPrices.length?Math.min(...minPrices):null;
   const rows=(source,labels)=>labels.filter(([k])=>source?.[k]!=null&&String(source[k]).trim()!==''&&source[k]!==false).map(([k,label])=>`<dt>${e(label)}</dt><dd>${e(typeof source[k]==='boolean'?'Да':source[k])}</dd>`).join('');
   const tech=rows(p.technical,[['total','Всего квартир'],['floors','Этажность'],['perFloor','Квартир на этаже'],['parkingLevels','Уровней паркинга'],['guestParking','Гостевых машино-мест'],['parkingSize','Размер машино-мест'],['penthouseFloor','Этаж с пентхаусами']]);
   const architecture=rows(p.architectureDesign,[['architecture','Архитектурный проект'],['interiors','Дизайн интерьеров'],['landscape','Ландшафтный дизайн'],['development','Девелопмент и строительство'],['jointDevelopment','Совместный девелопмент']]);
-  const locationPhotos=(p.locationGallery||[]).filter(m=>m?.src);
-  const hasLocation=locationPhotos.length>0;
-  const body=`<header class="property-intro" data-bc-layout="0.365"><a class="link-arrow" href="/properties/">← Все объекты</a>
-    <p class="eyebrow property-location">${e([p.city,p.district].filter(Boolean).join(' · '))}</p><h1>${title}</h1>
-    <p class="gran-developer">Кто строит: ${e(p.developerName)}</p>${area>0?`<p class="gran-territory">Площадь территории: ${e(number(area))} м² <span class="bc-territory-comparison">(${e(comparison)})</span></p>`:''}
-    <div class="bc-property-hero${first?'':' bc-property-hero-no-photo'}">${hero}<div class="bc-property-hero-side"><div data-bc-highlights hidden></div><div class="gran-facts property-facts"><div><p class="property-fact-label">Стоимость</p><h2>${p.priceBrl>0?'от ':''}${money(p.priceBrl)}</h2><div class="fact-currencies" hidden></div></div>
-    <div><p class="property-fact-label">Срок сдачи</p><h2>${e(p.completed?'Объект сдан':p.completion||'По запросу')}</h2></div></div></div></div>
-    ${p.longDescription?`<p class="bc-property-description">${e(p.longDescription)}</p>`:''}</header>
+  const body=`<header class="property-intro" data-bc-layout="0.367"><a class="link-arrow" href="/properties/">← Все объекты</a>
+    <div class="bc-title-line"><h1>${title}</h1>${p.developerName?`<p class="gran-developer">Застройщик: <strong>${e(p.developerName)}</strong></p>`:''}</div>
+    ${p.longDescription?`<p class="bc-property-description">${e(p.longDescription)}</p>`:''}
+    <div class="bc-property-hero${first?'':' bc-property-hero-no-photo'}"><div class="bc-property-hero-side"><div class="gran-facts property-facts">
+    <div class="bc-fact-location"><p class="property-fact-label"><svg viewBox="0 0 24 24" aria-hidden="true" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> ${e(city||'Расположение')}</p><h2>${e(district||city||'По запросу')}</h2>${neighborhood?`<p class="bc-neighborhood">${e(neighborhood)}</p>`:''}</div>
+    <div class="bc-fact-date"><p class="property-fact-label">Срок сдачи</p><h2>${e(date)}</h2></div>
+    <div class="bc-fact-price"><p class="property-fact-label">Стоимость квартир</p><h2>${minPrice?'от ':''}${money(minPrice)}</h2><div class="fact-currencies" hidden></div></div></div></div>${hero}</div>
+    <div data-bc-highlights hidden></div></header>
     ${plans?`<section class="gran-plans"><h2>Квартиры и планировки</h2>${plans}</section><section id="installment-calculator" class="installment-calculator" hidden></section>`:''}
     <section class="gran-tech bc-amenities" hidden></section>
-    <section class="gran-tech bc-surroundings" ${hasLocation?'':'hidden'}><h2>Расположение и окружение</h2>${hasLocation?`<div class="gran-gallery__grid">${locationPhotos.map(m=>`<figure>${pic(m)}<figcaption>${e(m.caption||m.category)}</figcaption></figure>`).join('')}</div>`:''}<div data-bc-nearby></div></section>
     ${tech?`<section class="gran-tech bc-technical"><details class="bc-public-fold"><summary>Технические характеристики ЖК</summary><dl class="gran-team">${tech}</dl></details></section>`:''}
     ${architecture?`<section class="gran-tech bc-architecture"><details class="bc-public-fold"><summary>Архитектура и дизайн</summary><dl class="gran-team">${architecture}</dl></details></section>`:''}
     <p class="property-disclaimer">Информация носит ознакомительный характер. Цены, характеристики и наличие необходимо уточнять перед покупкой.</p>`;

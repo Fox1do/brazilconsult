@@ -9,7 +9,7 @@ window.BCAmenities = [
     "items": [
       {
         "id": "outdoor-pool",
-        "emoji": "🏊",
+        "emoji": "🐟",
         "labels": {
           "ru": "Открытый бассейн",
           "pt": "Piscina externa",
@@ -18,7 +18,7 @@ window.BCAmenities = [
       },
       {
         "id": "heated-outdoor",
-        "emoji": "♨️",
+        "emoji": "🐟",
         "labels": {
           "ru": "Открытый бассейн с подогревом",
           "pt": "Piscina externa aquecida",
@@ -27,7 +27,7 @@ window.BCAmenities = [
       },
       {
         "id": "indoor-pool",
-        "emoji": "🏊",
+        "emoji": "🐟",
         "labels": {
           "ru": "Крытый бассейн",
           "pt": "Piscina coberta",
@@ -36,7 +36,7 @@ window.BCAmenities = [
       },
       {
         "id": "heated-indoor",
-        "emoji": "♨️",
+        "emoji": "🐟",
         "labels": {
           "ru": "Крытый бассейн с подогревом",
           "pt": "Piscina coberta aquecida",
@@ -45,7 +45,7 @@ window.BCAmenities = [
       },
       {
         "id": "pool-25",
-        "emoji": "🏊",
+        "emoji": "🐟",
         "labels": {
           "ru": "Бассейн 25 м",
           "pt": "Piscina de 25 m",
@@ -54,7 +54,7 @@ window.BCAmenities = [
       },
       {
         "id": "pool-50",
-        "emoji": "🏊",
+        "emoji": "🐟",
         "labels": {
           "ru": "Бассейн 50 м",
           "pt": "Piscina de 50 m",
@@ -63,7 +63,7 @@ window.BCAmenities = [
       },
       {
         "id": "kids-pool",
-        "emoji": "💦",
+        "emoji": "🐟",
         "labels": {
           "ru": "Детский бассейн",
           "pt": "Piscina infantil",

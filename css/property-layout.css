@@ -67,3 +67,37 @@
 
 .bc-property-hero-side > [data-bc-highlights][hidden]{display:none!important}
 .bc-property-hero-side > [data-bc-highlights] .bc-highlights{grid-template-columns:1fr;justify-content:start}
+/* Agreed 0.367 property header and infrastructure. */
+.gran-detail .bc-title-line{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:0 0 8px}
+.gran-detail .bc-title-line h1,.gran-detail .bc-title-line .gran-developer{margin:0}
+.gran-detail .bc-title-line .gran-developer{font-size:14px;color:#687580;font-weight:400}
+.gran-detail .bc-property-description{margin:0 0 18px}
+.gran-detail .bc-property-hero{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:10px;align-items:stretch}
+.gran-detail .bc-property-hero-no-photo{grid-template-columns:1fr}
+.gran-detail .bc-property-hero-side{justify-content:stretch}
+.gran-detail .bc-property-hero-side .property-facts{display:grid;grid-template-columns:1fr;grid-template-rows:repeat(3,minmax(0,1fr));gap:8px;flex:1;padding:0;background:transparent}
+.gran-detail .bc-property-hero-side .property-facts>div{border-radius:9px;padding:clamp(10px,1.3vw,18px);gap:4px;background:#E1E6E9;min-width:0}
+.gran-detail .bc-property-hero-side .property-facts>.bc-fact-date{background:#8497A5}
+.gran-detail .bc-property-hero-side .property-facts>.bc-fact-price{background:#687E8F}
+.gran-detail .property-facts h2{font-size:clamp(17px,2vw,22px);font-weight:500;color:#fff;line-height:1.25;margin:0}
+.gran-detail .property-facts .property-fact-label,.gran-detail .property-facts .fact-currencies,.gran-detail .property-facts .installment-note,.gran-detail .property-facts .bc-neighborhood{font-size:13px;line-height:1.35;font-weight:400;color:white;margin:0}
+.gran-detail .property-facts .bc-fact-location h2{color:#344755}
+.gran-detail .property-facts .bc-fact-location p{color:#687580}
+.gran-detail .bc-fact-location .property-fact-label{display:flex;align-items:center;gap:4px}
+.gran-detail .bc-fact-location svg{flex:none}
+.gran-detail .bc-hero-carousel{align-self:stretch;aspect-ratio:4/3}
+.gran-detail .bc-hero-carousel .bc-property-hero-photo img{object-fit:cover;background:#e1e6e9}
+.gran-detail .property-intro>[data-bc-highlights] .bc-highlights{display:flex;justify-content:center;gap:16px;margin:18px 0 0}
+.gran-detail .property-intro>[data-bc-highlights] .bc-highlights li{flex:0 1 33.333%;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:14px;color:#344755;gap:7px}
+.gran-detail .property-intro>[data-bc-highlights] .bc-highlight-icon{font-size:28px}
+.gran-detail .bc-amenities .bc-territory-card{background:#E1E6E9;border-radius:9px;padding:16px 20px;color:#344755;display:grid;gap:4px;margin-bottom:18px}
+.gran-detail .bc-territory-card .bc-territory-value{font-size:26px;font-weight:500;line-height:1.2}
+.gran-detail .bc-territory-card .bc-territory-comparison,.gran-detail .bc-territory-card .bc-territory-label{font-size:14px;color:#687580}
+.gran-detail .bc-sports-pictograms{display:flex;justify-content:center;align-items:start;flex-wrap:wrap;gap:18px;margin:14px 0 22px;padding:0;list-style:none}
+.gran-detail .bc-sports-pictograms li{width:140px;max-width:45%;display:flex;flex-direction:column;align-items:center;text-align:center;font-size:14px;gap:8px;line-height:1.3}
+.gran-detail .bc-sports-pictograms svg{width:100%;height:auto;display:block}
+.gran-detail .bc-amenities .bc-amenities-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:16px 0 0}
+.gran-detail .bc-amenities-grid li{flex-direction:column;text-align:center;justify-content:start;gap:6px;font-size:14px;line-height:1.3}
+.gran-detail .bc-amenities-grid .bc-amenity-icon{font-size:27px}
+.gran-detail .bc-sports-pictograms+.bc-amenities-grid{border-top:1px solid #dcddd5;padding-top:16px}
+@media(max-width:760px){.gran-detail .bc-property-hero{grid-template-columns:1fr}.gran-detail .bc-property-hero-side .property-facts{grid-template-rows:repeat(3,minmax(0,1fr))}.gran-detail .bc-property-hero-side .property-facts>div{padding:14px 16px}.gran-detail .property-facts h2{font-size:22px}.gran-detail .bc-amenities .bc-amenities-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gran-detail .bc-title-line{gap:8px}.gran-detail .bc-title-line .gran-developer{font-size:13px}}
