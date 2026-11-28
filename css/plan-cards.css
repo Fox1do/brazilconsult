@@ -70,8 +70,8 @@ main[data-bc-generated] .unit-option>summary:has(.bc-plan-heading)::after{grid-c
 
 
 /* 0.373: change only card palette and double the existing 8px side stripe. */
-main[data-bc-generated] .gran-plans>.unit-option{border-color:#F3F5F6;border-left:16px solid #B9C9D5;background:#F3F5F6}
-main[data-bc-generated] .gran-plans>.unit-option:nth-of-type(even){border-left-color:#8299AC}
+main[data-bc-generated] .gran-plans>.unit-option{border-color:#F3F5F6;border-left:16px solid #DBC2C7;background:#F3F5F6}
+main[data-bc-generated] .gran-plans>.unit-option:nth-of-type(even){border-left-color:#B99AA4}
 main[data-bc-generated] .gran-plans>.unit-option>summary{background:#F3F5F6;color:#293C46}
 main[data-bc-generated] .gran-plans>.unit-option>summary>.unit-price,
 main[data-bc-generated] .gran-plans>.unit-option>summary>.unit-price .currency-extra,
@@ -80,3 +80,14 @@ main[data-bc-generated] .gran-plans>.unit-option .unit-meta,
 main[data-bc-generated] .gran-plans>.unit-option .bc-plan-extras{color:#293C46}
 main[data-bc-generated] .gran-plans>.unit-option>summary>.installment-link,
 main[data-bc-generated] .gran-plans>.unit-option>summary>.plan-toggle-label{color:#354F60}
+
+/* 0.375: mobile only — align price with heading, allow action labels to wrap. */
+@media(max-width:760px){
+ main[data-bc-generated] .gran-plans>.unit-option>summary:has(.bc-plan-heading){grid-template-columns:minmax(0,1fr) minmax(0,1fr) 12px;gap:8px 6px;padding:12px;align-items:start}
+ main[data-bc-generated] .gran-plans>.unit-option>summary>.bc-plan-heading{grid-column:1/-1;grid-row:1;gap:4px}
+ main[data-bc-generated] .gran-plans>.unit-option>summary>.unit-price{grid-column:1/-1;grid-row:2;align-items:flex-start;text-align:left;justify-self:stretch;margin:0}
+ main[data-bc-generated] .gran-plans>.unit-option>summary>.unit-price .currency-extra{justify-content:flex-start}
+ main[data-bc-generated] .gran-plans>.unit-option>summary>.installment-link{grid-column:1;grid-row:3;white-space:normal;min-width:0;font-size:13px}
+ main[data-bc-generated] .gran-plans>.unit-option>summary>.plan-toggle-label{grid-column:2;grid-row:3;white-space:normal;min-width:0;font-size:13px}
+ main[data-bc-generated] .gran-plans>.unit-option>summary:has(.bc-plan-heading)::after{grid-column:3;grid-row:3}
+}

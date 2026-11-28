@@ -190,7 +190,7 @@
 .bc-property-portal main[data-bc-generated]>.property-detail-section{background:#E2E5E7;color:#293C46}
 .gran-detail>.property-intro[data-bc-layout="0.373"],
 .gran-detail>.bc-amenities,.gran-detail>.installment-calculator,.gran-detail>.bc-extra-panel{background:#F8F9F9}
-.gran-detail>.gran-plans{box-sizing:border-box;min-width:0;background:#A86B59;border:0;box-shadow:none;border-radius:16px;padding:clamp(16px,2.4vw,28px);margin:24px 0}
+.gran-detail>.gran-plans{box-sizing:border-box;min-width:0;background:#898394;border:0;box-shadow:none;border-radius:16px;padding:clamp(16px,2.4vw,28px);margin:24px 0}
 .gran-detail>.gran-plans>h2{margin:0 0 16px;color:#fff}
 .gran-detail>.gran-plans>.unit-option:first-of-type{margin-top:0}
 .gran-detail .property-intro h1,.gran-detail .bc-title-line .gran-developer,.gran-detail .bc-property-description,
