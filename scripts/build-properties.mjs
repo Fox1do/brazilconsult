@@ -26,6 +26,15 @@ for(const p of catalog){
 }
 const skip=new Set(['dist','admin','scripts','node_modules','.git','.github','.wrangler','.assetsignore','.gitignore','wrangler.toml','wrangler.json','wrangler.jsonc']);
 const excluded=rel=>rel.split('/').some(s=>s.startsWith('.')&&s!=='.well-known');
+// Refresh the BrasilDom wordmark on existing static pages as well as generated pages.
+// Keep source files and the separate Brazil Consult brand unchanged.
+function refreshBrasilDom(html){
+ return html.replace(/<img\b[^>]*>/gi,tag=>{
+  if(!/\bsrc\s*=\s*["'][^"']*\bassets\/img\/brazil-dom-logo(?:-light)?\.png(?:\?v=[0-9.]+)?["']/i.test(tag))return tag;
+  return tag.replace(/(\bassets\/img\/brazil-dom-logo(?:-light)?\.png)(?:\?v=[0-9.]+)?(?=["'])/gi,'$1?v=0.390')
+    .replace(/(\balt\s*=\s*)(["'])БРАЗИЛ\s*ДОМ\2/gi,(_,prefix,quote)=>prefix+quote+'BrasilDom'+quote);
+ });
+}
 // Recreate output, retaining all normal public files, including independent landing pages.
 // Reject symlinks instead of following potentially unsafe paths.
 async function copyTree(rel=''){
@@ -34,7 +43,10 @@ async function copyTree(rel=''){
   if((!rel&&skip.has(ent.name))||excluded(next))continue;
   if(ent.isSymbolicLink())throw Error('Символическая ссылка не поддерживается: '+next);
   if(ent.isDirectory()){await fs.mkdir(path.join(output,next),{recursive:true});await copyTree(next);}
-  else if(ent.isFile())await fs.copyFile(path.join(source,next),path.join(output,next));
+  else if(ent.isFile()){
+   if(/\.html$/i.test(next))await fs.writeFile(path.join(output,next),refreshBrasilDom(await read(next)));
+   else await fs.copyFile(path.join(source,next),path.join(output,next));
+  }
  }
 }
 // Dist is reserved for build output; never delete a source directory or follow a symlink.
