@@ -50,3 +50,6 @@ aside>button{width:100%;margin:10px 0 24px}aside h2{font-size:19px}
 .field-error-note{display:block;color:#a61c1c;font-size:.85rem;margin:.25rem 0;}
 
 .property-import-controls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.property-import-controls button{padding:8px 12px;font-size:13px}.import-status{flex-basis:100%;margin:0;overflow-wrap:anywhere}.import-status:empty{display:none}
+
+/* 0.356: explicitly scoped reorder handles */
+.reorder-controls{display:inline-flex;align-items:center;gap:3px;vertical-align:middle;margin-left:8px;flex:none}.reorder-controls button,.sidebar-item .reorder-controls button{font-size:14px;min-width:26px;min-height:28px;padding:2px 4px;margin:0;border:1px solid #c7d3c5;border-radius:5px;background:#fff;color:#345a45;flex:none}.reorder-controls button:disabled,.sidebar-item .reorder-controls button:disabled{opacity:.35;cursor:default}.reorder-handle[draggable=true]{cursor:grab;touch-action:pan-y}.reorder-handle[draggable=true]:active{cursor:grabbing}.sidebar-item .reorder-controls{margin-left:0;gap:2px}.sidebar-item .reorder-controls button{min-width:21px;padding:2px}.order-undo{font-size:12px;margin:4px 0}.plan-group>summary .reorder-controls{margin-right:6px}
