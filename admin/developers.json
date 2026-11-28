@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "tegra",
+    "name": "Tegra",
+    "active": true,
+    "website": "",
+    "description": "",
+    "logo": null
+  }
+]

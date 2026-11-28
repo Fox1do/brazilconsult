@@ -1,1 +1,226 @@
-[]
+[
+  {
+    "countryId": "brazil",
+    "cityId": "rio-de-janeiro",
+    "location": {
+      "city": "Рио-де-Жанейро",
+      "state": "RJ",
+      "district": "Barra da Tijuca",
+      "neighborhood": "Península",
+      "latitude": null,
+      "longitude": null,
+      "address": "Avenida Flamboyants da Península, nº 600, Barra da Tijuca, Rio de Janeiro"
+    },
+    "id": "gran-thai",
+    "title": "Gran Thai",
+    "developer": "tegra",
+    "developerName": "Tegra",
+    "page": "brazil/rio-de-janeiro/tegra/gran-thai/",
+    "active": false,
+    "plans": [
+      {
+        "id": "f0da4aff-b0f2-4bbb-9456-66ccf105e440",
+        "parentId": null,
+        "available": true,
+        "priceBrl": 2210000,
+        "spec": {
+          "apartmentType": "standard",
+          "bedrooms": 3,
+          "areaMin": 128,
+          "bathrooms": 5,
+          "suites": 3,
+          "parking": 2
+        },
+        "locations": [
+          {
+            "buildingId": "043a3c69-945b-4cd3-8cfd-9a221a730ee3",
+            "floorMin": null,
+            "floorMax": null,
+            "unit": ""
+          }
+        ],
+        "technical": {
+          "count": null
+        },
+        "typePriceMigrated": true
+      },
+      {
+        "id": "c9fe0c82-c9b1-41cd-8c44-fa56f99c30eb",
+        "parentId": "f0da4aff-b0f2-4bbb-9456-66ccf105e440",
+        "available": true,
+        "locations": [],
+        "media": {
+          "id": "826d335d-3384-4f94-9326-6366175fa1ec",
+          "name": "GRAN THAI_Book_Digital_Página_59.jpg",
+          "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/ed28dcdd141748d0bfb7d1dd8d3243221771cc0e.webp",
+          "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/floorplans/ed28dcdd141748d0bfb7d1dd8d3243221771cc0e.webp"
+        }
+      }
+    ],
+    "technical": {
+      "types": [],
+      "total": 245,
+      "floors": 15,
+      "parkingLevels": 2,
+      "guestParking": 13,
+      "parkingSize": "",
+      "penthouseFloor": true
+    },
+    "buildings": [
+      {
+        "id": "043a3c69-945b-4cd3-8cfd-9a221a730ee3",
+        "name": "Shanti",
+        "active": true
+      },
+      {
+        "id": "d5c2ba70-6c96-43ec-ad96-5bdfe34bcc3e",
+        "name": "Sawasdee",
+        "active": true
+      },
+      {
+        "id": "dbc235de-71ea-440a-a49d-3c0c6e56f46c",
+        "name": "Siam",
+        "active": true
+      }
+    ],
+    "buildingMode": "multiple",
+    "sales": {
+      "status": "none"
+    },
+    "hero": [
+      {
+        "id": "d39e75b9-7b74-44d7-b89f-946d9b022c00",
+        "name": "Peninsula Collection - Av Flamboyants - Material Preliminar Comercial_Página_04.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/main/1a97fa52268ee5242e1f0d0395d55638bf4e368e.webp",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/main/1a97fa52268ee5242e1f0d0395d55638bf4e368e.webp"
+      }
+    ],
+    "gallery": [
+      {
+        "id": "d0750c76-515a-4f53-b01b-f0f2e51b2a47",
+        "name": "Peninsula Collection - Av Flamboyants - Material Preliminar Comercial_Página_02.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/9a9e4724d35750dc1a4035a66cd893d871e98aeb.webp",
+        "category": "Входная группа",
+        "caption": "",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/9a9e4724d35750dc1a4035a66cd893d871e98aeb.webp"
+      },
+      {
+        "id": "4bdd843a-5b0c-42cc-8a3f-55a072cc7539",
+        "name": "Peninsula Collection - Av Flamboyants - Material Preliminar Comercial_Página_03.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/29f9d26de4a79521bc1009575368adb5dfbd9c46.webp",
+        "category": "Бассейн",
+        "caption": "",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/29f9d26de4a79521bc1009575368adb5dfbd9c46.webp"
+      },
+      {
+        "id": "1bb84c60-bbf2-4aec-b6fc-3a3b22e3a41f",
+        "name": "GRAN THAI_Book_Digital_Página_20+.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/f3033ccf2e700487dc26dcc2d502a2b409ae6e52.webp",
+        "category": "Фасад здания",
+        "caption": "",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/f3033ccf2e700487dc26dcc2d502a2b409ae6e52.webp"
+      },
+      {
+        "id": "dee83dba-fc68-4fbf-8079-d37566ff3b3c",
+        "name": "GRAN THAI_Book_Digital_Página_57 copy.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/355c152fda3d022bf79c1b2eb257ca99eb0ad61b.webp",
+        "category": "Вид из квартиры",
+        "caption": "Вид с балкона ",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/355c152fda3d022bf79c1b2eb257ca99eb0ad61b.webp"
+      },
+      {
+        "id": "25140eb9-2dfd-4b71-a69f-e853b7b8dd0b",
+        "name": "GRAN THAI_Book_Digital_Página_67+.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/6b774899f8379cd90e2b315467a6c0405a4145eb.webp",
+        "category": "Вид из квартиры",
+        "caption": "Вид на парк",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/gallery/6b774899f8379cd90e2b315467a6c0405a4145eb.webp"
+      }
+    ],
+    "locationGallery": [
+      {
+        "id": "5a449a4f-6270-40a8-844d-103beb6a010f",
+        "name": "0182.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/location/0e44aa1e1c39b33e910b6b6d84e81c96611a616c.webp",
+        "category": "Район",
+        "caption": "Пенинсула",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/location/0e44aa1e1c39b33e910b6b6d84e81c96611a616c.webp"
+      },
+      {
+        "id": "6dc3de63-b72e-4c3f-8a79-08358d5f5975",
+        "name": "0593.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/location/e99f8c17e88d070df4a4001a880d796b45146e16.webp",
+        "category": "Район",
+        "caption": "Вид на строящийся ЖК",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/location/e99f8c17e88d070df4a4001a880d796b45146e16.webp"
+      },
+      {
+        "id": "56b4bc76-80af-4899-90fc-60eac63ac8cf",
+        "name": "0597.jpg",
+        "src": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/location/53bdfc4cb45c40a956d7553bf60e42a6110136fe.webp",
+        "category": "Район",
+        "caption": "Вид на строящийся ЖК",
+        "captionPt": "",
+        "original": "../properties/brazil/rio-de-janeiro/tegra/gran-thai/images/location/53bdfc4cb45c40a956d7553bf60e42a6110136fe.webp"
+      }
+    ],
+    "uid": "52fa6033-51fd-44e6-a9ee-f8d121e47828",
+    "priceUpdatedAt": "2026-11-28T02:38:36.561Z",
+    "source": "Tegra / Carvalho Hosken — GRAN THAI_Book_Digital.pdf, стр. 8–54, 84–91, 95.",
+    "amenities": [
+      "pool-50",
+      "kids-pool",
+      "jacuzzi",
+      "gym",
+      "spa",
+      "massage",
+      "relax",
+      "playroom",
+      "playground",
+      "party",
+      "gourmet",
+      "barbecue",
+      "games",
+      "coworking",
+      "meeting",
+      "market",
+      "bike",
+      "ev",
+      "visitor-parking",
+      "security",
+      "garden",
+      "walk",
+      "laundry"
+    ],
+    "highlights": [
+      "pool-50",
+      "near-park",
+      "near-school"
+    ],
+    "surroundings": [],
+    "architectureDesign": {
+      "architecture": "FEU Arquitetura",
+      "interiors": "Studio Roca",
+      "landscape": "Benedito Abbud Arquitetura Paisagística",
+      "development": "Tegra Incorporadora (TGRJ-20 Empreendimentos Imobiliários Ltda.)",
+      "jointDevelopment": "Carvalho Hosken S/A"
+    },
+    "territoryArea": 8032,
+    "longDescription": "Gran Thai Leisure Residence — комплекс из трёх жилых корпусов в Península, Barra da Tijuca, с прямым выходом в Green Park. Проект вдохновлён тайской архитектурой. На территории предусмотрены 50-метровый бассейн, SPA, тренажёрный зал с оборудованием Technogym, детские игровые зоны и пространства для отдыха и встреч.",
+    "completionMonth": "2027-09",
+    "completion": "сентябрь 2027 г.",
+    "image": "brazil/rio-de-janeiro/tegra/gran-thai/images/main/1a97fa52268ee5242e1f0d0395d55638bf4e368e.webp",
+    "priceBrl": 2210000,
+    "price": "R$ 2 210 000",
+    "district": "Barra da Tijuca · Península",
+    "city": "Рио-де-Жанейро",
+    "description": "Застройщик Tegra"
+  }
+]
