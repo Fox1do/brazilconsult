@@ -128,6 +128,7 @@ export function pageHTML(p,template) {
   ];
   const architectureItems=[['architecture','Архитектура'],['interiors','Дизайн интерьеров'],['landscape','Ландшафтный дизайн'],['development','Девелопмент и строительство'],['jointDevelopment','Совместный девелопмент']].map(([k,label])=>present(p.architectureDesign?.[k])?`${label} — ${p.architectureDesign[k].trim()}`:'');
   const info=(items,heading,cls)=>{const list=items.filter(Boolean);return list.length?`<section class="gran-tech bc-extra-info ${cls}"><h2>${heading}</h2><ul class="bc-info-columns">${list.map(x=>`<li>${e(x)}</li>`).join('')}</ul></section>`:'';};
+  const extraInfo=info(techItems,'Технические характеристики','bc-technical')+info(architectureItems,'Архитектура и дизайн','bc-architecture');
   const body=`<header class="property-intro" data-bc-layout="0.370"><a class="link-arrow" href="/properties/">← Все объекты</a>
     <div class="bc-title-line"><h1>${title}</h1>${p.developerName?`<p class="gran-developer">Застройщик: <strong>${e(p.developerName)}</strong></p>`:''}</div>
     ${p.longDescription?`<p class="bc-property-description">${e(p.longDescription)}</p>`:''}
@@ -139,8 +140,7 @@ export function pageHTML(p,template) {
     ${plans?`<section class="gran-plans"><h2>Квартиры и планировки</h2>${plans}</section>`:''}
     <section class="gran-tech bc-amenities" hidden></section>
     ${plans?'<section id="installment-calculator" class="installment-calculator" hidden></section>':''}
-    ${info(techItems,'Технические характеристики','bc-technical')}
-    ${info(architectureItems,'Архитектура и дизайн','bc-architecture')}
+    ${extraInfo?`<div class="bc-extra-panel">${extraInfo}</div>`:''}
     <p class="property-disclaimer">Информация носит ознакомительный характер. Цены, характеристики и наличие необходимо уточнять перед покупкой.</p>`;
   if(!template.includes('__TITLE__')||!template.includes('__BODY__')||!template.includes('</head>')) fail('Некорректный шаблон страницы ЖК',502);
   return template.replace('__TITLE__',()=>title).replace('__BODY__',()=>body).replace('</head>',()=>`<meta name="description" content="${title} — квартиры и планировки"><link rel="canonical" href="https://brazilconsult.com/${root(p)}">${p.active===false?'<meta name="robots" content="noindex">':''}</head>`);

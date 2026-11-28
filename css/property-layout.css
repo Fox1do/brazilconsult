@@ -122,3 +122,55 @@
 .gran-detail .installment-disclaimer{font-size:12px;line-height:1.4}
 @media(max-width:760px){.gran-detail .bc-amenities .bc-territory-card{grid-template-columns:1fr;gap:14px}.gran-detail .bc-territory-cell+.bc-territory-cell{border-top:1px solid #cbd3d9;padding-top:12px}.gran-detail .installment-part{grid-template-rows:auto auto auto}.gran-detail .installment-part label{min-height:0}}
 @media(max-width:420px){.gran-detail .bc-info-columns{gap:8px 14px;font-size:13px}}
+
+
+/* 0.371: quiet, independent white panels below apartment cards. */
+.gran-detail>.bc-amenities,
+.gran-detail>.installment-calculator,
+.gran-detail>.bc-extra-panel{
+  box-sizing:border-box;min-width:0;background:#fff;border:0;box-shadow:none;
+  border-radius:16px;padding:clamp(16px,2.4vw,28px);margin:24px 0;
+}
+.gran-detail>.bc-amenities h2{margin:0 0 18px}
+.gran-detail>.bc-amenities .bc-territory-card{
+  grid-template-columns:repeat(var(--fact-cols,3),minmax(0,1fr));
+  grid-template-rows:repeat(3,auto);gap:8px 16px;align-items:stretch;
+  padding:20px 14px;margin:0 0 18px;
+}
+.gran-detail>.bc-amenities .bc-territory-card .bc-territory-cell{
+  grid-row:span 3;grid-template-rows:subgrid;gap:8px;align-items:center;
+  text-align:center;justify-items:center;
+}
+.gran-detail>.bc-amenities .bc-territory-cell .bc-territory-label{grid-row:1}
+.gran-detail>.bc-amenities .bc-territory-cell .bc-territory-value{grid-row:2;font-variant-numeric:tabular-nums}
+.gran-detail>.bc-amenities .bc-territory-cell .bc-territory-comparison{grid-row:3}
+.gran-detail>.bc-amenities .bc-amenities-grid{gap:16px 12px;margin-bottom:0}
+.gran-detail>.bc-amenities .bc-amenities-grid .bc-amenity-icon{font-size:32px}
+.gran-detail>.bc-amenities .bc-amenities-grid li{padding:4px 0;gap:5px}
+.gran-detail>.bc-extra-panel .bc-extra-info{margin:0;padding:0;border:0}
+.gran-detail>.bc-extra-panel .bc-extra-info+.bc-extra-info{border-top:1px solid #e4e5e0;margin-top:22px;padding-top:22px}
+.gran-detail>.bc-extra-panel .bc-extra-info h2{margin:0 0 14px;font-size:clamp(19px,2.1vw,22px)}
+.gran-detail>.installment-calculator .installment-currencies{
+  display:inline-flex;align-items:center;gap:3px;flex:none;
+  border:0;border-radius:0;overflow:visible;background:transparent;
+  color:#426448;white-space:nowrap;
+}
+.gran-detail>.installment-calculator .installment-currencies button{
+  font:inherit;font-size:15px;line-height:1.4;font-weight:400;
+  border:0;border-radius:0;background:transparent;color:#426448;
+  padding:8px 2px;cursor:pointer;
+}
+.gran-detail>.installment-calculator .installment-currencies button[aria-pressed="true"]{background:transparent;color:#426448;font-weight:600}
+.gran-detail>.installment-calculator .installment-currencies button:not(:disabled):hover{text-decoration:underline;text-underline-offset:3px}
+.gran-detail>.installment-calculator .installment-currencies button:focus-visible{outline:2px solid #426448;outline-offset:2px}
+.gran-detail>.installment-calculator .installment-currencies button:disabled{opacity:.4;cursor:not-allowed}
+.gran-detail>.installment-calculator .installment-currency-separator{font-size:15px;line-height:1;pointer-events:none}
+.gran-detail>.installment-calculator .installment-disclaimer{margin-bottom:0}
+@media(max-width:760px){
+  .gran-detail>.bc-amenities,.gran-detail>.installment-calculator,.gran-detail>.bc-extra-panel{margin:18px 0;border-radius:12px}
+  .gran-detail>.bc-amenities .bc-territory-card{grid-template-columns:1fr;grid-template-rows:none;gap:14px}
+  .gran-detail>.bc-amenities .bc-territory-card .bc-territory-cell{grid-row:auto;grid-template-rows:auto auto auto;gap:4px}
+  .gran-detail>.bc-amenities .bc-territory-card .bc-territory-cell+.bc-territory-cell{padding-top:14px}
+  .gran-detail>.installment-calculator .installment-heading h2,.gran-detail>.installment-calculator .installment-heading h2 span{white-space:normal}
+  .gran-detail>.installment-calculator .installment-heading{gap:4px 12px}
+}
