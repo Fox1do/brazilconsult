@@ -15,7 +15,7 @@
   "developer": "tegra",
   "developerName": "Tegra",
   "page": "brazil/rio-de-janeiro/tegra/gran-thai/",
-  "active": false,
+  "active": true,
   "plans": [
     {
       "id": "f0da4aff-b0f2-4bbb-9456-66ccf105e440",
