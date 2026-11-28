@@ -73,7 +73,7 @@ function typeOnSale(plans,type) {
 
   function restoreGeneratedPlans(property) {
     if (!document.querySelector('main[data-bc-generated="true"]')) return;
-    if(!document.querySelector('link[href="/css/plan-cards.css?v=0.367"]')){const css=document.createElement('link');css.rel='stylesheet';css.href='/css/plan-cards.css?v=0.367';document.head.append(css);}
+    if(!document.querySelector('link[href="/css/plan-cards.css?v=0.372"]')){const css=document.createElement('link');css.rel='stylesheet';css.href='/css/plan-cards.css?v=0.372';document.head.append(css);}
     const make=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text)n.textContent=text;return n;};
     const map=new Map(property.plans.map(p=>[p.id,p]));
     const icon='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4m-6.8 7 6.8 4"/></svg>';
@@ -125,19 +125,25 @@ function planDescription(plan) {
       const title=parent.translations?.ru?.title?.trim()||bedroomLabel(s);
       if(heading){heading.textContent=title;summary.querySelectorAll('.bc-plan-description').forEach(n=>n.remove());const desc=planDescription(parent);if(desc.trim())heading.after(make('small','bc-plan-description',desc.trim()));}
       const meta=summary.querySelector('.unit-meta');
+      const left=summary.querySelector(':scope > span:first-child');
+      const headingRow=make('span','bc-plan-title-row');
+      const extras=make('span','bc-plan-extras');
+      if(heading){heading.before(headingRow);headingRow.append(heading);}
       if(meta){
         const entries=[];
         if(s.areaMin>0)entries.push([area(s),'Площадь']);
         if(s.bathrooms!=null)entries.push([String(s.bathrooms),'Санузлы','bath']);
         if(s.parking!=null)entries.push([String(s.parking),'Парковочные места','car']);
         const features=[['garden','🌿','Собственный дворик / терраса'],['staff','🛏️','Комната для персонала'],['pool','🏊','Собственный бассейн'],['sauna','♨️','Приватная сауна'],['bath','🛁','Ванна'],['jacuzzi','🫧','Джакузи'],['privateElevator','🛗','Индивидуальный лифт'],['serviceEntrance','🚪','Служебный вход'],['barbecue','🍖','Своя зона барбекю'],['doubleHeight','↕️','Второй свет'],['designRenovation','🎨','Дизайнерский ремонт'],['authorInterior','🖼️','Авторский интерьер'],['fullyFurnished','🛋️','Полностью меблирована']];
-        for(const [key,glyph,label] of features)if(s[key]===true||(key==='garden'&&s.apartmentType==='garden'))entries.push([glyph,label,key]);
+        for(const [key,glyph,label] of features)if(s[key]===true||(key==='garden'&&s.apartmentType==='garden'))entries.push([glyph,label,key,true]);
         meta.replaceChildren();
         const paths={car:'M5 17H3v-5l3-6h12l3 6v5h-2m-12 0h10M3 12h18M7 14h.01M17 14h.01M5 17v3m14-3v3',garden:'M12 21v-9m0 4C3 16 3 9 3 5c7 0 9 4 9 7m0 0c0-6 5-9 9-9 0 7-4 10-9 10',staff:'M3 18V6m0 9h18v5M3 9h7v6m0-4h8a3 3 0 0 1 3 3v1',pool:'M3 15q3 3 6 0t6 0t6 0M3 20q3 3 6 0t6 0t6 0M8 12V5a2 2 0 0 1 4 0m3 7V5a2 2 0 0 1 4 0M8 8h7',sauna:'M4 16h16v5H4zm3-4c-4-4 4-5 0-9m5 9c-4-4 4-5 0-9m5 9c-4-4 4-5 0-9',bath:'M3 12h18v3a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5v-3Zm2 0V5a3 3 0 0 1 6 0v2m-2 0h4M7 20l-1 2m11-2 1 2',jacuzzi:'M3 14h18l-2 6H5zm4-3v-1m5 1V9m5 2v-1M6 6h.01M12 4h.01M18 6h.01',privateElevator:'M4 3h16v18H4zM12 3v18M7 12l2-2m-2 2 2 2m8-2-2-2m2 2-2 2',serviceEntrance:'M4 21h16M6 21V3h12v18m-8-9h.01',barbecue:'M4 9h16a8 8 0 0 1-16 0Zm8 8v5m-4 0h8M8 6V3m4 3V2m4 4V3',doubleHeight:'M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4M4 3h2m12 0h2M4 21h2m12 0h2',designRenovation:'M3 21l6-2 12-12-4-4L5 15zm12-16 4 4M5 15l4 4',authorInterior:'M3 4h18v16H3zM5 17l5-6 4 4 3-3 4 5M16 8h.01',fullyFurnished:'M5 12V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M5 12a2 2 0 0 0-3 2v4h20v-4a2 2 0 0 0-3-2v3H5zm0 6v3m14-3v3'};
-        entries.forEach(([glyph,label,kind],i)=>{if(i)meta.append(make('span','bc-meta-separator','·'));const tip=make('span','unit-tip bc-meta-item');if(kind){const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');svg.setAttribute('fill','none');svg.setAttribute('stroke','currentColor');svg.setAttribute('stroke-width','1.6');svg.setAttribute('stroke-linecap','round');svg.setAttribute('stroke-linejoin','round');const path=document.createElementNS(svg.namespaceURI,'path');path.setAttribute('d',paths[kind]);svg.append(path);tip.append(svg);if(label==='Санузлы'||label==='Парковочные места')tip.append(make('span','bc-meta-number',glyph));}else tip.textContent=glyph;tip.dataset.tip=label;tip.title=label;tip.tabIndex=0;tip.setAttribute('aria-label',(label==='Санузлы'||label==='Парковочные места')?label+': '+glyph:label);tip.addEventListener('click',ev=>{ev.preventDefault();ev.stopPropagation();tip.focus();});tip.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();ev.stopPropagation();}});meta.append(tip);});
+        entries.forEach(([glyph,label,kind,isExtra])=>{const target=isExtra?extras:meta;if(target.childNodes.length)target.append(make('span','bc-meta-separator','·'));const tip=make('span','unit-tip bc-meta-item');if(kind){const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('aria-hidden','true');svg.setAttribute('fill','none');svg.setAttribute('stroke','currentColor');svg.setAttribute('stroke-width','1.6');svg.setAttribute('stroke-linecap','round');svg.setAttribute('stroke-linejoin','round');const path=document.createElementNS(svg.namespaceURI,'path');path.setAttribute('d',paths[kind]);svg.append(path);tip.append(svg);if(label==='Санузлы'||label==='Парковочные места')tip.append(make('span','bc-meta-number',glyph));}else tip.textContent=glyph;tip.dataset.tip=label;tip.title=label;tip.tabIndex=0;tip.setAttribute('aria-label',(label==='Санузлы'||label==='Парковочные места')?label+': '+glyph:label);tip.addEventListener('click',ev=>{ev.preventDefault();ev.stopPropagation();tip.focus();});tip.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();ev.stopPropagation();}});target.append(tip);});
+        if(extras.childNodes.length&&heading)headingRow.append(extras);
+        if(!meta.childNodes.length)meta.hidden=true;
       }
       const toggle=make('span','plan-toggle-label');toggle.append(make('span','when-closed','Подробнее'),make('span','when-open','Свернуть'));summary.append(toggle);
-      const left=summary.querySelector(':scope > span:first-child');const priceEl=left?.querySelector('.unit-price');if(left&&meta&&priceEl){left.classList.add('bc-plan-heading');summary.insertBefore(meta,toggle);summary.insertBefore(priceEl,toggle);}
+      const priceEl=left?.querySelector('.unit-price');if(left&&priceEl){left.classList.add('bc-plan-heading');summary.insertBefore(priceEl,toggle);}
       const variants=property.plans.filter(p=>p.parentId===parent.id&&p.available!==false);
       const legacyIds=Array.isArray(parent.legacyVariantIds)?parent.legacyVariantIds:variants.map(v=>v.id);
       const entries=property.plans.some(p=>p.parentId===parent.id)?variants:[parent];

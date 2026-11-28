@@ -127,9 +127,9 @@ export function pageHTML(p,template) {
     positive(t.guestParking)?`Гостевых машино-мест — ${number(t.guestParking)}`:''
   ];
   const architectureItems=[['architecture','Архитектура'],['interiors','Дизайн интерьеров'],['landscape','Ландшафтный дизайн'],['development','Девелопмент и строительство'],['jointDevelopment','Совместный девелопмент']].map(([k,label])=>present(p.architectureDesign?.[k])?`${label} — ${p.architectureDesign[k].trim()}`:'');
-  const info=(items,heading,cls)=>{const list=items.filter(Boolean);return list.length?`<section class="gran-tech bc-extra-info ${cls}"><h2>${heading}</h2><ul class="bc-info-columns">${list.map(x=>`<li>${e(x)}</li>`).join('')}</ul></section>`:'';};
+  const info=(items,heading,cls)=>{const list=items.filter(Boolean);return list.length?`<section class="gran-tech bc-extra-info ${cls}"><h2>${cls==='bc-technical'?'<svg class="bc-tech-heading-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg>':''}<span>${heading}</span></h2><ul class="bc-info-columns">${list.map(x=>`<li>${e(x)}</li>`).join('')}</ul></section>`:'';};
   const extraInfo=info(techItems,'Технические характеристики','bc-technical')+info(architectureItems,'Архитектура и дизайн','bc-architecture');
-  const body=`<header class="property-intro" data-bc-layout="0.370"><a class="link-arrow" href="/properties/">← Все объекты</a>
+  const body=`<a class="link-arrow bc-property-back" href="/properties/">← Все объекты</a><header class="property-intro" data-bc-layout="0.372">
     <div class="bc-title-line"><h1>${title}</h1>${p.developerName?`<p class="gran-developer">Застройщик: <strong>${e(p.developerName)}</strong></p>`:''}</div>
     ${p.longDescription?`<p class="bc-property-description">${e(p.longDescription)}</p>`:''}
     <div class="bc-property-hero${first?'':' bc-property-hero-no-photo'}"><div class="bc-property-hero-side"><div class="gran-facts property-facts">
