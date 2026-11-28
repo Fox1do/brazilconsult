@@ -10,13 +10,16 @@ const read=rel=>fs.readFile(path.join(source,rel),'utf8');
 const parse=async rel=>JSON.parse(await read(rel));
 const [catalog,developers,template,sitemap]=await Promise.all([parse('admin/catalog.json'),parse('admin/developers.json'),read('admin/property-template.html'),read('sitemap.xml')]);
 if(!Array.isArray(catalog)||!Array.isArray(developers)||!sitemap.includes('</urlset>'))throw Error('Некорректные данные сборки');
+const nearby=await parse('admin/surroundings.json').catch(e=>{if(e.code==='ENOENT')return [];throw e;});
+if(!Array.isArray(nearby))throw Error('Некорректная база окружения');
+const aroundById=new Map(nearby.map(x=>[x.id,x]));
 const names=new Map(developers.map(d=>[d.id,d.name]));
 const entries=new Map();
 for(const p of catalog){
  const dir=root(p); if(entries.has(dir)||!names.has(p.developer)||!Array.isArray(p.plans))throw Error('Некорректный ЖК: '+dir);
  const data={...p,developerName:names.get(p.developer),page:dir.slice('properties/'.length)};
  // Render before changing the output; a malformed catalog must fail the build.
- entries.set(dir,{data,html:pageHTML(data,template)});
+ entries.set(dir,{data,html:pageHTML(data,template,aroundById)});
 }
 const skip=new Set(['dist','admin','scripts','node_modules','.git','.github','.wrangler','.assetsignore','.gitignore','wrangler.toml','wrangler.json','wrangler.jsonc']);
 const excluded=rel=>rel.split('/').some(s=>s.startsWith('.')&&s!=='.well-known');

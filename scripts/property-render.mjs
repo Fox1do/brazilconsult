@@ -1,4 +1,5 @@
 // Public presentation only. No credentials, API calls or GitHub writes.
+import '../js/surroundings-distance.js';
 const slug=/^[a-z0-9][a-z0-9-]*$/;
 const imagePath=/^properties\/(?:[a-z0-9_-]+\/)+[a-z0-9_.-]+\.(webp|jpe?g|png)$/i;
 const safePath=p=>!p.split('/').some(s=>s==='.'||s==='..');
@@ -86,7 +87,16 @@ function salesLabel(plan) {
   return n===1?'Осталась 1 квартира':`Осталось ${n} ${n<=4?'квартиры':'квартир'}`;
 }
 
-export function pageHTML(p,template) {
+export function nearbyHTML(p,aroundById){
+ const api=globalThis.BCNearbyDistance,seen=new Set(),rows=[];let straight=false,time=false;
+ for(const link of p.surroundingsLinks||[]){const x=aroundById.get(link.objectId);if(seen.has(link.objectId)||!api.active(x)||x.cityId!==p.cityId||!String(x.name||'').trim())continue;seen.add(link.objectId);
+ const d=api.describe(p.location,x,link);straight||=!!d.label&&!d.manual;time||=!!d.time;
+ rows.push(`<li class="bc-nearby-row"><span>${esc(x.name)}</span>${d.text?`<strong>${esc(d.text)}</strong>`:''}</li>`);}
+ if(!rows.length)return '';
+ const note=[straight?'Автоматически рассчитанные расстояния указаны по прямой.':'',time?'Время в пути ориентировочное.':''].filter(Boolean).join(' ');
+ return `<section class="gran-tech bc-nearby"><h2>Окружение комплекса</h2><ul>${rows.join('')}</ul>${note?`<p class="bc-nearby-note">${esc(note)}</p>`:''}</section>`;
+}
+export function pageHTML(p,template,aroundById=new Map()) {
   const e=esc,title=e(p.title);
   const pic=m=>m?.src?`<a data-lightbox href="${e(mediaUrl(m.original||m.src))}"><img loading="lazy" src="${e(mediaUrl(m.src))}" alt="${e(m.caption||m.category||p.title)}"></a>`:'';
   const gallery=(items,label)=>items?.length?`<section class="gran-gallery"><h2>${label}</h2><div class="gran-gallery__grid">${items.map(m=>`<figure>${pic(m)}<figcaption>${e(m.caption||m.category)}</figcaption></figure>`).join('')}</div></section>`:'';
@@ -140,6 +150,7 @@ export function pageHTML(p,template) {
     ${plans?`<section class="gran-plans"><h2>Квартиры и планировки</h2>${plans}</section>`:''}
     <section class="gran-tech bc-amenities" hidden></section>
     ${plans?'<section id="installment-calculator" class="installment-calculator" hidden></section>':''}
+    ${nearbyHTML(p,aroundById)}
     ${extraInfo?`<div class="bc-extra-panel">${extraInfo}</div>`:''}
     <p class="property-disclaimer">Информация носит ознакомительный характер. Цены, характеристики и наличие необходимо уточнять перед покупкой.</p>`;
   if(!template.includes('__TITLE__')||!template.includes('__BODY__')||!template.includes('</head>')) fail('Некорректный шаблон страницы ЖК',502);
