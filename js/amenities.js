@@ -15,10 +15,24 @@
     const selected=new Set(Array.isArray(p.amenities)?p.amenities:[]);if(p.hotelService===true)selected.add('hotel-service');
     const items=(window.BCAmenities||[]).flatMap(g=>g.items).filter(i=>selected.has(i.id));
     const area=Number(p.territoryArea),hasArea=Number.isFinite(area)&&area>0;
-    if(!items.length&&!hasArea)return;
+    const positive=v=>typeof v==='number'&&Number.isFinite(v)&&v>0;
+    const buildings=Array.isArray(p.buildings)?p.buildings.length:0;
+    const floors=p.technical?.floors,total=p.technical?.total;
+    const areas=(p.plans||[]).filter(x=>!x.parentId).map(x=>x.spec?.areaMin).filter(positive);
+    const minArea=areas.length?Math.min(...areas):null;
+    if(!items.length&&!hasArea&&!buildings&&!positive(total)&&!positive(floors)&&!minArea)return;
     const lang=(document.documentElement.lang||'ru').slice(0,2),label=o=>o[lang]||o.ru;
     section.replaceChildren();make('h2',label({ru:'Инфраструктура комплекса',pt:'Lazer e conveniências',en:'Amenities'}),section);
-    if(hasArea){const card=make('div',null,section,'bc-territory-card');make('span','Площадь территории',card,'bc-territory-label');make('strong',area.toLocaleString('ru-RU',{maximumFractionDigits:2})+' м²',card,'bc-territory-value');const courts=area/260.7569,rounded=Math.round(courts),word=rounded%100>=11&&rounded%100<=14?'теннисных кортов':rounded%10===1?'теннисный корт':rounded%10>=2&&rounded%10<=4?'теннисных корта':'теннисных кортов';const comparison=area>=3570?'≈ '+(area/7140).toLocaleString('ru-RU',{maximumFractionDigits:1})+' футбольного поля':courts<1?'Менее одного теннисного корта':'≈ '+rounded+' '+word;make('span',comparison,card,'bc-territory-comparison');}
+    const fmt=n=>n.toLocaleString('ru-RU',{maximumFractionDigits:2});
+    const plural=(n,one,few,many)=>n%100>=11&&n%100<=14?many:n%10===1?one:n%10>=2&&n%10<=4?few:many;
+    if(hasArea||buildings||positive(total)||positive(floors)||minArea){
+      const card=make('div',null,section,'bc-territory-card');
+      const cell=(label,value,sub)=>{const col=make('div',null,card,'bc-territory-cell');make('span',label,col,'bc-territory-label');if(value)make('strong',value,col,'bc-territory-value');if(sub)make('span',sub,col,'bc-territory-comparison');};
+      if(hasArea){const courts=area/260.7569,rounded=Math.round(courts);const comparison=area>=3570?'≈ '+(area/7140).toLocaleString('ru-RU',{maximumFractionDigits:1})+' футбольного поля':courts<1?'Менее одного теннисного корта':'≈ '+rounded+' '+plural(rounded,'теннисный корт','теннисных корта','теннисных кортов');cell('Площадь территории',fmt(area)+' м²',comparison);}
+      if(buildings||positive(floors))cell(buildings?'Количество корпусов':'Этажность',buildings?fmt(buildings):fmt(floors),buildings&&positive(floors)?fmt(floors)+' '+plural(floors,'этаж','этажа','этажей'):null);
+      if(positive(total)||minArea)cell(positive(total)?'Количество квартир':'Площадь квартир',positive(total)?fmt(total):'От '+fmt(minArea)+' м²',positive(total)&&minArea?'От '+fmt(minArea)+' м²':null);
+      card.style.setProperty('--fact-cols',String(card.children.length));
+    }
     const sports=items.filter(i=>Object.hasOwn(illustrations,i.id));
     if(sports.length){const list=make('ul',null,section,'bc-sports-pictograms');for(const i of sports){const li=make('li',null,list);const art=make('div',null,li);art.innerHTML='<svg viewBox="0 0 120 90" aria-hidden="true" focusable="false">'+illustrations[i.id]+'</svg>';make('span',label(i.labels),li);}}
     const rest=items.filter(i=>!Object.hasOwn(illustrations,i.id));

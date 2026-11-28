@@ -101,3 +101,24 @@
 .gran-detail .bc-amenities-grid .bc-amenity-icon{font-size:27px}
 .gran-detail .bc-sports-pictograms+.bc-amenities-grid{border-top:1px solid #dcddd5;padding-top:16px}
 @media(max-width:760px){.gran-detail .bc-property-hero{grid-template-columns:1fr}.gran-detail .bc-property-hero-side .property-facts{grid-template-rows:repeat(3,minmax(0,1fr))}.gran-detail .bc-property-hero-side .property-facts>div{padding:14px 16px}.gran-detail .property-facts h2{font-size:22px}.gran-detail .bc-amenities .bc-amenities-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gran-detail .bc-title-line{gap:8px}.gran-detail .bc-title-line .gran-developer{font-size:13px}}
+
+/* 0.368: compact information, infrastructure first, calculator below. */
+.gran-detail .bc-amenities .bc-territory-card{grid-template-columns:repeat(var(--fact-cols,3),minmax(0,1fr));gap:14px 22px;align-items:start}
+.gran-detail .bc-territory-cell{display:grid;gap:5px;min-width:0;grid-template-rows:auto auto auto;overflow-wrap:anywhere}
+.gran-detail .bc-territory-cell .bc-territory-value{margin:0}
+.gran-detail .bc-extra-info{margin:26px 0}
+.gran-detail .bc-extra-info h2{margin:0 0 12px}
+.gran-detail .bc-info-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 24px;color:#344755;font-size:14px;line-height:1.5;list-style:disc;padding:0 0 0 18px;margin:0}
+.gran-detail .bc-info-columns li{margin:0;min-width:0;overflow-wrap:anywhere}
+.gran-detail .bc-extra-info+.bc-extra-info{border-top:1px solid #dcddd5;padding-top:22px}
+.gran-detail .installment-total{margin:8px 0 14px;color:#687580;font-size:14px;line-height:1.4}
+.gran-detail .installment-total strong{font-size:20px;color:#26352b;font-weight:600;margin-left:5px}
+.gran-detail .installment-grid{align-items:stretch;gap:12px}
+.gran-detail .installment-part{display:grid;grid-template-rows:minmax(42px,1fr) auto auto;gap:7px;min-width:0;padding:16px}
+.gran-detail .installment-part label{margin:0;line-height:1.4;overflow-wrap:anywhere}
+.gran-detail .installment-date{display:block;font-weight:400}
+.gran-detail .installment-part>div{line-height:1.4;overflow-wrap:anywhere}
+.gran-detail .installment-part input{margin:10px 0 5px;min-width:0}
+.gran-detail .installment-disclaimer{font-size:12px;line-height:1.4}
+@media(max-width:760px){.gran-detail .bc-amenities .bc-territory-card{grid-template-columns:1fr;gap:14px}.gran-detail .bc-territory-cell+.bc-territory-cell{border-top:1px solid #cbd3d9;padding-top:12px}.gran-detail .installment-part{grid-template-rows:auto auto auto}.gran-detail .installment-part label{min-height:0}}
+@media(max-width:420px){.gran-detail .bc-info-columns{gap:8px 14px;font-size:13px}}

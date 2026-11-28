@@ -116,10 +116,19 @@ export function pageHTML(p,template) {
   const date=p.completed?'Объект сдан':p.completionMonth&&/^\d{4}-(0[1-9]|1[0-2])$/.test(p.completionMonth)?new Intl.DateTimeFormat('ru-RU',{month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(p.completionMonth+'-15T12:00:00Z')).replace(/ г\.$/,'').replace(/^./,c=>c.toUpperCase()):p.completion||'По запросу';
   const minPrices=p.plans.filter(a=>typeOnSale(p.plans,a)&&Number(a.priceBrl)>0).map(a=>Number(a.priceBrl));
   const minPrice=minPrices.length?Math.min(...minPrices):null;
-  const rows=(source,labels)=>labels.filter(([k])=>source?.[k]!=null&&String(source[k]).trim()!==''&&source[k]!==false).map(([k,label])=>`<dt>${e(label)}</dt><dd>${e(typeof source[k]==='boolean'?'Да':source[k])}</dd>`).join('');
-  const tech=rows(p.technical,[['total','Всего квартир'],['floors','Этажность'],['perFloor','Квартир на этаже'],['parkingLevels','Уровней паркинга'],['guestParking','Гостевых машино-мест'],['parkingSize','Размер машино-мест'],['penthouseFloor','Этаж с пентхаусами']]);
-  const architecture=rows(p.architectureDesign,[['architecture','Архитектурный проект'],['interiors','Дизайн интерьеров'],['landscape','Ландшафтный дизайн'],['development','Девелопмент и строительство'],['jointDevelopment','Совместный девелопмент']]);
-  const body=`<header class="property-intro" data-bc-layout="0.367"><a class="link-arrow" href="/properties/">← Все объекты</a>
+  const t=p.technical||{};
+  const positive=v=>typeof v==='number'&&Number.isFinite(v)&&v>0;
+  const present=v=>typeof v==='string'&&v.trim()!=='';
+  const techItems=[
+    positive(t.perFloor)?`Квартир на этаже — ${number(t.perFloor)}`:'',
+    positive(t.ceilingHeight)?`Высота потолков — ${number(t.ceilingHeight)} м`:'',
+    ...[['privateElevator','Индивидуальный лифт'],['backupGenerator','Резервный генератор'],['evCharging','Зарядка электромобилей'],['accessControl','Контроль доступа'],['smartHome','Система «Умный дом»'],['soundInsulation','Улучшенная звукоизоляция']].map(([k,label])=>t[k]===true?label:''),
+    present(t.finishing)?`Отделка — ${t.finishing.trim()}`:'',
+    positive(t.guestParking)?`Гостевых машино-мест — ${number(t.guestParking)}`:''
+  ];
+  const architectureItems=[['architecture','Архитектура'],['interiors','Дизайн интерьеров'],['landscape','Ландшафтный дизайн'],['development','Девелопмент и строительство'],['jointDevelopment','Совместный девелопмент']].map(([k,label])=>present(p.architectureDesign?.[k])?`${label} — ${p.architectureDesign[k].trim()}`:'');
+  const info=(items,heading,cls)=>{const list=items.filter(Boolean);return list.length?`<section class="gran-tech bc-extra-info ${cls}"><h2>${heading}</h2><ul class="bc-info-columns">${list.map(x=>`<li>${e(x)}</li>`).join('')}</ul></section>`:'';};
+  const body=`<header class="property-intro" data-bc-layout="0.370"><a class="link-arrow" href="/properties/">← Все объекты</a>
     <div class="bc-title-line"><h1>${title}</h1>${p.developerName?`<p class="gran-developer">Застройщик: <strong>${e(p.developerName)}</strong></p>`:''}</div>
     ${p.longDescription?`<p class="bc-property-description">${e(p.longDescription)}</p>`:''}
     <div class="bc-property-hero${first?'':' bc-property-hero-no-photo'}"><div class="bc-property-hero-side"><div class="gran-facts property-facts">
@@ -127,10 +136,11 @@ export function pageHTML(p,template) {
     <div class="bc-fact-date"><p class="property-fact-label">Срок сдачи</p><h2>${e(date)}</h2></div>
     <div class="bc-fact-price"><p class="property-fact-label">Стоимость квартир</p><h2>${minPrice?'от ':''}${money(minPrice)}</h2><div class="fact-currencies" hidden></div></div></div></div>${hero}</div>
     <div data-bc-highlights hidden></div></header>
-    ${plans?`<section class="gran-plans"><h2>Квартиры и планировки</h2>${plans}</section><section id="installment-calculator" class="installment-calculator" hidden></section>`:''}
+    ${plans?`<section class="gran-plans"><h2>Квартиры и планировки</h2>${plans}</section>`:''}
     <section class="gran-tech bc-amenities" hidden></section>
-    ${tech?`<section class="gran-tech bc-technical"><details class="bc-public-fold"><summary>Технические характеристики ЖК</summary><dl class="gran-team">${tech}</dl></details></section>`:''}
-    ${architecture?`<section class="gran-tech bc-architecture"><details class="bc-public-fold"><summary>Архитектура и дизайн</summary><dl class="gran-team">${architecture}</dl></details></section>`:''}
+    ${plans?'<section id="installment-calculator" class="installment-calculator" hidden></section>':''}
+    ${info(techItems,'Технические характеристики','bc-technical')}
+    ${info(architectureItems,'Архитектура и дизайн','bc-architecture')}
     <p class="property-disclaimer">Информация носит ознакомительный характер. Цены, характеристики и наличие необходимо уточнять перед покупкой.</p>`;
   if(!template.includes('__TITLE__')||!template.includes('__BODY__')||!template.includes('</head>')) fail('Некорректный шаблон страницы ЖК',502);
   return template.replace('__TITLE__',()=>title).replace('__BODY__',()=>body).replace('</head>',()=>`<meta name="description" content="${title} — квартиры и планировки"><link rel="canonical" href="https://brazilconsult.com/${root(p)}">${p.active===false?'<meta name="robots" content="noindex">':''}</head>`);
