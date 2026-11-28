@@ -214,3 +214,10 @@
  .gran-detail>.gran-plans{margin:18px 0;border-radius:12px}
  .gran-detail>.bc-extra-panel{grid-template-columns:1fr;gap:22px}
 }
+
+/* 0.374: mobile gallery height must not depend on a grid item's computed height. */
+@media(max-width:760px){
+  .gran-detail .bc-hero-carousel{width:100%;height:auto;aspect-ratio:auto;align-self:start}
+  .gran-detail .bc-hero-carousel .bc-property-hero-photo{position:relative;display:block;width:100%;height:auto;aspect-ratio:auto;padding-top:75%;box-sizing:border-box}
+  .gran-detail .bc-hero-carousel .bc-property-hero-photo img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover}
+}
